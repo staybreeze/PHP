@@ -1,0 +1,183 @@
+@charset "utf-8";
+
+body {
+    background-color: #fbf9cc;
+
+}
+
+a {
+    color: #df4839;
+
+}
+
+a:hover {
+
+    color: #ff705b;
+    text-decoration: none;
+}
+
+h1 {
+    background-color: #6fbb9a;
+    color: #fff;
+    margin: 40px auto;
+    padding: 30px;
+    border: 5px solid #95dbbd;
+    text-align: center;
+    width: 600px;
+    font-size: 300%;
+    line-height: 1;
+    border-radius: 5px 10px 15px 20px;
+    text-shadow: 1px 1px 2px #307657;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-image: linear-gradient(to botto, #6fbb9a, #4a9d79);
+    font-family: 'Limelight', cursive;
+
+}
+
+h2 {
+    padding: 10px;
+    margin-bottom: 30px;
+    border: 1px dotted #94c8b1;
+    border-left: 10px solid #d0e35b;
+    color: #6fbb9a;
+}
+
+#contents {
+    /* width: 798px;960(我們希望總BODER-box的寬為此)-80-80-1-1 */
+    box-sizing:border-box;
+    width:960px;
+    margin: 40px auto;
+    padding: 40px 80px;
+    border: 1px solid #f6bb9e;
+    background-color: #fff;
+
+}
+
+.container {
+    display: flex;
+
+    margin: auto
+}
+
+.cat {
+    width: 50%;
+
+}
+
+.dog {
+    width: 50%;
+    object-position: center;
+}
+
+.more {
+    text-align: left;
+}
+
+.more::after {
+    content: url(./img/HTML_CSS_Practice/chapter02/lesson07/after/img/ico_arrow.png);
+    margin: left 3px;
+    vertical-align: middle;
+}
+
+.h {
+    padding: 10px;
+    margin-bottom: 30px;
+    border: 1px dotted #94c8b1;
+    border-left: 10px solid #d0e35b;
+    color: #6fbb9a;
+    border-radius: 5px 0 0 5px;
+}
+
+.h-sub {
+    padding: 10px;
+    background-color: #fbf9cc;
+    color: #ff705b;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 2px #ffd0ad inset;
+}
+
+.h-sub span {
+
+    font-weight: normal;
+
+}
+
+#contents>section+section {
+    margin-top: 80px;
+}
+
+header,
+nav,
+footer {
+    text-align: center;
+}
+
+a[target="_blank"]::after {
+    content: url(./img/HTML_CSS_Practice/chapter02/lesson07/after/img/ico_blank.png);
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+a[href^="mailto"]::after {
+    content: url(./img/HTML_CSS_Practice/chapter02/lesson07/after/img/ico_mail.png);
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+body {
+    background-color: #fbf9cc;
+    background-image: url(./img/HTML_CSS_Practice/chapter02/lesson08/after/img/bg.png);
+    background-repeat: repeat-x;
+
+}
+
+.menu li {
+    list-style-type: none;
+
+    display: inline-block;
+    width: 180px;
+    margin: 0 10px
+}
+
+.menu a {
+    display: block;
+    padding: 10px;
+    background-color: #6fbb9a;
+    border-radius: 8px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    background-color: #90ddbb;
+}
+
+.imgL {
+    float: left;
+    margin-right: 20px;
+
+}
+
+.imgR {
+
+    float: right;
+    margin-left: 20px;
+
+}
+
+.clear {
+    clear: both
+}
+
+.clearfix::after{
+content:"";
+   display:block;
+   clear:both;
+
+}
+.img-round{
+    width:200px;
+    height:200px;
+border-radius:50%;
+
+}

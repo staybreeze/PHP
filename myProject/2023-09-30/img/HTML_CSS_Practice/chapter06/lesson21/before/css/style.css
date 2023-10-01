@@ -1,0 +1,105 @@
+/* Transform（變形）
+---------------------------*/
+
+/*translate()*/
+.trans01{ }
+.trans02{ }
+.trans03{ }
+
+/*scale()*/
+.scale01{ }
+.scale02{ }
+.scale03{ }
+
+/*rotate()*/
+.rotate01{ }
+.rotate02{ }
+.rotate03{ }
+
+/*skew()*/
+.skew01{ }
+.skew02{ }
+.skew03{ }
+
+
+/* Transform-Origin
+---------------------------*/
+.origin li{
+  width:30%;
+  cursor:pointer;
+}
+
+.origin li:hover{  
+  transform: scale(2, 1);
+}
+
+/*在transform加上transition的效果*/
+.sample > * {
+  transition: 0.5s;
+}
+
+/* Transition
+---------------------------*/
+/*改變按鈕顏色1（背景色與字體顏色）*/
+p.btn01 a{
+  background-color:#9c9;
+  color:#fff;
+}
+
+p.btn01 a:hover{
+  background-color:#fc6;
+  color:#000;
+}
+
+/*改變按鈕顏色2（背景色）*/
+p.btn02 a{
+  background-color:#9c9;
+  color:#fff;
+}
+
+p.btn02 a:hover{
+  background-color:#fc6;
+  color:#000;
+}
+
+/*改變按鈕顏色3（時間差）*/
+p.btn03 a{
+  background-color:#9c9;
+  color:#fff;
+}
+
+
+p.btn03 a:hover{
+  background-color:#fc6;
+  color:#000;
+}
+
+/*transition-timing-function*/
+
+.timing li{
+  position:relative;
+  left:0;
+}
+
+.timing:hover li{
+  left:500px;
+}
+
+.t01{ transition:left 2s ease;}
+.t02{ transition:left 2s linear;}
+.t03{ transition:left 2s ease-in;}
+.t04{ transition:left 2s ease-out;}
+.t05{ transition:left 2s ease-in-out;}
+
+/* Animation
+---------------------------*/
+@keyframes fadeIn {
+
+}
+.fadeIn01 { }
+.fadeIn02 { } /*無限迴圈*/
+.fadeIn03 { } /*無限迴圈 + 正反向輪流播放*/
+.fadeIn04 { } /*無限迴圈 + 正反向輪流播放 + 3秒後開始*/
+
+
+

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="utf-8">
+<title>範例：translate()事例</title>
+<link href="css/base.css" rel="stylesheet" media="all">
+
+<style>
+  .mvArea {
+    position: relative;
+  }
+  .logo {
+    /*以mv區塊左上為起點，配置於上下左右50%的位置*/
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    /*往左上平移圓圈半徑的距離（讓中心點對齊中央）*/
+    transform: translate(-50%,-50%);
+  }
+</style>
+
+</head>
+<body>
+<h1>translate()實用事例</h1>
+
+<figure>
+<figcaption>●配置在正中央</figcaption>
+
+<div class="mvArea">
+  <div class="logo">LOGO</div>
+</div>
+
+</figure>
+
+
+</body>
+</html>

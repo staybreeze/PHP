@@ -1,0 +1,43 @@
+@charset "UTF-8";
+/* CSS Document */
+
+*{
+  margin:0;
+  padding:0;
+}
+
+ul{
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+
+
+#wrap{
+  width: 960px;
+  margin: 0 auto;
+  background-color: beige;
+}
+
+#header{
+  margin-bottom: 20px;
+  background-color: lightpink;
+}
+
+#footer{
+  background-color: gold;
+  clear: both;
+}
+
+.box li{
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+/* 1 使用CSS3的虛擬類別 :nth-child(n) */
+.box li:nth-child(4n) {
+  margin-right: 0;
+}
+
