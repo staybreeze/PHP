@@ -13,21 +13,21 @@
         }
 
         a {
-    color:dodgerblue;
+            color: dodgerblue;
 
-}
+        }
 
-a:hover {
+        a:hover {
 
-    color:darkturquoise;
-    text-decoration: none;
-}
+            color: darkturquoise;
+            text-decoration: none;
+        }
 
         table,
         tr,
         td {
             border: px solid black;
-border-collapse: collapse;
+            border-collapse: collapse;
             width: 40%;
             height: 60px;
             margin: auto;
@@ -50,7 +50,7 @@ border-collapse: collapse;
         .box3 {
             background-color: rgba(43, 42, 42, 0.898);
             color: white;
-    
+
         }
 
         .box4 {
@@ -59,7 +59,7 @@ border-collapse: collapse;
             text-align: center;
         }
 
-        .box5{
+        .box5 {
             text-align: center;
             background-color: rgba(43, 42, 42, 0.898);
 
@@ -70,57 +70,64 @@ border-collapse: collapse;
 
 <body>
     <div class="container">
+        <form action="" method="get">
+            <table>
+                <tr>
+                    <td class="box1" rowspan="3">
+                        <h1>歡迎回來!</h1>
+                        <p>我們很高興又見到您了!</p>
 
-        <table>
-            <tr>
-                <td class="box1" rowspan="3">
-                    <h1>歡迎回來!</h1>
-                    <p>我們很高興又見到您了!</p>
+                    </td>
+                    <td class="box2" rowspan="4">
+                        <div class="box4">
+                            <img src="./img2.png" alt="" height="200">
+                        </div>
+                    </td>
+                </tr>
 
-                </td>
-                <td class="box2" rowspan="4">
-                    <div class="box4">
-                        <img src="./img2.png" alt="" height="200">
+                <tr>
+
+                    <div class="box5 h-40">
+                        <!-- <td>4</td> -->
                     </div>
-                </td>
-            </tr>
+                </tr>
+                <tr>
+                    <!-- <td>5</td> -->
+                    <!-- <td>6</td> -->
+                </tr>
+                <td rowspan="3" class="box3">
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;電子郵件或電話號碼
+                    </p>
 
-            <tr>
-
-                <div class="box5 h-40">
-                    <!-- <td>4</td> -->
-                </div>
-            </tr>
-            <tr>
-                <!-- <td>5</td> -->
-                <!-- <td>6</td> -->
-            </tr>
-            <td rowspan="3" class="box3">
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;電子郵件或電話號碼</p>
-   
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="" id="">
-            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;密碼</p>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="password" name="" id="">&nbsp;&nbsp;
-            <a href="http://">忘記您的密碼?</a>
-            <p>
-            </p>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="submit" value="登入">
-            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;需要一個帳號嗎?&nbsp;&nbsp;<a href="http://">註冊</a></p> 
-            </td>
-            <!-- <td>8</td> -->
-            </tr>
-            <tr>
-                <td rowspan="2" class="box5">
-<h3>使用QR Code登入</h3>
-<p>用Discord行動應用程式 對此掃描就能立即登入。</p>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input
+                        type="text" name="" id="" required>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;密碼
+                    </p>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="password" name="" id="" required>&nbsp;&nbsp;
+                    <a href="http://">忘記您的密碼?</a>
+                    <p>
+                    </p>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="submit" value="登入">
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;需要一個帳號嗎?&nbsp;&nbsp;<a
+                            href="http://">註冊</a></p>
                 </td>
-                <!-- <td>10</td> -->
-            </tr>
-            <tr>
-                <!-- <td>11</td> -->
-                <!-- <td>12</td> -->
-            </tr>
-        </table>
+                <!-- <td>8</td> -->
+                </tr>
+                <tr>
+                    <td rowspan="2" class="box5">
+                        <h3>使用QR Code登入</h3>
+                        <p>用Discord行動應用程式 對此掃描就能立即登入。</p>
+                    </td>
+                    <!-- <td>10</td> -->
+                </tr>
+                <tr>
+                    <!-- <td>11</td> -->
+                    <!-- <td>12</td> -->
+                </tr>
+            </table>
+        </form>
     </div>
 </body>
 
