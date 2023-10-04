@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            text-align: center;
+        }
+
+        table {
+            text-align: center;
+            margin: auto;
+ 
+        }
+
+        table,
+        td,
+        tr {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        td {
+            width: 50%;
+            height:80vh
+        }
+
+        video {
+            width: 90%;
+            height: 90%
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h3>video</h3>
+        <table>
+            <tr>
+                <td>
+                    <video autoplay loop muted controls>
+                    <source src="./video1.mp4" type="video/mp4"></video>
+                </td>
+                <td>
+                    <h1>tree</h1>
+                    <p>moving</p>
+                </td>
+            </tr>
+        </table>
+
+    </div>
+
+    <hr>
+
+    <div class="container">
+        <h3>audio</h3>
+        <table>
+            <tr>
+                <td>
+                    <audio muted loop controls>
+                    <source src="./test_mp3.mp3" type="audio/mp3"></audio>
+                </td>
+                <td>
+                    <h1>tree</h1>
+                    <p>moving</p>
+                </td>
+            </tr>
+        </table>
+
+    </div>
+</body>
+
+</html>
