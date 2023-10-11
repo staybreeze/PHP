@@ -11,7 +11,7 @@
             margin: auto;
             background-color: hsl(8, 100%, 68%, 0.9);
             /* padding: 15px 20px 20px 20px; */
-            height: 11vh;
+            height: 12vh;
             display: flex;
             justify-content: center;
             /* 水平居中 */
@@ -32,10 +32,10 @@
         }
 
         .container {
-            background-color: beige;
+            background-color:beige;
             /* opacity: 0.54; */
             box-sizing: border-box;
-            width: 90%;
+            width: 70%;
 
             height: 50vh;
             /* border: 1px solid #ff705b; */
@@ -73,24 +73,20 @@
         }
 
 
-        .menu li {
+        /* .menu li {
             list-style-type: none;
 
             display: inline-block;
             width: 300px;
             margin: 0 0px;
             text-align: center;
-            position: relative;
+position: relative;
             top: 65px;
-            left: 450px;
+            left: 450px;} 
 
-        }
 
-        /* .td3{
-            width: 33%;
-        border:none; }*/
 
-        .menu a{
+        .menu a {
             display: block;
             padding: 10px;
             background-color: #6fbb9a;
@@ -99,22 +95,63 @@
             text-decoration: none;
             font-size: larger;
 
+        } */
+
+        .menu {
+            /* background-color: hsl(68, 71%, 62%, 0.2); */
+            /* width: 90%; */
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            /* 水平分散排列 */
+            align-items: center;
+            list-style: none;
+            padding: 0;
         }
 
+        .menu ul {
+            display: flex;
+            width: 70%;
+            /* 让ul元素充满父容器 */
+            justify-content: space-between;
+            /* 均分三个li元素 */
+            list-style: none;
+            padding: 0;
+            margin: auto;
+        }
+
+        .menu li {
+            width: 30%;
+            /* 均分三个li元素的宽度 */
+            text-align: center;
+        }
+
+        .menu a {
+            display: block;
+            padding: 10px;
+            background-color: #6fbb9a;
+            border-radius: 8px;
+            color: #fff;
+            text-decoration: none;
+            font-size: larger;
+        }
+
+
+
         nav {
-            width: 90%;
-            height: 19vh;
-            background-color: hsl(68, 71%, 62%, 0.4);
+            width: 70%;
+            height: 21vh;
+            background-color: hsl(68, 71%, 62%, 0.3);
 
             margin: auto;
-   
+
 
         }
 
         .top {
             display: block;
             padding: 10px;
-            background-color: #ff705b;
+            background-color: hsl(8, 100%, 68%, 0.9);
             border-radius: 8px;
             color: #fff;
             text-decoration: none;
@@ -132,19 +169,24 @@
         }
 
         .img1 {
-            width: 410px;
-            height: 300px;
+            width: 70%;
+            height: auto;
+            border: 5px solid hsl(8, 100%, 68%, 0.6);
+            box-shadow: hsl(68, 71%, 62%, 0.4) 5px 10px;
         }
 
         .img2 {
-            width: 410px;
-            height: 200px;
+            width: 60%;
+            height: auto;
+            border: 5px solid hsl(8, 100%, 68%, 0.6);
+            box-shadow: hsl(68, 71%, 62%, 0.4) 5px 10px;
+            box-shadow: hsl(68, 71%, 62%, 0.4) 5px 10px;
         }
 
         .img3 {
             position: relative;
-            left: 440px;
-            bottom: 320px;
+            left: 300px;
+            bottom: 310px;
 
 
 
@@ -154,15 +196,20 @@
         iframe {
             width: 90%;
             height: 90%;
-
+            border: 5px solid #d0e35b;
+            border-radius: 30px 30px 30px 30px;
+            box-shadow: hsl(68, 71%, 62%, 0.4) 5px 10px;
         }
+
 
         footer {
             text-align: center;
         }
-        pre{
+
+        pre {
             font-weight: bold;
         }
+        
     </style>
 
 </head>
@@ -171,7 +218,7 @@
     <header id="header">
         <div class="head">
             <h1>能幹貓今天也憂鬱</h1>
-<h3>デキる猫は今日も憂鬱</h3>
+            <h3>デキる猫は今日も憂鬱</h3>
             <pre>                                                        by山田羊（山田ヒツジ）</pre>
         </div>
     </header>
@@ -183,7 +230,7 @@
                 <td class="td3"><a href="#box3">地圖</a></td>
             </tr>
         </table> -->
- <ul>
+        <ul>
             <li><a href="#box1">圖片</a></li>
             <li><a href="#box2">影片</a></li>
             <li><a href="#box3">地圖</a></li>
@@ -193,22 +240,25 @@
         <table>
             <tr>
                 <td class="td1">
-<a href="https://zh.wikipedia.org/zh-tw/%E8%83%BD%E5%B9%B9%E8%B2%93%E4%BB%8A%E5%A4%A9%E4%B9%9F%E6%86%82%E9%AC%B1">
-                    <img src="./img/img1.jpg" alt="" class="img1"></a>
+                    <a
+                        href="https://zh.wikipedia.org/zh-tw/%E8%83%BD%E5%B9%B9%E8%B2%93%E4%BB%8A%E5%A4%A9%E4%B9%9F%E6%86%82%E9%AC%B1">
+                        <img src="./img/img1.jpg" alt="" class="img1"></a>
                     <p>
                         ❤❤ 諭吉好可愛喔 ❤❤
                     </p>
                 </td>
                 <td class="td1">
 
-                   <a href="https://ani.gamer.com.tw/animeVideo.php?sn=34079"> <img src="./img/img2.jpg" alt="" class="img1"></a>
+                    <a href="https://ani.gamer.com.tw/animeVideo.php?sn=34079"> <img src="./img/img2.jpg" alt=""
+                            class="img1"></a>
                     <p>
                         我也想要有諭吉~♥♥
                     </p>
                 </td>
                 <td class="td1">
 
-                    <a href="https://zh.wikipedia.org/zh-tw/%E7%A6%8F%E6%B3%BD%E8%B0%95%E5%90%89"><img src="./img/img4.jpg" alt="" class="img2"></a>
+                    <a href="https://zh.wikipedia.org/zh-tw/%E7%A6%8F%E6%B3%BD%E8%B0%95%E5%90%89"><img
+                            src="./img/img4.jpg" alt="" class="img2"></a>
                     <p>
                         不是這個諭吉啦!</p>
                     <p>但要是這個諭吉也可以啦⁽⁽٩(๑˃̶͈̀ ᗨ ˂̶͈́)۶⁾⁾
@@ -244,7 +294,7 @@
                 <td class="td2">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1662975.6066615344!2d138.45064401641255!3d35.50429722477511!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x605d1b87f02e57e7%3A0x2e01618b22571b89!2z5pel5pys5p2x5Lqs6YO9!5e0!3m2!1szh-TW!2stw!4v1696998790195!5m2!1szh-TW!2stw"
-                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        width="600" height="450" style="border:1;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
 
                 </td>
