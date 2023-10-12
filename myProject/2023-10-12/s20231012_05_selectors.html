@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS選擇器示例</title>
+    <style>
+        /* 子元素選擇器 (A > B) */
+        /* ul > li {
+    background-color: yellow;
+} */
+
+        /* 通用兄弟选择器 (A ~ B) */
+        ul~div {
+            background-color: lightblue;
+        }
+
+        /* 相鄰兄弟選擇器 (A + B) */
+        /* ul + div {
+    background-color: lightcoral;
+} */
+
+        /* 後代選擇器 (A B) */
+    /* ul div {
+    background-color: lightgreen;
+} */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <ul>
+            <li>直接子元素 1</li>
+            <li>直接子元素 2</li>
+            <li>直接子元素 3</li>
+            <ul>
+                <li>直接子元素 1</li>
+                <li>直接子元素 2</li>
+                <li>直接子元素 3</li>       
+                 <ul>
+                    <li>直接子元素 1</li>
+                    <li>直接子元素 2</li>
+<div>                   Lorem ipsum dolor sit amet.</div>
+                    <li>直接子元素 3</li>
+        
+                </ul>
+    
+            </ul>
+        </ul>
+        <div>
+            同級兄弟1
+        </div>
+        <div>
+            同級兄弟2
+        </div>
+    </div>
+</body>
+
+</html>

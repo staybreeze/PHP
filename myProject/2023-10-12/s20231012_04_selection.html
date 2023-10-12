@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web</title>
+    <style>
+        * {
+            margin: 0;
+
+        }
+
+        header {
+            background-color: #ccc;
+            height: 8vh;
+            text-align: center;
+        }
+
+        nav {
+            margin: auto;
+            text-align: center;
+            background-color: antiquewhite;
+
+        }
+
+        .nav>a, .box>a {
+
+            text-decoration: none;
+
+        }
+        main{
+            background-color: cornsilk
+        }
+
+        .container {
+            background-color: bisque;
+            width: 60%;
+            height: 70vh;
+            margin: auto;
+            /* TOP鍵位置設定 */
+            position: relative;
+        }
+
+        footer {
+            text-align: center;
+        }
+
+        .box {            /* TOP鍵位置設定 */
+            border: 3px solid brown;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        footer{
+            background-color:darkseagreen;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header">
+        <h1>Web Title</h1>
+    </header>
+    <nav class="nav">
+        <a href="#item1">item1</a>
+        <a href="#item2">item2</a>
+        <a href="#item3">item3</a>
+    </nav>
+
+    <main class="main">
+        main
+        <div id="item1"></div>
+        <section class="container">
+            section
+            <h3>item1</h3>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic temporibus ad provident perferendis
+                obcaecati
+                ipsa natus quasi cumque nostrum magni?</p>
+
+        </section>
+        <br>
+        <hr> <br>
+
+        <div id="item2"></div>
+        <section class="container">
+            section
+            <h3>item2</h3>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic temporibus ad provident perferendis
+                obcaecati
+                ipsa natus quasi cumque nostrum magni?</p>
+            <div class="box">
+                <a href="#header">top</a> 
+            </div>
+        </section>
+        <br>
+        <hr> <br>
+
+        <div id="item3"></div>
+        <section class="container">
+            section
+            <h3>item3</h3>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic temporibus ad provident perferendis
+                obcaecati
+                ipsa natus quasi cumque nostrum magni?</p>
+                <div class="box">
+                   <a href="#header">top</a> 
+                </div>
+        </section>
+    </main>
+    <footer>
+        &copy; WSL Web All Rights.
+    </footer>
+</body>
+
+</html>

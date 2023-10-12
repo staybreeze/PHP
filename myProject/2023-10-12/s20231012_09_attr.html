@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            width: 100%;
+        }
+
+        table,
+        tr,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        .box1 {
+            width: 20%;
+        }
+
+        .box2 {
+            width: 60%;
+        }
+
+        .money::before {
+            content: "$";
+        }
+
+        .money::after {
+            content: "元";
+        }
+
+        .status::after {
+            content: "%";
+        }
+        /* 藏資訊，打ELEMENT或CLASS都可以 */
+        /* td[level='1']{
+            color:crimson;
+        } */
+        .status[level='1']{
+            color:crimson;
+        }
+        input[type="text"]{
+            background-color: bisque;
+        }
+        input[type='number']{
+            background-color: darkseagreen;
+        }
+        p[class^="iphone14"] {
+            background-color: aquamarine;
+        }
+
+        p[class^="iphone15"] {
+            background-color: gold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <table>
+            <tr>
+                <th class="box1">name</th>
+                <th class="box1">bonus</th>
+                <th class="box1">績效成長</th>
+                <th class="box2">備註</th>
+            </tr>
+            <tr>
+                <td>Amy</td>
+                <td class="money">5800</td>
+                <td class="status">10</td>
+
+            </tr>
+            <tr>
+                <td>Bob</td>
+                <td class="money">4000</td>
+                <td class="status">20</td>
+
+            </tr>
+            <tr>
+                <td>Cat</td>
+                <td class="money">3200</td>
+                <td class="status" level="1">30</td>
+
+            </tr>
+        </table>
+    </div>
+    <br>
+    <hr><br>
+    <form action="">
+        <label for="">name</label>
+        <input type="text">
+        <label for="">name</label>
+        <input type="text">
+        <label for="">name</label>
+        <input type="text"><br>
+        <br>
+        <label for="">name</label>
+        <input type="number">
+        <label for="">name</label>
+        <input type="number">
+    </form>
+    <br>
+    <hr><br>
+    <div class="container">
+        <p class="iphone14">Lorem ipsum dolor sit amet.</p>
+        <p class="iphone14-pro">Lorem ipsum dolor sit amet.</p>
+        <p class="iphone15">Lorem ipsum dolor sit amet.</p>
+        <p class="iphone15-pro">Lorem ipsum dolor sit amet.</p>
+    </div>
+</body>
+
+</html>

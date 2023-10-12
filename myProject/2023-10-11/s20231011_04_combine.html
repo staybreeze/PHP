@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div1>p {
+            color: brown;
+        }
+
+        .div2>p {
+            color: blue;
+        }
+
+        /* div3以下所有的p，空格，非常強大，但會影響太多 */
+        /* 建議少用空格
+ */
+        .div3 p {
+            color: chartreuse;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="div1">
+            div1
+            <p>
+                4568564
+            </p>
+        </div>
+        <div class="div2">
+            div2
+            <p>
+                654654
+            </p>
+        </div>
+        <div class="div3">
+            div3
+            <div class="div31">
+                &nbsp; div31
+                <p>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 654654
+                </p>
+                <p>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 654654
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

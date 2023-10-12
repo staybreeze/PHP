@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background</title>
+    <style>
+        .container {
+            width: 80%;
+            height: 150vh;
+            margin: auto;
+        }
+
+        .box1 {
+            background-color: beige;
+            background-image: url(/myProject/20023-10-11/img/img1.jpg), url(./img/img2.jpg);
+
+            background-repeat: no-repeat;
+            background-position: right, left;
+
+            background-size: 500px auto, 500px auto;
+        }
+
+        .box2 {
+            width: 20%;
+            background-color: beige;
+            background-image: url(/myProject/20023-10-11/img/img1.jpg);
+            background-repeat: no-repeat;
+        }
+
+        .box3 {
+            background-color: beige;
+            background-image: url(/myProject/20023-10-11/img/img1.jpg);
+            background-repeat: no-repeat;
+            background-position: bottom right;
+
+        }
+
+        table,
+        tr,
+        td {
+
+
+            border: 1px solid black;
+        }
+
+        table {
+            margin: auto;
+
+            width: 80%;
+            height: 100%;
+        }
+
+        td {
+            width: 50%;
+            height: 50%;
+        }
+
+        .img1 {
+            width: 100px;
+            height: auto;
+            opacity: 0.5;
+            position: relative;
+            right: auto;
+            left: 10px;
+            top: auto;
+            bottom: 70px;
+
+        }
+
+        .img2 {
+            width: 100px;
+            height: auto;
+            opacity: 0.5;
+            /* 圖片移動用以下方法 */
+            position: relative;
+            right: auto;
+            left: 250px;
+            top: 70px;
+            bottom: auto;
+
+        }
+        iframe{
+            width:42%;
+            /* height:100%; */
+        }
+        .iframe1{
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container box1">
+
+        <table>
+            <tr>
+                
+                <td>               
+                     <img src="/myProject/2023-10-4/img/img3.png" alt="" class="img1"></td>
+                <td>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/BBmz-B5kSO8?si=FBeRbEHKqhuJGqfP"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                    <img src="/myProject/2023-10-4/img/img3.png" alt="" class="img1"></td>
+            </tr>
+            <tr>
+                <td>
+
+                    <img src="/myProject/2023-10-4/img/img3.png" alt="" class="img2">
+                    
+                </td>
+                <td>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/BBmz-B5kSO8?si=FBeRbEHKqhuJGqfP"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                    <img src="/myProject/2023-10-4/img/img3.png" alt="" class="img2">
+                </td>
+
+            </tr>
+        </table>
+
+    </div>
+
+    <div class=" container box2">
+
+    </div>
+    <div class="container box3">
+
+    </div>
+</body>
+
+</html>
