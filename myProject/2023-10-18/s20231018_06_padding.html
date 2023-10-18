@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            /* 含border，從border開始算尺寸(500往外加margin)，算到border為以下設定的500*500，
+            不然原本設定為「content-box」，也就是content-box為500*500，並從此往外開始加padding、border、margin
+            最好一開始就設定border-box比較好
+
+            *{box-sizing: border-box;
+            margin:0;}
+        */
+            box-sizing: border-box;
+            margin:0;
+        }
+
+        .box {
+            width: 500px;
+            height: 500px;
+            background-color: lightyellow;
+            padding-top: 30px;
+            padding-left: 50px;
+            padding-right: 70px;
+            border: 5px solid lightpink
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime perferendis et, eos, consectetur harum
+                facilis ipsum ipsam inventore modi quas perspiciatis nemo ratione doloribus aliquam eaque non dicta
+                nostrum optio.</p>
+        </div>
+    </div>
+</body>
+
+</html>

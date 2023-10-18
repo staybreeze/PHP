@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 圖片按鈕 */
+        nav>a {
+            display: inline-block;
+            background-color: aquamarine;
+            height: 50px;
+            width: 50px;
+            margin-top: 10px;
+
+            margin-right: 10px;
+
+            background-image: url(https://picsum.photos/id/50/50/50);
+        }
+
+        img {
+            display: block;
+        }
+
+        input用inline-block可以調整高度 input {
+            display: inline-block;
+            height: 100px;
+        }
+
+        /* DIV做成的圖片按鈕沒辦法按圖即超連結 */
+        .my-div {
+            width: 150px;
+            height: 150px;
+            background-image: url(https://picsum.photos/id/60/150/150);
+        }
+
+        /* li用inline or inline-block就可以創造nav的感受 */
+        li {
+            display: inline-block;
+            background-color: aquamarine;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+
+        <a href="http://">home</a>
+
+        <a href="http://">home</a>
+
+        <a href="http://">home</a>
+    </nav>
+
+    <div class="my-div">
+        <a href="http://">div-home</a>
+    </div>
+    <div class="my-div">
+        <a href="http://">
+            div-home
+        </a>
+    </div>
+    <div class="my-div">
+        <a href="http://">
+            div-home
+        </a>
+    </div>
+    <div class="container">
+
+        <img src="https://picsum.photos/id/50/200/300" alt="">
+        <img src="https://picsum.photos/id/60/200/300" alt="">
+        <img src="https://picsum.photos/id/7/200/300" alt="">
+
+        <br>
+        <input type="text">
+        <input type="text">
+        <input type="text">
+
+    </div>
+
+    <div class="container">
+        <ul>
+            <li>amy</li>
+            <li>bob</li>
+            <li>cat</li>
+        </ul>
+    </div>
+</body>
+
+</html>
