@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container {
+            /* 宣告flexbox */
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            height: 100vh;
+            /* 主軸 row 置中  */
+            justify-content: space-around;
+            /* 參考軸 column*/
+            align-items: center;
+
+            width: 100vw;
+
+            background-color: cadetblue;
+            margin: auto;
+        }
+
+        .item {
+            width: 30%;
+            height: 25vh;
+            background-color: lightgray;
+
+        }
+        .none{
+
+            padding-top: 50px;
+        }
+
+        .green {
+            background-color: yellowgreen;
+            color: antiquewhite;
+            text-align: center;
+            padding-top: 40px;
+            padding-bottom: 10px;
+        }
+
+        .green::before {
+            content: '◯';
+            font-size: 180px;
+        }
+
+        /* 
+            font-size: 220px;
+        } */
+
+        .red {
+            background-color: palevioletred;
+            color: antiquewhite;
+            text-align: center;
+            padding-bottom: 50px;
+
+        }
+        .red::before {
+            content: '✕';
+            font-size: 200px;
+        }
+
+
+        /* .item-0 {
+            width: 300px;
+            height: 300px;
+            background-color: lightgray;
+            opacity: 0;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="item none"></div>
+        <div class="item none"></div>
+        <div class="item green"></div>
+        <div class="item red"></div>
+
+
+        <div class="item green"></div>
+        <div class="item none"></div>
+        <div class="item green"></div>
+        <div class="item none"></div>
+        <div class="item red"></div>
+
+
+    </div>
+</body>
+
+</html>
