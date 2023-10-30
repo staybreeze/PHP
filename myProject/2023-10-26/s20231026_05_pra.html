@@ -11,15 +11,19 @@
 
         }
 
-        nav {
+        body {
+            background-image: url(./img/photo-1546827275-0cdce0c88847.png);
+        }
+
+        .nav1 {
             width: 100%;
-            height: 20vh;
+            height: 23vh;
             position: fixed;
 
             text-align: center;
             align-items: center;
             /* border-bottom: 5px solid rgba(0, 0, 0, 0.417); */
-
+            background-color:  rgba(128, 0, 128, 0.405);
             color: antiquewhite;
             background-image: url(./img/未命名2.png);
             background-repeat: repeat-x;
@@ -31,8 +35,11 @@
             line-height: 80px;
         }
 
+
+
         .container1 {
-            background-color: rgba(0, 0, 0, 0.253);
+            /* background-color:rgba(218, 165, 32, 0.242); */
+
 
         }
 
@@ -51,7 +58,7 @@
             align-items: center;
 
             border: 5px solid burlywood;
-            background-color: rgba(95, 158, 160, 0.738);
+            background-color: rgb(95, 158, 160);
             border-radius: 0px 50px 0px 50px;
 
             background-position: bottom;
@@ -60,7 +67,7 @@
         }
 
         .container2 {
-            background-color:rgba(95, 158, 160, 0.903);
+            background-color: rgba(95, 158, 160);
 
 
         }
@@ -71,7 +78,7 @@
             flex-wrap: wrap;
             margin: auto;
             width: 70vw;
-            height: 100vh;
+            height: 110vh;
             justify-content: space-around;
 
             /* background-color: beige; */
@@ -82,9 +89,17 @@
         }
 
         .container3 {
-            background-color:rgba(0, 0, 0, 0.253);
+            /* background-color:rgba(0, 0, 0, 0.253); */
             width: 100%;
-            height: 30vh;
+            height: 33vh;
+            /* background-color: beige; */
+        }
+
+        .container4 {
+            /* background-color:rgba(0, 0, 0, 0.253); */
+            width: 100%;
+            height: 10vh;
+            /* background-color: beige; */
         }
 
         .item1 {
@@ -96,9 +111,9 @@
             align-items: center;
         }
 
-        .item1:hover {
+        /* .item1:hover {
             opacity: 0.8;
-        }
+        } */
 
         .item2 {
             width: 25%;
@@ -126,11 +141,11 @@
 
         a {
             text-decoration: none;
+
         }
 
         a:hover {
-            background-color: cadetblue;
-            opacity: 1;
+            color: beige
         }
 
         .p2 {
@@ -144,7 +159,20 @@
 
             border: 5px solid rgba(205, 92, 92, 0.386);
             background-color: burlywood;
-            line-height: 25px;
+            line-height: 40px;
+            font-size: larger;
+            color: rgba(178, 34, 34, );
+        }
+
+        .buy:hover {
+
+            font-size: x-large;
+            border: 5px solid rgba(205, 92, 92, 0.386);
+            line-height: 50px;
+            font-weight: bold;
+            border-radius: 0px 00px 15px 15px;
+            background-color: goldenrod;
+            color: azure
         }
 
         .intro {
@@ -155,11 +183,13 @@
         }
 
         .intro0 {
-            width: 6%;
+            width: 5%;
             height: 100%;
-            background-color: rgba(178, 34, 34, 0.543);
+            background-color: rgba(178, 34, 34);
             ;
+
             border: 5px solid burlywood;
+            border-left: 20px solidrgba(178, 34, 34);
             border-top: none;
             border-bottom: none;
             font-size: 40px;
@@ -188,16 +218,17 @@
             /* font-size: 100px; */
             color: pink;
         }
+
         .span3 {
-/* background-color: darkkhaki; */
-        }
-        .span4 {
-background-color: rgba(189, 183, 107, 0.487);
+            /* background-color: darkkhaki; */
         }
 
-        .nav{
-            background-color: rgba(189, 183, 107, 0.183);
+        .span4 {
+            background-color: rgba(189, 183, 107, 0.487);
         }
+
+
+
         .footer1 {
 
             background-color: rgba(95, 158, 160, 0.903);
@@ -218,28 +249,30 @@ background-color: rgba(189, 183, 107, 0.487);
 
         }
 
-        a {
+        /* a {
             color: firebrick;
-        }
+        } */
     </style>
 </head>
 
 <body>
 
-    <nav>
+    <nav class="nav1">
         <br>
 
 
-       <span class="span4"> <span class="span1">南</span><span class="span2">瓜</span><span class="span1">南</span><span
-            class="span2">瓜</span> <span class="span3">線上課程</span></span>
+        <span class="span4"> <span class="span1">南</span><span class="span2">瓜</span><span class="span1">南</span><span
+                class="span2">瓜</span> <span class="span3">線上課程</span></span>
     </nav>
 
     <div class="container3"></div>
     <div class="container1">
-        <div class="section1">
-            <div class="intro0">
+
+        <!-- <div class="intro0">
                 <br><br><span> 超<br>夢<br>幻</span><span><br>精<br>選<br>課<br>程</span><br>
-            </div>
+            </div> -->
+        <div class="section1">
+
             <div class="item1">
                 <img src="./img/img1.jpg" alt="" width="100%" height="70%">
 
@@ -259,11 +292,13 @@ background-color: rgba(189, 183, 107, 0.487);
 
                 <p class="p1">PHP/jQeury/Python</p>
                 <br><br>
-                <p class="buy">Buy it!</p>
+                <p class="buy"> <a href="http://">Buy it!</a></p>
             </div>
         </div>
-    </div>
 
+
+    </div>
+    <div class="container4"></div>
     <div class="container2">
 
         <div class="section2">
@@ -274,15 +309,21 @@ background-color: rgba(189, 183, 107, 0.487);
 
             <div class="item2"><img src="./img/img3.png" alt="" width="100%" height="100%">
                 <p class="p2">大數據分析</p>
-                <p class="buy">Buy it!</p>
+                <p class="buy">
+                    <a href="http://">Buy it!</a>
+                </p>
             </div>
             <div class="item2"><img src="./img/img4.jpg" alt="" width="100%" height="100%">
                 <p class="p2">國際數位金融技術</p>
-                <p class="buy">Buy it!</p>
+                <p class="buy">
+                    <a href="http://">Buy it!</a>
+                </p>
             </div>
             <div class="item2"><img src="./img/img6.jpg" alt="" width="100%" height="100%">
                 <p class="p2">人生必學的財務自由課</p>
-                <p class="buy">Buy it!</p>
+                <p class="buy">
+                    <a href="http://">Buy it!</a>
+                </p>
             </div>
 
             <!-- <div class="intro">
@@ -291,17 +332,21 @@ background-color: rgba(189, 183, 107, 0.487);
             </div> -->
             <div class="item2"><img src="./img/img9.jpg" alt="" width="100%" height="100%">
                 <p class="p2">歡迎光臨AI帝國</p>
-                <p class="buy">Buy it!</p>
+                <p class="buy"> <a href="http://">Buy it!</a></p>
             </div>
             <div class="item2"><img src="./img/7.jpg" alt="" width="100%" height="100%">
 
                 <p class="p2">來吧!斷捨離</p>
-                <p class="buy">Buy it!</p>
+                <p class="buy">
+                    <a href="http://">Buy it!</a>
+                </p>
             </div>
             <div class="item2"><img src="./img/img8.jpg" alt="" width="100%" height="100%">
                 <p class="p2">一機在手，世界我有</p>
 
-                <p class="buy">Buy it!</p>
+                <p class="buy">
+                    <a href="http://">Buy it!</a>
+                </p>
             </div>
         </div>
 
