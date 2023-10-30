@@ -23,7 +23,7 @@
             text-align: center;
             align-items: center;
             /* border-bottom: 5px solid rgba(0, 0, 0, 0.417); */
-            background-color:  rgba(128, 0, 128, 0.405);
+            background-color: rgba(128, 0, 128, 0.405);
             color: antiquewhite;
             background-image: url(./img/未命名2.png);
             background-repeat: repeat-x;
@@ -57,8 +57,8 @@
             text-align: center;
             align-items: center;
 
-            border: 5px solid burlywood;
-            background-color: rgb(95, 158, 160);
+            border: 5px solid rgba(128, 0, 128, 0.63);
+            background-color: rgba(243, 194, 69);
             border-radius: 0px 50px 0px 50px;
 
             background-position: bottom;
@@ -67,10 +67,10 @@
         }
 
         .container2 {
-            background-color: rgba(95, 158, 160);
-
-
+            background-color: rgb(243, 193, 69);
         }
+
+
 
         .section2 {
             display: flex;
@@ -78,8 +78,8 @@
             flex-wrap: wrap;
             margin: auto;
             width: 70vw;
-            height: 110vh;
-            justify-content: space-around;
+            height: 100vh;
+            justify-content: space-between;
 
             /* background-color: beige; */
 
@@ -171,7 +171,7 @@
             line-height: 50px;
             font-weight: bold;
             border-radius: 0px 00px 15px 15px;
-            background-color: goldenrod;
+            background-color: rgba(128, 0, 128, 0.494);
             color: azure
         }
 
@@ -180,12 +180,19 @@
             height: 10vh;
             background-color: bisque;
             margin: auto;
+            text-align: center;
+            justify-items: center;
+            border: 5px solid rgba(195, 28, 28, 0.794);
+            font-size: 40px;
+            font-weight: bolder;
+            font-family: 'Times New Roman', Times, serif;
+            color: pink;
         }
 
         .intro0 {
             width: 5%;
             height: 100%;
-            background-color: rgba(178, 34, 34);
+            background-color: rgba(128, 0, 128, 0.8);
             ;
 
             border: 5px solid burlywood;
@@ -195,13 +202,41 @@
             font-size: 40px;
             font-weight: bolder;
             font-family: 'Times New Roman', Times, serif;
-            color: darkseagreen;
+            color: pink;
 
         }
 
+        .intro1 {
+            width: 25%;
+            height: 25vh;
+            background-color: rgb(128, 0, 128);
+            ;
+            border-radius: 20px 20px 20px 20px;
+            border: 5px solid gold;
+
+            font-size: 40px;
+            font-weight: bolder;
+
+            color: pink;
+
+ }
+
+        .intro0:hover {
+
+            color: khaki;
+
+        }
+
+        .intro1:hover {
+
+            background-color: rgba(128, 0, 128, 0.509);
+            ;
+        }
+
         .span1 {
-            color: darkkhaki;
+            color: goldenrod;
             font-size: 100px;
+            font-weight: 1000;
         }
 
         .span1:hover {
@@ -210,8 +245,9 @@
         }
 
         .span2 {
-            color: darkkhaki;
+            color: goldenrod;
             font-size: 50px;
+            font-weight: 1000;
         }
 
         .span2:hover {
@@ -220,18 +256,19 @@
         }
 
         .span3 {
-            /* background-color: darkkhaki; */
+            color: goldenrod;
+            font-weight: 600;
         }
 
         .span4 {
-            background-color: rgba(189, 183, 107, 0.487);
+            background-color: purple;
         }
 
 
 
         .footer1 {
 
-            background-color: rgba(95, 158, 160, 0.903);
+            background-color: rgba(243, 194, 69, 0.653);
             /* width: 100%;
             height: 10vh; */
             background-image: url(./img/pngtree-halloween-horror-troll-shadow-border-png-image_6188362.png);
@@ -249,9 +286,9 @@
 
         }
 
-        /* a {
-            color: firebrick;
-        } */
+        a {
+            color: rgb(192, 0, 0);
+        }
     </style>
 </head>
 
@@ -262,16 +299,17 @@
 
 
         <span class="span4"> <span class="span1">南</span><span class="span2">瓜</span><span class="span1">南</span><span
-                class="span2">瓜</span> <span class="span3">線上課程</span></span>
+                class="span2">瓜</span> <span class="span3">學習莊園</span></span>
     </nav>
 
     <div class="container3"></div>
     <div class="container1">
 
-        <!-- <div class="intro0">
-                <br><br><span> 超<br>夢<br>幻</span><span><br>精<br>選<br>課<br>程</span><br>
-            </div> -->
+
         <div class="section1">
+            <div class="intro0">
+                <br><br><span> 超<br>夢<br>幻</span><span><br>精<br>選<br>課<br>程</span><br>
+            </div>
 
             <div class="item1">
                 <img src="./img/img1.jpg" alt="" width="100%" height="70%">
@@ -302,10 +340,20 @@
     <div class="container2">
 
         <div class="section2">
-            <div class="intro">
-                <br>
+            <!-- <div class="intro">
+         
                 熱門課程
+            </div> -->
+            <div class="intro1">
+                <br> <br>
+                熱門課程
+
+
+
+
             </div>
+
+
 
             <div class="item2"><img src="./img/img3.png" alt="" width="100%" height="100%">
                 <p class="p2">大數據分析</p>
@@ -326,10 +374,7 @@
                 </p>
             </div>
 
-            <!-- <div class="intro">
-                <br>
-                特選課程
-            </div> -->
+
             <div class="item2"><img src="./img/img9.jpg" alt="" width="100%" height="100%">
                 <p class="p2">歡迎光臨AI帝國</p>
                 <p class="buy"> <a href="http://">Buy it!</a></p>
@@ -341,13 +386,13 @@
                     <a href="http://">Buy it!</a>
                 </p>
             </div>
-            <div class="item2"><img src="./img/img8.jpg" alt="" width="100%" height="100%">
+            <!-- <div class="item2"><img src="./img/img8.jpg" alt="" width="100%" height="100%">
                 <p class="p2">一機在手，世界我有</p>
 
                 <p class="buy">
                     <a href="http://">Buy it!</a>
                 </p>
-            </div>
+            </div> -->
         </div>
 
 
