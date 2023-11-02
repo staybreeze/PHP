@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body {
+
+    width: 1024px;
+    height: 768px;
+    /* background-color: beige; */
+    margin: auto;
+}
+
+.header,
+.aside,
+.aside-header,
+.aside-footer,
+.main,
+.main-header,
+.main-footer,
+.footer {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.header {
+
+    width: 100%;
+    height: 65px;
+    margin: auto;
+    /* background-color: aquamarine; */
+    border-bottom: 0;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1024px;
+    margin: auto;
+}
+
+.aside {
+
+    width: 215px;
+    height: calc(768px - 65px - 20px);
+    /* background-color: aqua; */
+    border-right: 0;
+}
+
+.aside-header {
+    height: calc(100% - 25px);
+    border: 0;
+    /* background-color: chocolate; */
+    border-bottom: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+.aside-header>.box1 {
+    font-size: 24px;
+    text-decoration: underline;
+    text-align: center;
+    color: #FF00FF;
+    font-family: '標楷體';
+    font-weight: 500;
+}
+
+.aside-header>.box2 {
+    width: 200px;
+    height: 35px;
+
+    background-image: url(../../17300-104301/menu1.png);
+    text-align: center;
+    padding-top: 5px;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #000000;
+    font-family: '標楷體';
+    font-weight: 500;
+}
+
+.aside-header>.box2:hover {
+    background-image: url(../../17300-104301/menu2.png);
+}
+
+.aside-footer {
+    font-family: '標楷體';
+    font-size: 16px;
+    color: #000000;
+    text-align: center;
+    align-self: center;
+    border: 0;
+    /* background-color: chocolate; */
+}
+
+.main {
+    width: calc(1024px - 215px);
+    /* background-color: cadetblue; */
+}
+
+.main-header {
+    height: 29px;
+    border: 0;
+    border-bottom: 1px solid black;
+    font-size: 24px;
+    font-family: '標楷體';
+    color: #0000FF;
+
+    /* background-color: rosybrown; */
+}
+
+.main-footer {
+    height: calc(100% - 29px);
+    border: 0;
+    /* background-color: darkkhaki; */
+
+}
+
+.footer {
+
+    width: 1024px;
+    height: 20px;
+    /* background-color:crimson; */
+    border-top: 0;
+    font-family: '標楷體';
+    color: #000000;
+    text-align: center;
+    font-size: 16px;
+}
+iframe{
+    height:100%;
+    width:100%;
+
+}

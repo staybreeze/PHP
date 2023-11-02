@@ -1,0 +1,53 @@
+body{
+    background-image: url(../../17300-104301/0101.jpg);
+}
+
+header{
+
+    font-size: 18px;
+    font-family: '標楷體';
+    color:#FF0000;
+    text-align: center;
+    margin-bottom: 16px;
+}
+table{
+    width:100%;
+    text-align: center;
+
+}
+
+
+.margin-top{
+    margin-top: 36px;
+}
+.box{
+    font-size: 16px;
+    font-family: '標楷體';
+    text-align: left;
+
+}
+
+.color1{
+
+    color:#800000;
+}
+.color2{
+
+    color:#0000FF;
+}
+.color3{
+
+    color:#FF0000;
+}
+.color4{
+
+    color:#00FF00;
+}
+.color5{
+
+    color:#000000;
+}
+.color6{
+
+    color:lightslategray;
+}

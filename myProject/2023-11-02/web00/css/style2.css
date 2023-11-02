@@ -1,0 +1,26 @@
+body {
+    background-image: url(../../17300-104301/0101.jpg);
+}
+
+header {
+
+    font-size: 18px;
+    font-family: '標楷體';
+    color: #FF0000;
+    text-align: center;
+}
+table{
+margin: auto;
+width:100%;
+text-align: center;
+}
+td{
+    width:33%;
+}
+
+p {
+    font-size: 16px;
+    font-family: '標楷體';
+    text-align: left;
+    color: #FF0000;
+}
