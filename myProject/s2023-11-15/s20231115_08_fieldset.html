@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Feildset</title>
+    <style>
+        body {
+            background-color: #d0e35b;
+        }
+
+        .container {
+
+            width: 60%;
+            background-color: #fbf9cc;
+
+        }
+
+        /* .box {
+            width: 80%;
+            text-align: left;
+            margin: auto;
+
+        } */
+
+        .bold {
+            font-weight: bold;
+            color: brown;
+
+        }
+
+        .HR {
+
+            font-weight: bolder;
+            padding: 10px;
+            margin-bottom: 30px;
+            border: 1px dotted #94c8b1;
+            border-left: 10px solid #d0e35b;
+            color: #6fbb9a;
+            border-radius: 5px 0 0 5px;
+            background-color: white;
+            text-align: center;
+
+        }
+
+        .box1 {
+            text-align: right;
+        }
+
+        table,
+        tr,
+        td {
+            width: 100%;
+
+        }
+
+        .w-10 {
+            width: 10%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <form action="upload" method="post" enctype="multipart/form-data">
+                <fieldset>
+
+
+                    <legend class="HR ">HR表單</legend>
+                    <div class="row">
+                        <div class="col">
+                            <div class="input-group mb-3">
+                                <span class="input-group-text bold">日期</span>
+                                <input type="date" class="form-control">
+                              
+                            </div>
+                        </div>
+                     
+                        <div class="col">
+                            <div class="input-group mb-3">
+                                <span class="input-group-text bold ms-3">密碼</span>
+                                <input type="password" class="form-control" placeholder="****">
+                              
+                            </div>
+                        </div>
+                     
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="input-group mb-3">
+                                <span class="input-group-text bold">姓名</span>
+                                <input type="text" class="form-control" placeholder="姓氏">
+                                <input type="text" class="form-control" placeholder="名字">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="input-group mb-3">
+                                <span class="input-group-text bold">電話</span>
+                                <input type="number" class="form-control" placeholder="+886">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="input-group mt-3 mb-3">
+                                <span class="input-group-text bold">住址</span>
+
+                                <button type="button" class="btn btn-light border  dropdown-toggle"
+                                    data-bs-toggle="dropdown">
+                                    郵遞區號
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">郵遞區號 1</a></li>
+                                    <li><a class="dropdown-item" href="#">郵遞區號 2</a></li>
+                                    <li><a class="dropdown-item" href="#">郵遞區號 3</a></li>
+                                </ul>
+                                <input type="text" class="form-control" placeholder="住址">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p class="bold mt-3">下拉選單</p>
+                            <select class="form-select mt-3 mb-3" name="" id="">
+                                <option value="">請選擇</option>
+                                <option value="option1">option1</option>
+                                <option value="option2">option2</option>
+                                <option value="option3">option3</option>
+                            </select>
+
+                            <div class="form-floating">
+                                <select class="form-select" id="sel1" name="sellist">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                </select>
+                                <label for="sel1" class="form-label">Select list (select one):</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p class="bold mt-3">單選</p>
+                            <div class="form-check">
+
+                                <input type="radio" class="form-check-input" name="myRadio" id="item1">
+                                <label for="item1" class="form-check-label">item1</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" name="myRadio" id="item2">
+                                <label for="item2" class="form-check-label">item2</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" name="myRadio" id="item3" disabled>
+                                <label for="item3" class="form-check-label">item3(disabled)</label>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <p class="bold mt-3">多選</p>
+
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" name="" id="check1">
+                                <label for="check1" class="form-check-label">check1</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" name="" id="check2">
+                                <label for="check2" class="form-check-label">check2</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" name="" id="check3" disabled>
+                                <label for="check3" class="form-check-label">check3(disabled)</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p class="bold mt-3">附件</p>
+                            <div class="input-group">
+                                <input type="file" class="form-control">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <p class="bold mt-3">Hidden</p>
+                            <input type="hidden " class="form-control" name="" placeholder="secret">
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p class="bold mt-3">備註</p>
+                            <div class="form-floating">
+                                <textarea class="form-control" id="comment" name="text"
+                                    placeholder="Comment goes here"></textarea>
+                                <label for="comment">Comments</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <table>
+                                <tr>
+                                    <td td style="width: 50%;">
+                                        <button type="reset" class="btn btn-success mt-3 mb-3">Reset</button>
+                                    </td>
+                                    <td style="width: 50%;">
+                                        <div class=" box1">
+
+                                            <button type="submit" class="btn btn-primary mt-3 mb-3">Submit</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                </fieldset>
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
