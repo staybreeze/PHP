@@ -12,12 +12,7 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <style>
-        .container-my-img {
-            /* width: 100%; */
-            height: 100vh;
-            background-image: url('https://picsum.photos/id/10/1920/1080');
-        }
-/* 自己刻d-flex置中的方法 */
+  /* 自己刻d-flex置中的方法 */
   .td-box {
 
     display: flex;
@@ -39,18 +34,48 @@
   }
 </style>
 
-<body class="container-my-img">
+<body>
+
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Logo</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="../photo/index.html">Photos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Feature</a>
+          </li>
+          <!-- <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Dropdown</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Link</a></li>
+              <li><a class="dropdown-item" href="#">Another link</a></li>
+              <li><a class="dropdown-item" href="#">A third link</a></li>
+            </ul>
+          </li> -->
+        </ul>
+      </div>
+    </div>
+  </nav>
 
   <div class="container-fluid mt-3">
     <h2>Hover Rows</h2>
     <p>The .table-hover class enables a hover state (grey background on mouse over) on table rows:</p>
     <div class="text-end">
-      <button type="button" class="btn btn-warning btn-lg"><i class="fa-regular fa-plus"></i></button>
+      <a href="./create.html" class="btn btn-success btn-lg">&nbsp;<i class="fa-solid fa-plus"></i>&nbsp;</a>
     </div>
 
     <!-- 也可以在<table>、<td>的class中加align-middle垂直置中 -->
-      <!-- 也就是vertical-align:middle -->
-      <!-- ps.需先設定height -->
+    <!-- 也就是vertical-align:middle -->
+    <!-- ps.需先設定height -->
     <table class="table table-hover text-center">
       <thead>
         <tr>
@@ -99,7 +124,8 @@
     <!-- d-flex要在有高度的DIV才能作用 -->
     <!-- BS5 用d-flex置中的作法 -->
     <div class="td-box-row d-flex justify-content-center align-items-center">
-      <button type="button" class="btn btn-secondary ms-2"><i class="fa-solid fa-pen-clip"></i></button>
+      <a href="./edit.html"><button type="button" class="btn btn-secondary ms-2"><i
+            class="fa-solid fa-pen-clip"></i></button></a>
       <button type="button" class="btn btn-danger ms-3"><i class="fa-regular fa-trash-can"></i></button>
     </div>
   </td>
