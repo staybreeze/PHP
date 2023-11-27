@@ -131,9 +131,7 @@
     <div class="td-box-row d-flex justify-content-center align-items-center">
       <a href="./edit.html"><button type="button" class="btn btn-secondary ms-2"><i
             class="fa-solid fa-pen-clip"></i></button></a>
-      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
-        Open modal
-      </button>
+
       <button type="button" class="btn btn-danger ms-3"><i class="fa-regular fa-trash-can"></i></button>
     </div>
   </td>
@@ -160,69 +158,72 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
         </div>
 
-        <!-- Modal body -->
-        <div class="modal-body">
+          <!-- Modal body -->
+                <div class="modal-body">
+                  <!-- 插入程式碼要有頭跟END，方便日後維護及辨識 -->
+                    <!-- Modal body container.. -->
+                    <div class="container mt-3">
+                        <h2>Product Create</h2>
+                        <form action="/action_page.php">
+                            <div class="row">
+                                <div class="col-12 col-sm-6">
+                                    <div class="mb-3 mt-3">
+                                        <label for="text">File:</label>
+                                        <input type="file" class="form-control" id="file" name="file">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="mb-3">
+                                        <label for="photoDesc">Photo Description:</label>
+                                        <input type="text" class="form-control" id="photoDesc"
+                                            placeholder="Enter Photo Description" name="photoDesc">
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-12 col-sm-6">
+                                    <div class="mb-3">
+                                        <label for="price">Price:</label>
+                                        <input type="number" class="form-control" id="price" placeholder="Enter price"
+                                            name="price">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <div class="mb-3">
+                                        <label for="unit">Unit: 單位</label>
+                                        <input type="text" class="form-control" id="unit" placeholder="Enter unit"
+                                            name="unit">
+                                    </div>
 
-          <div class="container mt-3">
-            <h2>Product Create</h2>
-            <form action="./create.php" method="get">
+                                </div>
+                            </div>
 
-          </div>
-          <div class="row">
-            <div class="col-12">
-              <div class="mb-3">
-                <label for="product">Product:</label>
-                <input type="text" class="form-control" id="product" placeholder="Enter Product" name="product">
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-12">
-              <div class="mb-3">
-                <label for="photoDesc">Photo Description:</label>
-                <input type="text" class="form-control" id="photoDescription" placeholder="Enter Photo Description"
-                  name="photoDescription">
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-12 col-sm-6">
-              <div class="mb-3">
-                <label for="price">Price:</label>
-                <input type="number" class="form-control" id="price" placeholder="Enter Price" name="price">
-              </div>
-            </div>
+                            <div class="row mt-5">
+                                <div class="col-12">
+                                    <div class="mb-3">
+                                        <div class="d-grid gap-2">
+                                            <button type="submit"
+                                                class="btn btn-primary btn-lg bg-self-blue">Submit</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- Modal body container end -->
+                </div>
 
-            <div class="col-12 col-sm-6">
-              <div class="mb-3">
-                <label for="unit">Unit:</label>
-                <input type="text" class="form-control" id="unit" placeholder="Enter Unit" name="unit">
-              </div>
-            </div>
-          </div>
-          <div class="form-check mb-3">
-            <label class="form-check-label">
-              <input class="form-check-input" type="checkbox" name="remember"> Remember me
-            </label>
-          </div>
-          <div class="d-grid">
-            <button type="submit" class="btn btn-primary btn-block btn-lg bg-self-blue">Submit</button>
-          </div>
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
 
-          </form>
+            </div>
         </div>
-
-
-      </div>
-
-      <!-- Modal footer -->
-      <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-      </div>
-
     </div>
-  </div>
-  </div>
 </body>
 
 </html>
