@@ -10,13 +10,31 @@
   <style>
     .w-10 {
       width: 10%;
+    }   
+    
+    .h-8{
+      height:8vh;
+    }
+    .h-10{
+      height:10vh;
+    }
+
+    .myInput {
+      border: none;
+      border-bottom:1px solid white;
+      background-color: transparent;
+    }
+    .myOffcanvas{
+      position: fixed;
+      margin-left:60px;
+      background-color: rgb(94, 94, 86);
     }
   </style>
 </head>
 
 
 <body>
-  <nav class="navbar bg-dark navbar-dark">
+  <nav class="navbar bg-dark navbar-dark h-10">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Logo</a>
   
@@ -33,12 +51,12 @@
         </div>
       </div>
   
-      <button class="btn btn-primary ms-auto" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+      <button class="btn btn-primary myOffcanvas" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
         <span class="navbar-toggler-icon text-end"></span>
       </button>
   
       <form class="d-flex">
-        <input class="search-wrapper me-2" type="text" placeholder="Search">
+        <input class="search-wrapper me-2 myInput ms-5" type="text" placeholder="Search">
         <button class="btn btn-primary rounded-pill" style="width:130px" type="button">Search</button>
       </form>
     </div>
