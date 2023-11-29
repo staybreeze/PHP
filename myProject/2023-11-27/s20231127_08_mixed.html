@@ -114,7 +114,7 @@
 
     .myNav {
       position: absolute;
-      top: 38px;
+      bottom: 1px;
       left: 365px;
     }
 
@@ -170,16 +170,16 @@
 <body>
   <nav class="navbar bg-dark navbar-dark h-11">
     <div class="container-fluid row">
-      <div class="test col-1">
-        <a class="navbar-brand logo-div" href="#" data-bs-toggle="modal" data-bs-target="#myModal-2"><img class="logo"
+      <div class="test col-1" style="position: relative">
+        <a class="navbar-brand" href="#" data-bs-toggle="modal" data-bs-target="#myModal-2"><img class="logo"
             src="./img/未命名-1.png" alt="" width="70%" height="70%"></a>
       </div>
-      <div class="test col-2 mt-2">
+      <div class="test col-2 mt-2 me-10">
 
         <h2>奇多喵合作社</h2>
 
       </div>
-      <div class="col-4">
+      <div class="col-5">
       </div>
       <div class="col-1 mt-1">
         <div class="offcanvas offcanvas-end" id="demo">
@@ -237,10 +237,11 @@
             </div>
           </div>
         </div>
-
+<div style="position: relative;">
         <button class="btn myOffcanvas btn-bg" type="button" data-bs-toggle="offcanvas"
           data-bs-target="#demo">
           <span class="navbar-toggler-icon text-end"></span>
+        </div>
         </button>
       </div>
       <div class="col-3 test">
@@ -251,7 +252,7 @@
       </div>
     </div>
   </nav>
-  <header>
+  <header style="position: relative;">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark h-5 myNav mt-1">
       <div class="container">
         <div class="page-link mx-auto">
