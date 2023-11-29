@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+
+header .page-link>ul {
+    display: flex
+}
+
+header .page-link>ul>li {
+    position: relative;
+    width: 130px;
+    height: 50.5px;
+    margin: 0 5px;
+    padding-left: 5px;
+    padding-top: 9px
+}
+ 
+header .page-link>ul>li:last-child {
+    margin-right: 10px
+} 
+
+header .page-link>ul>li>span {
+    color: #fff;
+    transition: .3s
+}
+
+header .page-link>ul>li>a {
+    text-decoration: none;
+    color: #fff;
+    transition: .3s
+}
+
+header .page-link .unloading-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 130px;
+    height: 1px;
+    background: #fff
+}
+
+header .page-link .loading-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: #ffb71b;
+    transition: .3s
+}
+
+ .links .page-link>ul>li:hover .contact-submenu {
+    opacity: 1;
+    top: 50px
+}
+
+.links .page-link>ul>li:hover.digit-brand-menu {
+    position: sticky;
+    top: 135px
+} 
+
+ .links .page-link .contact-submenu {
+    position: absolute;
+    top: 0;
+    left: -1px;
+    opacity: 0;
+    width: 131px;
+    height: 90px;
+    padding: 8px;
+    transition: .3s;
+    background: hsla(0,0%,100%,.9)
+}
+
+.links .page-link .contact-submenu ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%
+} 
+
+.links .page-link .contact-submenu ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 115px;
+    height: 33px;
+    border: 1px solid #ffb71b
+} 
+
+ .links .page-link .contact-submenu ul li a {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    text-align: center;
+    letter-spacing: .015em;
+    color: #494949
+} 
+
+.links .page-link .contact-submenu ul li:hover {
+    background: #343a40
+}
+
+.links .page-link .contact-submenu ul li:hover a {
+    color: #ffb71b
+}
+
+header .page-link li:hover {
+    cursor: pointer
+}
+
+header .page-link li:hover a,header .page-link li:hover span {
+    color: #ffb71b
+}
+
+header .page-link li:hover .loading-bar {
+    width: 200px
+}
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+
+                    <div class="page-link">
+                        <ul>
+                            <li>
+                                <span>方案</span>
+                                <div class="unloading-bar"></div>
+                                <div class="loading-bar"></div>
+                            </li>
+                        </ul>
+                    </div>
+                        
+
+        </nav>
+    </header>
+    
+</body>
+    
+</body>
+</body>
+</html>
