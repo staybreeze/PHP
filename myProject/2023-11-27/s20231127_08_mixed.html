@@ -165,10 +165,10 @@
       position: sticky;
       top: 0
     }
-    .test-1{
-  padding-top:38px;
-    }
 
+    .test-1 {
+      padding-top: 38px;
+    }
   </style>
 </head>
 
@@ -176,7 +176,7 @@
 <body>
 
   <header class="bg-dark navbar-dark h-11">
-    <div class="container-fluid row navbar" >
+    <div class="container-fluid row navbar">
       <div class="test col-1 ms-3">
         <a class="navbar-brand" href="#" data-bs-toggle="modal" data-bs-target="#myModal-2"><img class="logo"
             src="./img/未命名-1.png" alt="" width="70%" height="70%"></a>
@@ -188,136 +188,166 @@
       </div>
       <div class="test col-5 me-5 test-1">
         <div class="page-link ">
-         
-            <ul>
-              <li>
-                <span >關於我們</span>
+
+          <ul>
+            <li>
+              <span>關於我們</span>
+              <div class="unloading-bar"></div>
+              <div class="loading-bar"></div>
+            </li>
+            <li class="nav-item">
+              <a href="/works.html">論壇</a>
+              <div class="unloading-bar"></div>
+              <div class="loading-bar"></div>
+            </li>
+            <li class="nav-item">
+              <a href="/socials.html">商城</a>
+              <div class="unloading-bar"></div>
+              <div class="loading-bar"></div>
+            </li>
+            <li class="nav-item">
+              <span>聯絡我們</span>
+              <div class="unloading-bar"></div>
+              <div class="loading-bar"></div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="modal" data-bs-target="#myModal">
+                <span> 會員登入</span>
                 <div class="unloading-bar"></div>
                 <div class="loading-bar"></div>
-              </li>
-              <li class="nav-item">
-                <a href="/works.html">論壇</a>
-                <div class="unloading-bar"></div>
-                <div class="loading-bar"></div>
-              </li>
-              <li class="nav-item">
-                <a href="/socials.html">商城</a>
-                <div class="unloading-bar"></div>
-                <div class="loading-bar"></div>
-              </li>
-              <li class="nav-item">
-                <span>聯絡我們</span>
-                <div class="unloading-bar"></div>
-                <div class="loading-bar"></div>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="modal" data-bs-target="#myModal">
-                  <span> 會員登入</span>
-                  <div class="unloading-bar"></div>
-                  <div class="loading-bar"></div>
-                </a>
-              </li>
-            </ul>
-        
-          </div>
-        </div>
-        <div class="test col-1 mt-1 me-2">
-          <div class="offcanvas offcanvas-end" id="demo">
-            <div class="offcanvas-header">
-              <h1 class="offcanvas-title">會員中心<img src="./img/未命名-1.png" alt="" width="60px"></h1>
+              </a>
+            </li>
+          </ul>
 
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
-            </div>
-            <div class="offcanvas-body">
-              <div class="modal-header">
-                <h4 class="modal-title">請先登入</h4>
-
-
-              </div>
-
-              <!-- Modal body -->
-              <div class="modal-body">
-                <!-- 插入程式碼要有頭跟END，方便日後維護及辨識 -->
-                <!-- Modal body container.. -->
-                <div class="container mt-3">
-
-
-                  <form action="/action_page.php">
-
-                    <div class="row">
-                      <div class="col-12">
-                        <div class="mb-3">
-                          <label for="price">帳號:</label>
-                          <input type="text" class="form-control" id="acc" placeholder="Enter acc" name="acc">
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-12">
-                        <div class="mb-3">
-                          <label for="unit">密碼:</label>
-                          <input type="password" class="form-control" id="pw" placeholder="Enter password" name="pw">
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="row mt-5">
-                      <div class="col-12 mt-1">
-                        <div class="mb-3">
-                          <div class="d-flex gap-2">
-                            <button type="reset" class="btn btn-primary btn-secondary col-6">Reset</button>
-                            <button type="submit" class="btn btn-primary btn-warning  col-6">Submit</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-                <!-- Modal body container end -->
-              </div>
-            </div>
-          </div>
-          <div style="position: relative">
-            <button class="btn myOffcanvas btn-bg" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
-              <span class="navbar-toggler-icon text-end"></span>
-          </div>
-          </button>
-        </div>
-        <div class="col-2 test">
-          <form class="d-flex">
-            <input class="search-wrapper me-2 myInput " type="text" placeholder="Search">
-            <button class="btn btn-primary rounded-pill btn-bg" style="width:130px" type="button">Search</button>
-          </form>
         </div>
       </div>
+      <div class="test col-1 mt-1 me-2">
+        <div class="offcanvas offcanvas-end" id="demo">
+          <div class="offcanvas-header">
+            <h1 class="offcanvas-title">會員中心<img src="./img/未命名-1.png" alt="" width="60px"></h1>
+
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="modal-header">
+              <h4 class="modal-title">請先登入</h4>
+
+
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+              <!-- 插入程式碼要有頭跟END，方便日後維護及辨識 -->
+              <!-- Modal body container.. -->
+              <div class="container mt-3">
+
+
+                <form action="/action_page.php">
+
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="mb-3">
+                        <label for="price">帳號:</label>
+                        <input type="text" class="form-control" id="acc" placeholder="Enter acc" name="acc">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="mb-3">
+                        <label for="unit">密碼:</label>
+                        <input type="password" class="form-control" id="pw" placeholder="Enter password" name="pw">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row mt-5">
+                    <div class="col-12 mt-1">
+                      <div class="mb-3">
+                        <div class="d-flex gap-2">
+                          <button type="reset" class="btn btn-primary btn-secondary col-6">Reset</button>
+                          <button type="submit" class="btn btn-primary btn-warning  col-6">Submit</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <!-- Modal body container end -->
+            </div>
+          </div>
+        </div>
+        <div style="position: relative">
+          <button class="btn myOffcanvas btn-bg" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+            <span class="navbar-toggler-icon text-end"></span>
+        </div>
+        </button>
+      </div>
+      <div class="col-2 test">
+        <form class="d-flex">
+          <input class="search-wrapper me-2 myInput " type="text" placeholder="Search">
+          <button class="btn btn-primary rounded-pill btn-bg" style="width:130px" type="button">Search</button>
+        </form>
+      </div>
+    </div>
   </header>
 
   <!-- ---- -->
-
   <div class="contaainer">
     <!-- data-bs-ride="carousel" 使用 自動輪播功能 -->
     <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
         <!-- 設定 秒數 data-bs-interval="1000" -->
-        <div class="carousel-item active" data-bs-interval="3000">
+        <div class="carousel-item active" data-bs-interval="2500">
           <img src="./img/cheetos7.jpg" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
-            <h5>奇多（東京巴奈奈版）</h5>
+            <h5>奇多（妖嬈版）</h5>
             <p>Some representative placeholder content for the first slide.</p>
           </div>
         </div>
-        <div class="carousel-item" data-bs-interval="3000">
+        <div class="carousel-item" data-bs-interval="2500">
           <img src="./img/cheetos6.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>奇多（妖嬈版）</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
         </div>
-        <div class="carousel-item" data-bs-interval="3000">
+        <div class="carousel-item" data-bs-interval="2500">
           <img src="./img/cheetos5.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>奇多（妖嬈版）</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
         </div>
-      </div>
 
- 
+        <div class="carousel-item" data-bs-interval="2500">
+          <img src="./img/cheetos3.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>奇多（妖嬈版）</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2500">
+          <img src="./img/cheetos2.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>奇多（妖嬈版）</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2500">
+          <img src="./img/cheetos1.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>奇多（妖嬈版）</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
+        </div>
+       
+
+      </div>
     </div>
   </div>
-<!-- 
+
+  <!-- 
   <div class="carosel bg-black">
     <div class="container-fluid">
       <div id="carouselExampleIndicators" class="carousel slide "class="carousel slide" data-bs-ride="carousel">
@@ -387,7 +417,7 @@
           </div> -->
 
 
-        <!-- </div>
+  <!-- </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
           data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
