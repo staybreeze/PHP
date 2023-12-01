@@ -11,717 +11,47 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css.css">
   <style>
-    * {
-      margin: 0;
-      box-sizing: border-box;
-    }
 
-    body {
-      overflow-x: hidden;
-
-    }
-
-    .w-10 {
-      width: 10%;
-    }
-
-    .h-5 {
-      height: 5vh;
-    }
-
-    .h-8 {
-      height: 8vh;
-    }
-
-    .h-11 {
-      height: 12.5vh;
-    }
-
-    .myInput {
-      border: none;
-      border-bottom: 1px solid white;
-      background-color: transparent;
-    }
-
-
-
-    header .page-link>ul {
-      display: flex
-    }
-
-    header .page-link>ul>li {
-      position: relative;
-      width: 130px;
-      height: 50.5px;
-      margin: 0 5px;
-      padding-left: 5px;
-      padding-top: 9px;
-
-    }
-
-    header .page-link>ul>li:last-child {
-      margin-right: 10px
-    }
-
-    header .page-link>ul>li>span {
-      color: #fff;
-      transition: .3s
-    }
-
-    header .page-link>ul>li>a {
-      text-decoration: none;
-      color: #fff;
-      transition: .3s;
-
-    }
-
-    header .page-link .unloading-bar {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 80px;
-      height: 1px;
-      background: #fff;
-
-    }
-
-    header .page-link .loading-bar {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 0;
-      height: 1px;
-      background: #ffb71b;
-      transition: .4s
-    }
-
-
-
-
-    header .page-link li:hover {
-      cursor: pointer
-    }
-
-    header .page-link li:hover a,
-    header .page-link li:hover span {
-      color: #ffb71b
-    }
-    .shopping-cart, .shopping-cart-p{
-      color: #fff;
-      text-decoration: none;
-}
-
-.shopping-cart-a{
-  text-decoration: none;
-}
-
-
-.shopping-cart {
-
-      height: 0px;
-
-      transition: 0.5s
-    }
-
-    .shopping-cart:hover{
-  color: #ffb71b
-}
-
-    header .page-link li:hover .loading-bar {
-      width: 80px
-    }
-
-
-
-
-
-    /* .test {
-      border: 1px solid white;
-      text-align: center;
-    } */
-
-    .myOffcanvas {
-      padding-bottom: 10px;
-      margin-left: 110px;
-
-
-    }
-
-    .btn-bg {
-      background-color: #ffb71b;
-      border: 0;
-    }
-
-    .btn-bg:hover {
-      background-color: rgb(240, 207, 170);
-    }
-
-    .logo {
-      padding-bottom: 3px;
-    }
-
-    h2 {
-      color: white
-    }
-
-    .carousel-img {
-      width: 100%;
-      /* height: 50vh; */
-    }
-
-    .modal-dialog {
-      margin-left: 630px;
-      margin-top: 170px;
-    }
-
-    /* .logo{
-      border:1px solid #ffb71b;
-      background-color:#ffb71b ;
-
-    } */
-
-    header {
-      height: 135px;
-      /* background: #343a40; */
-      /* padding: 0 243px; */
-      z-index: 1999;
-      position: sticky;
-      top: 0
-    }
-
-    .test-1 {
-      padding-top: 38px;
-    }
-
-    .bg-gray {
-      background-color: rgb(216, 162, 90);
-    }
-
-    li {
-      list-style: none;
-
-    }
-
-    .allPages {
-      /* display: -webkit-box;
-      display: -ms-flexbox; */
-
-      display: flex;
-      height: 210px;
-      width: 80%;
-      padding: 0 15px
-    }
-
-    footer {
-      position: relative;
-      height: 40vh;
-      background-color: rgb(107, 62, 2);
-      padding: 90px 70px 145px 115px;
-      line-height: 30px;
-      clear: both;
-      overflow: hidden;
-      text-align: left;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      font-size: 1.8rem;
-      font-weight: 400;
-      color: #fff;
-
-    }
-
-    footer a {
-      color: #fff;
-      text-decoration: none
-    }
-
-    footer .contact {
-      display: inline-block;
-      width: 30%;
-
-      font-size: 1.8rem;
-      font-weight: 400;
-      line-height: 2;
-      letter-spacing: .9px;
-      text-align: left;
-      color: #fff
-    }
-
-    footer .contact a {
-      color: #fff;
-      font-weight: 600;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-
-    }
-
-    footer .contact p {
-      color: #fff;
-      font-weight: 600;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      font-size: 1.8rem
-    }
-
-
-
-    footer .contact .logo-footer {
-      fill: #ffb71b;
-      margin-bottom: 60px;
-      width: 263px;
-      height: 108px;
-      max-width: 21vw
-    }
-
-    .allPages {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      width: 80%;
-      padding: 0 15px
-    }
-
-
-
-
-    footer .pages {
-      display: inline-block;
-      padding-right: 20px;
-
-      font-size: 1.8rem;
-      font-weight: 400;
-      line-height: 1.33;
-      letter-spacing: .9px;
-      text-align: left;
-      color: #fff
-    }
-
-    footer .pages:first-child {
-      /* width: 15% */
-    }
-
-    footer .pages:nth-child(2) {
-      /* width: 21.25% */
-    }
-
-    /* footer .pages:nth-child(2) li a,footer .pages:nth-child(2) p {
-                color: #ffb71b
-            } */
-
-    footer .pages:nth-child(2) .change_width {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: end;
-      -ms-flex-pack: end;
-      justify-content: flex-end;
-      width: 124px
-    }
-
-
-
-    footer .pages:nth-child(3),
-    footer .pages:nth-child(4) {
-      width: 21.25%
-    }
-
-    footer .pages:nth-child(4) li:nth-of-type(1n+5) {
-      display: none
-    }
-
-    footer .pages:nth-child(5) {
-      width: 21.25%
-    }
-
-    footer .pages:nth-child(5) li:nth-child(2),
-    footer .pages:nth-child(5) li:nth-child(3),
-    footer .pages:nth-child(5) li:nth-child(4) {
-      display: none
-    }
-
-    footer .pages li:first-child {
-      font-size: 2rem
-    }
-
-
-    footer .pages li a {
-      padding: 12px 0;
-      display: block
-    }
-
-    @media (hover: hover) {
-      footer .pages li a:hover {
-        color: #ffc94a
-      }
-    }
-
-    footer .subscription-and-social {
-      display: inline-block;
-      /* width: 5%; */
-
-      color: #dfdfdf;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: end;
-      -ms-flex-pack: end;
-      justify-content: flex-end;
-      -webkit-box-align: start;
-      -ms-flex-align: start;
-      align-items: flex-start
-    }
-
-    footer .subscription label {
-      font-size: 1.8rem;
-      font-weight: 400;
-      line-height: 1.41;
-      letter-spacing: .9px;
-      text-align: left
-    }
-
-    footer .subscription .input-wrapper {
-      width: 100%;
-      height: 70px;
-      position: relative;
-      margin-top: 15px
-    }
-
-    footer .subscription .input-wrapper form {
-      width: 100%;
-      height: 100%
-    }
-
-    footer .subscription .input-wrapper input {
-      width: 100%;
-      height: 100%;
-      font-size: 16px;
-      padding-left: 30px
-    }
-
-    footer .subscription .input-wrapper input.btn-subscribe {
-      width: 137px;
-      height: 100%;
-      position: absolute;
-      right: 0;
-      top: 0;
-      background-color: #ffc94a;
-      font-size: 1.8rem;
-      font-weight: 400;
-      line-height: 1.41;
-      letter-spacing: .9px;
-      text-align: center;
-      color: #333;
-      padding: 0 !important;
-      -webkit-appearance: none;
-      border: none
-    }
-
-    footer .social-wrapper {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-      flex-direction: column
-    }
-
-    footer .social-wrapper .btn-social {
-      display: inline-block;
-      margin: 0
-    }
-
-    footer .social-wrapper .btn-social:nth-child(2) {
-      margin: 40px 0
-    }
-
-
-
-    footer .social-wrapper [class^=icon-] {
-      width: 48px;
-      height: 48px;
-      fill: #fff
-    }
-
-    .copyright {
-      width: 100%;
-      height: 40px;
-      background-color: rgb(216, 162, 90);
-      text-align: center;
-      color: #333;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center
-    }
-
-    .copyright p {
-      font-size: 1rem;
-      font-weight: 400;
-      line-height: 1.4;
-      letter-spacing: .75px;
-      color: #6c6a6a;
-      padding-top: 15px;
-    }
-
-
-
-    .footer-header {
-      font-size: 23px;
-    }
-
-    .pages li {
-      font-size: 18px;
-    }
-
-    .footer {
-      margin-top: 20px;
-
-
-    }
-
-    .contact {
-      position: absolute;
-      top: 40px;
-      left: 200px;
-    }
-
-    .join-us:hover {
-
-      -webkit-animation-name: fa-shake;
-      animation-name: fa-shake;
-      -webkit-animation-delay: var(--fa-animation-delay, 0s);
-      animation-delay: var(--fa-animation-delay, 0s);
-      -webkit-animation-direction: var(--fa-animation-direction, normal);
-      animation-direction: var(--fa-animation-direction, normal);
-      -webkit-animation-duration: var(--fa-animation-duration, 1.3s);
-      animation-duration: var(--fa-animation-duration, 1.3s);
-      -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
-      animation-iteration-count: var(--fa-animation-iteration-count, infinite);
-      -webkit-animation-timing-function: var(--fa-animation-timing, linear);
-      animation-timing-function: var(--fa-animation-timing, linear);
-    }
-
-    .fa-cart-shopping:hover{
-      -webkit-animation-name: fa-bounce;
-          animation-name: fa-bounce;
-  -webkit-animation-delay: var(--fa-animation-delay, 0s);
-          animation-delay: var(--fa-animation-delay, 0s);
-  -webkit-animation-direction: var(--fa-animation-direction, normal);
-          animation-direction: var(--fa-animation-direction, normal);
-  -webkit-animation-duration: var(--fa-animation-duration, 1s);
-          animation-duration: var(--fa-animation-duration, 1s);
-  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
-          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
-  -webkit-animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.28, 0.84, 0.42, 1));
-          animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.28, 0.84, 0.42, 1));
-    }
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
-
-body {
-    font-family: "Poppins", sans-serif;
-    color: #444444;
-}
-
-a,
-a:hover {
-    text-decoration: none;
-    color: inherit;
-}
-
-.section-products {
-    padding: 80px 0 54px;
-}
-
-.section-products .header {
-    margin-bottom: 50px;
-}
-
-.section-products .header h3 {
-    font-size: 1rem;
-    color: #fe302f;
-    font-weight: 500;
-}
-
-.section-products .header h2 {
-    font-size: 2.2rem;
-    font-weight: 400;
-    color: #444444; 
-}
-
-.section-products .single-product {
-    margin-bottom: 26px;
-}
-
-.section-products .single-product .part-1 {
-    position: relative;
-    height: 290px;
-    max-height: 290px;
-    margin-bottom: 20px;
-    overflow: hidden;
-}
-
-.section-products .single-product .part-1::before {
-		position: absolute;
-		content: "";
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		z-index: -1;
-		transition: all 0.3s;
-}
-
-.section-products .single-product:hover .part-1::before {
-		transform: scale(1.2,1.2) rotate(5deg);
-}
-
-.section-products #product-1 .part-1::before {
-    background: url("./img/good1.webp") no-repeat center;
-    background-size: cover;
-		transition: all 0.3s;
-}
-
-.section-products #product-2 .part-1::before {
-    background: url("https://i.ibb.co/cLnZjnS/2.jpg") no-repeat center;
-    background-size: cover;
-}
-
-.section-products #product-3 .part-1::before {
-    background: url("https://i.ibb.co/L8Nrb7p/1.jpg") no-repeat center;
-    background-size: cover;
-}
-
-.section-products #product-4 .part-1::before {
-    background: url("https://i.ibb.co/cLnZjnS/2.jpg") no-repeat center;
-    background-size: cover;
-}
-
-.section-products .single-product .part-1 .discount,
-.section-products .single-product .part-1 .new {
-    position: absolute;
-    top: 15px;
-    left: 20px;
-    color: #ffffff;
-    background-color: #fe302f;
-    padding: 2px 8px;
-    text-transform: uppercase;
-    font-size: 0.85rem;
-}
-
-.section-products .single-product .part-1 .new {
-    left: 0;
-    background-color: #444444;
-}
-
-.section-products .single-product .part-1 ul {
-    position: absolute;
-    bottom: -41px;
-    left: 20px;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    opacity: 0;
-    transition: bottom 0.5s, opacity 0.5s;
-}
-
-.section-products .single-product:hover .part-1 ul {
-    bottom: 30px;
-    opacity: 1;
-}
-
-.section-products .single-product .part-1 ul li {
-    display: inline-block;
-    margin-right: 4px;
-}
-
-.section-products .single-product .part-1 ul li a {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    background-color: #ffffff;
-    color: #444444;
-    text-align: center;
-    box-shadow: 0 2px 20px rgb(50 50 50 / 10%);
-    transition: color 0.2s;
-}
-
-.section-products .single-product .part-1 ul li a:hover {
-    color: #fe302f;
-}
-
-.section-products .single-product .part-2 .product-title {
-    font-size: 1rem;
-}
-
-.section-products .single-product .part-2 h4 {
-    display: inline-block;
-    font-size: 1rem;
-}
-
-.section-products .single-product .part-2 .product-old-price {
-    position: relative;
-    padding: 0 7px;
-    margin-right: 2px;
-    opacity: 0.6;
-}
-
-.section-products .single-product .part-2 .product-old-price::after {
-    position: absolute;
-    content: "";
-    top: 50%;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background-color: #444444;
-    transform: translateY(-50%);
-}
   </style>
 </head>
 
 
 <body>
 
-  <header class=" h-11 bg-gray">
-    <div class="container-fluid row navbar">
-      <div class="test col-1 ms-3">
-        <a class="navbar-brand" href="#" data-bs-toggle="modal" data-bs-target="#myModal-2"><img class="logo"
-            src="./img/未命名-1.png" alt="" width="70%" height="70%"></a>
+  <header class=" h-11 bg-gray d-grid">
+    <div class="container-fluid row">
+      <div class="test col-1 ms-3 logo-area ">
+        <a  href="#" data-bs-toggle="modal" data-bs-target="#myModal-2">
+          <img 
+            src="./img/未命名-1.png" alt="" width="100%" height="100%"></a>
       </div>
-      <div class="test col-2 mt-2 me-5">
+      <div class="test col-2 mt-4 ps-5 pe-1 pt-2">
 
-        <h2>奇多喵合作社</h2>
+        <h2 style="font-weight:600;">奇多喵合作社</h2>
 
       </div>
       <div class="test col-4 me-5 test-1">
         <div class="page-link ">
 
           <ul>
-            <li>
-              <span>關於我們</span>
+            <li class="nav-item me-3">
+              <a href="/works.html">關於我們</a>
               <div class="unloading-bar"></div>
               <div class="loading-bar"></div>
             </li>
-            <li class="nav-item">
+            <li class="nav-item  me-3">
               <a href="/works.html">論壇</a>
               <div class="unloading-bar"></div>
               <div class="loading-bar"></div>
             </li>
-            <li class="nav-item">
+            <li class="nav-item me-3">
               <a href="/socials.html">商城</a>
               <div class="unloading-bar"></div>
               <div class="loading-bar"></div>
             </li>
-            <li class="nav-item">
+            <li class="nav-item me-3">
               <span>聯絡我們</span>
               <div class="unloading-bar"></div>
               <div class="loading-bar"></div>
@@ -739,16 +69,16 @@ a:hover {
 
       </div>
 
-      <div class="col-1" style="position: absolute;right:410px;top:45px">
+      <div class="col-1 pt-4">
         <a class="shopping-cart-a" target="_blank" href="">
-          <i class="fa-sharp fa-solid fa-cart-shopping shopping-cart fa-2xl" style="  font-size: 2.4em;"></i>
-          <p class="mt-2 me-5 shopping-cart-p">Buy it  !</p>
+          <i class="fa-sharp fa-solid fa-cart-shopping shopping-cart fa-l" style="  font-size: 2em;"></i>
+          <p class="mt-1 me-5 shopping-cart-p">Buy it !</p>
         </a>
 
       </div>
-   
-    
-      <div class="test col-1 mt-1 me-2">
+
+
+      <div class="test col-1 pt-4">
 
         <div class="offcanvas offcanvas-end" id="demo">
           <div class="offcanvas-header">
@@ -793,8 +123,8 @@ a:hover {
                     <div class="col-12 mt-1">
                       <div class="mb-3">
                         <div class="d-flex gap-2">
-                          <button type="reset" class="btn btn-primary btn-secondary col-6">Reset</button>
-                          <button type="submit" class="btn btn-primary btn-warning  col-6">Submit</button>
+                          <button type="reset" class="btn btn-primary btn-secondary col-6">重置</button>
+                          <button type="submit" class="btn btn-primary btn-warning  col-6">送出</button>
                         </div>
                       </div>
                     </div>
@@ -805,13 +135,15 @@ a:hover {
             </div>
           </div>
         </div>
-        <div style="position: relative">
-          <button class="btn myOffcanvas btn-bg" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
-            <span class="navbar-toggler-icon text-end"></span>
+        <div>
+
+          <i class="fa-regular fa-circle-user ms-3" style=" font-size: 2em;" data-bs-toggle="offcanvas" data-bs-target="#demo"></i>
+            
+          <p class="mt-1   shopping-cart-p">Menbership</p>
         </div>
         </button>
       </div>
-      <div class="col-2 test">
+      <div class="col-1 test pt-4">
         <form class="d-flex">
           <input class="search-wrapper me-2 myInput " type="text" placeholder="Search">
           <button class="btn btn-primary rounded-pill btn-bg" style="width:130px" type="button">Search</button>
@@ -961,165 +293,172 @@ a:hover {
   </div> -->
   <!-- ---- -->
   <section class="section-products">
-		<div class="container">
-				<div class="row justify-content-center text-center">
-						<div class="col-md-8 col-lg-6">
-								<div class="header">
-										<h3>Featured Product</h3>
-										<h2>Popular Products</h2>
-								</div>
-						</div>
-				</div>
-				<div class="row">
-						<!-- Single Product -->
-						<div class="col-md-6 col-lg-4 col-xl-3">
-								<div id="product-1" class="single-product">
-										<div class="part-1">
-												<ul>
-														<li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
-														<li><a href="#"><i class="fas fa-heart"></i></a></li>
-														<li><a href="#"><i class="fas fa-plus"></i></a></li>
-														<li><a href="#"><i class="fas fa-expand"></i></a></li>
-												</ul>
-										</div>
-										<div class="part-2">
-												<h3 class="product-title">Here Product Title</h3>
-												<h4 class="product-old-price">$79.99</h4>
-												<h4 class="product-price">$49.99</h4>
-										</div>
-								</div>
-						</div>
-						<!-- Single Product -->
-						<div class="col-md-6 col-lg-4 col-xl-3">
-								<div id="product-2" class="single-product">
-										<div class="part-1">
-												<span class="discount">15% off</span>
-												<ul>
-														<li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
-														<li><a href="#"><i class="fas fa-heart"></i></a></li>
-														<li><a href="#"><i class="fas fa-plus"></i></a></li>
-														<li><a href="#"><i class="fas fa-expand"></i></a></li>
-												</ul>
-										</div>
-										<div class="part-2">
-												<h3 class="product-title">Here Product Title</h3>
-												<h4 class="product-price">$49.99</h4>
-										</div>
-								</div>
-						</div>
-						<!-- Single Product -->
-						<div class="col-md-6 col-lg-4 col-xl-3">
-								<div id="product-3" class="single-product">
-										<div class="part-1">
-												<ul>
-														<li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
-														<li><a href="#"><i class="fas fa-heart"></i></a></li>
-														<li><a href="#"><i class="fas fa-plus"></i></a></li>
-														<li><a href="#"><i class="fas fa-expand"></i></a></li>
-												</ul>
-										</div>
-										<div class="part-2">
-												<h3 class="product-title">Here Product Title</h3>
-												<h4 class="product-old-price">$79.99</h4>
-												<h4 class="product-price">$49.99</h4>
-										</div>
-								</div>
-						</div>
-						<!-- Single Product -->
-						<div class="col-md-6 col-lg-4 col-xl-3">
-								<div id="product-4" class="single-product">
-										<div class="part-1">
-												<span class="new">new</span>
-												<ul>
-														<li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
-														<li><a href="#"><i class="fas fa-heart"></i></a></li>
-														<li><a href="#"><i class="fas fa-plus"></i></a></li>
-														<li><a href="#"><i class="fas fa-expand"></i></a></li>
-												</ul>
-										</div>
-										<div class="part-2">
-												<h3 class="product-title">Here Product Title</h3>
-												<h4 class="product-price">$49.99</h4>
-										</div>
-								</div>
-						</div>
-						<!-- Single Product -->
-						<div class="col-md-6 col-lg-4 col-xl-3">
-								<div id="product-1" class="single-product">
-										<div class="part-1">
-												<ul>
-														<li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
-														<li><a href="#"><i class="fas fa-heart"></i></a></li>
-														<li><a href="#"><i class="fas fa-plus"></i></a></li>
-														<li><a href="#"><i class="fas fa-expand"></i></a></li>
-												</ul>
-										</div>
-										<div class="part-2">
-												<h3 class="product-title">Here Product Title</h3>
-												<h4 class="product-old-price">$79.99</h4>
-												<h4 class="product-price">$49.99</h4>
-										</div>
-								</div>
-						</div>
-						<!-- Single Product -->
-						<div class="col-md-6 col-lg-4 col-xl-3">
-								<div id="product-2" class="single-product">
-										<div class="part-1">
-												<span class="discount">15% off</span>
-												<ul>
-														<li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
-														<li><a href="#"><i class="fas fa-heart"></i></a></li>
-														<li><a href="#"><i class="fas fa-plus"></i></a></li>
-														<li><a href="#"><i class="fas fa-expand"></i></a></li>
-												</ul>
-										</div>
-										<div class="part-2">
-												<h3 class="product-title">Here Product Title</h3>
-												<h4 class="product-price">$49.99</h4>
-										</div>
-								</div>
-						</div>
-						<!-- Single Product -->
-						<div class="col-md-6 col-lg-4 col-xl-3">
-								<div id="product-3" class="single-product">
-										<div class="part-1">
-												<ul>
-														<li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
-														<li><a href="#"><i class="fas fa-heart"></i></a></li>
-														<li><a href="#"><i class="fas fa-plus"></i></a></li>
-														<li><a href="#"><i class="fas fa-expand"></i></a></li>
-												</ul>
-										</div>
-										<div class="part-2">
-												<h3 class="product-title">Here Product Title</h3>
-												<h4 class="product-old-price">$79.99</h4>
-												<h4 class="product-price">$49.99</h4>
-										</div>
-								</div>
-						</div>
-						<!-- Single Product -->
-						<div class="col-md-6 col-lg-4 col-xl-3">
-								<div id="product-4" class="single-product">
-										<div class="part-1">
-												<span class="new">new</span>
-												<ul>
-														<li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
-														<li><a href="#"><i class="fas fa-heart"></i></a></li>
-														<li><a href="#"><i class="fas fa-plus"></i></a></li>
-														<li><a href="#"><i class="fas fa-expand"></i></a></li>
-												</ul>
-										</div>
-										<div class="part-2">
-												<h3 class="product-title">Here Product Title</h3>
-												<h4 class="product-price">$49.99</h4>
-										</div>
-								</div>
-						</div>
-				</div>
-		</div>
-</section>
+    <div class="container">
+      <div class="row justify-content-center text-center">
+        <div class="col-md-8 col-lg-6">
+          <div class="header">
+            <h3>特色商品</h3>
+            <h2>超熱銷~
+              
+            </h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <!-- Single Product -->
+        <div class="col-md-6 col-lg-4 col-xl-3">
+          <div id="product-1" class="single-product">
+            <div class="part-1">
+              <span class="new">new</span>
+              <ul>
+                <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                <li><a href="#"><i class="fas fa-plus"></i></a></li>
+                <li><a href="#"><i class="fas fa-expand"></i></a></li>
+              </ul>
+            </div>
+            <div class="part-2">
+              
+              <h3 class="product-title">逗貓棒替換頭：羽毛毛條</h3>
+              <!-- <h4 class="product-old-price">NTD 400</h4> -->
+              <h4 class="product-price">NTD 35</h4>
+            </div>
+          </div>
+        </div>
+        <!-- Single Product -->
+        <div class="col-md-6 col-lg-4 col-xl-3">
+          <div id="product-2" class="single-product">
+            <div class="part-1">
+              <span class="discount">20% off</span>
+              <ul>
+                <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                <li><a href="#"><i class="fas fa-plus"></i></a></li>
+                <li><a href="#"><i class="fas fa-expand"></i></a></li>
+              </ul>
+            </div>
+            <div class="part-2">
+              <h3 class="product-title">皮繩逗貓棒</h3>
+              <h4 class="product-old-price">NTD 400</h4>
+              <h4 class="product-price">NTD 320</h4>
+            </div>
+          </div>
+        </div>
+        <!-- Single Product -->
+        <div class="col-md-6 col-lg-4 col-xl-3">
+          <div id="product-3" class="single-product">
+            <div class="part-1">
+              <ul>
+                <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                <li><a href="#"><i class="fas fa-plus"></i></a></li>
+                <li><a href="#"><i class="fas fa-expand"></i></a></li>
+              </ul>
+            </div>
+            <div class="part-2">
+              <h3 class="product-title">逗貓棒替換頭：羽毛毛條</h3>
+
+              <h4 class="product-price">NTD 220</h4>
+            </div>
+          </div>
+        </div>
+        <!-- Single Product -->
+        <div class="col-md-6 col-lg-4 col-xl-3">
+          <div id="product-4" class="single-product">
+            <div class="part-1">
+        
+              <ul>
+                <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                <li><a href="#"><i class="fas fa-plus"></i></a></li>
+                <li><a href="#"><i class="fas fa-expand"></i></a></li>
+              </ul>
+            </div>
+            <div class="part-2">
+              <h3 class="product-title">Doge Daddy｜秘密花園趣食碗</h3>
+              <h4 class="product-price">NTD 220</h4>
+            </div>
+          </div>
+        </div>
+        <!-- Single Product -->
+        <div class="col-md-6 col-lg-4 col-xl-3">
+          <div id="product-5" class="single-product">
+            <div class="part-1">
+              <span class="new">new</span>
+              <ul>
+                <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                <li><a href="#"><i class="fas fa-plus"></i></a></li>
+                <li><a href="#"><i class="fas fa-expand"></i></a></li>
+              </ul>
+            </div>
+            <div class="part-2">
+              <h3 class="product-title">KONG｜三臂型塞食器S</h3>
+      
+              <h4 class="product-price">NTD 399</h4>
+            </div>
+          </div>
+        </div>
+        <!-- Single Product -->
+        <div class="col-md-6 col-lg-4 col-xl-3">
+          <div id="product-6" class="single-product">
+            <div class="part-1">
+              <span class="discount">15% off</span>
+              <ul>
+                <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                <li><a href="#"><i class="fas fa-plus"></i></a></li>
+                <li><a href="#"><i class="fas fa-expand"></i></a></li>
+              </ul>
+            </div>
+            <div class="part-2">
+              <h3 class="product-title">Doge Daddy｜秘密花園趣食碗</h3>
+              <h4 class="product-old-price">NTD 400</h4>
+              <h4 class="product-price">NTD 340</h4>
+            </div>
+          </div>
+        </div>
+        <!-- Single Product -->
+        <div class="col-md-6 col-lg-4 col-xl-3">
+          <div id="product-7" class="single-product">
+            <div class="part-1">
+              <ul>
+                <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                <li><a href="#"><i class="fas fa-plus"></i></a></li>
+                <li><a href="#"><i class="fas fa-expand"></i></a></li>
+              </ul>
+            </div>
+            <div class="part-2">
+              <h3 class="product-title">Doge Daddy｜秘密花園趣食碗e</h3>
+
+              <h4 class="product-price">NTD 55</h4>
+            </div>
+          </div>
+        </div>
+        <!-- Single Product -->
+        <div class="col-md-6 col-lg-4 col-xl-3">
+          <div id="product-8" class="single-product">
+            <div class="part-1">
+              <span class="new">new</span>
+              <ul>
+                <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                <li><a href="#"><i class="fas fa-plus"></i></a></li>
+                <li><a href="#"><i class="fas fa-expand"></i></a></li>
+              </ul>
+            </div>
+            <div class="part-2">
+              <h3 class="product-title">放輕鬆｜舒芙巾</h3>
+              <h4 class="product-price">NTD 29</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <!-- ---- -->
-  <div class="container-fluid mt-3">
+  <!-- <div class="container-fluid mt-3">
     <div class="row">
 
       <div class="col-sm-8 p-3 bg-warning text-center text-white">col-4</div>
@@ -1128,10 +467,10 @@ a:hover {
   </div>
 
 
-  </div>
+  </div> -->
   <!-- ---- -->
 
-  <div class="d-grid mt-3">
+  <!-- <div class="d-grid mt-3">
     <div class="row">
       <div class="btn-group col-4">
         <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown"
@@ -1155,7 +494,7 @@ a:hover {
         </ul>
       </div>
     </div>
-  </div>
+  </div> -->
 
 
   <div class="modal" id="myModal">
@@ -1194,21 +533,22 @@ a:hover {
                   </div>
                 </div>
               </div>
-
+          
               <div class="row mt-5">
                 <div class="col-12">
                   <div class="mb-3">
                     <div class="d-flex gap-2">
-                      <button type="reset" class="btn btn-primary btn-secondary col-6">Reset</button>
-                      <button type="submit" class="btn btn-primary btn-warning  col-6">Submit</button>
+                      <button type="reset" class="btn btn-primary btn-secondary col-6">重置</button>
+                      <button type="submit" class="btn btn-primary btn-warning  col-6">送出</button>
                     </div>
                   </div>
                 </div>
               </div>
             </form>
           </div>
-          <!-- Modal body container end -->
         </div>
+          <!-- Modal body container end -->
+      
 
         <!-- Modal footer -->
         <!-- <div class="modal-footer">
@@ -1223,18 +563,16 @@ a:hover {
 
       <img src="./img/未命名-1.png" alt="" width="120%">
 
-
-
-
       <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-
 
     </div>
   </div>
+
+
   <footer class="footer" id="footer">
     <div class="contact">
-      <div class="logo-footer" aria-hidden="true">
-        <img src="./img/未命名-1.png" alt="" width="150px" height="150px">
+      <div>
+        <img src="./img/未命名-1.png" alt="" width="130px" >
 
       </div>
 
@@ -1247,14 +585,9 @@ a:hover {
 
 
     </div>
-    <div class="">
-      <div class="logo-footer" aria-hidden="true">
 
-      </div>
 
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    </div>
-    <div class="font-awesome">
+    <div class="font-awesome mt-3">
       <a aria-label="instagram" target="_blank" href="">
         <i class="fa-brands fa-instagram  fa-lg"></i>
       </a>
@@ -1275,7 +608,7 @@ a:hover {
       </a>
 
     </div>
-    <div class="allPages" style="border-left:5px solid white">
+    <div class="allPages mt-3" style="border-left:5px solid white">
       <ul class="pages">
         <li>
           <a class="footer-header" href="">關於我們</a>
@@ -1341,16 +674,7 @@ a:hover {
             style="color:#ffc94a;font-size: 55px;font-weight:bolder;border:3px solid#ffb71b;text-align: center; width:150px;"
             href="">Join Us!</a>
         </li>
-        <li>
-          <a class="ms-4" href="">加入會員</a>
-        </li>
-        <li>
-          <a class="ms-4" href="">修改密碼</a>
-        </li>
-        <li>
-          <a class="ms-4" href="">訂單查詢</a>
-        </li>
-        <li>
+
 
       </ul>
     </div>
