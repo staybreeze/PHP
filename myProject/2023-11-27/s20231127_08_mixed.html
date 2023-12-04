@@ -20,19 +20,18 @@
 
 <body>
 
-  <header class=" h-11 bg-gray d-grid">
-    <div class="container-fluid row">
-      <div class="test col-1 ms-3 logo-area">
-        <a  href="#" data-bs-toggle="modal" data-bs-target="#myModal-2">
-          <img 
-            src="./img/logo1.png" alt="" width="100%" height="100%"></a>
+  <header class=" h-11 bg-gray container-fluid">
+    <div class="row bg-gray">
+      <div class="test col-md-2 ms-3 logo-area">
+        <a href="#" data-bs-toggle="modal" data-bs-target="#myModal-2">
+          <img src="./img/logo1.png" alt="" width="85%" height="100%"></a>
       </div>
-      <div class="test col-2 mt-4 ps-5 pe-1 pt-3">
+      <div class="test col-md-2 mt-4 pt-3">
 
         <h2 style="font-weight:600;">奇多喵合作社</h2>
 
       </div>
-      <div class="test col-4 me-5 test-1 pt-5">
+      <div class="col-md-5 test-1 pt-5">
         <div class="page-link ">
 
           <ul>
@@ -69,16 +68,16 @@
 
       </div>
 
-      <div class="col-1 pt-4" style="margin-top:8px;margin-left:60px">
+      <div class="col-md-1 pt-4 test" style="margin-top:8px">
         <a class="shopping-cart-a" target="_blank" href="">
           <i class="fa-sharp fa-solid fa-cart-shopping shopping-cart fa-l" style="  font-size: 2em;"></i>
-          <p class="mt-1 me-5 shopping-cart-p">Buy it !</p>
+          <p class="mt-1 shopping-cart-p">Buy it !</p>
         </a>
 
       </div>
 
 
-      <div class="test col-1 pt-4"  style="margin-top:8px">
+      <div class="test col-md-1 pt-4" style="margin-top:8px">
 
         <div class="offcanvas offcanvas-end" id="demo">
           <div class="offcanvas-header">
@@ -137,13 +136,14 @@
         </div>
         <div>
 
-          <i class="fa-regular fa-circle-user ms-3" style=" font-size: 2em;" data-bs-toggle="offcanvas" data-bs-target="#demo"></i>
-            
-          <p class="mt-1   shopping-cart-p">Menbership</p>
+          <i class="fa-regular fa-circle-user" style=" font-size: 2em;" data-bs-toggle="offcanvas"
+            data-bs-target="#demo"></i>
+
+          <p class="mt-1  shopping-cart-p">Menbership</p>
         </div>
         </button>
       </div>
-      <div class="col-1 test pt-4 me-0"  style="margin-top:20px;margin-left:20px">
+      <div class="col-md-1 test pt-4" style="margin-top:20px">
         <form class="d-flex">
           <input class="search-wrapper me-2 myInput " type="text" placeholder="Search">
           <button class="btn btn-primary rounded-pill btn-bg" style="width:130px" type="button">Search</button>
@@ -299,9 +299,10 @@
         <div class="col-md-8 col-lg-6">
           <div class="header">
             <h2><b>特色商品</b>
-              
+
             </h2>
-            <br>            <h3>超熱銷(=^-ω-^=)</h3>
+            <br>
+            <h3>超熱銷(=^-ω-^=)</h3>
 
             <br>
           </div>
@@ -321,7 +322,7 @@
               </ul>
             </div>
             <div class="part-2">
-              
+
               <h3 class="product-title">逗貓棒替換頭：羽毛毛條</h3>
               <!-- <h4 class="product-old-price">NTD 400</h4> -->
               <h4 class="product-price">NTD 35</h4>
@@ -369,7 +370,7 @@
         <div class="col-md-6 col-lg-4 col-xl-3">
           <div id="product-4" class="single-product">
             <div class="part-1">
-        
+
               <ul>
                 <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
                 <li><a href="#"><i class="fas fa-heart"></i></a></li>
@@ -397,7 +398,7 @@
             </div>
             <div class="part-2">
               <h3 class="product-title">KONG｜三臂型塞食器S</h3>
-      
+
               <h4 class="product-price">NTD 399</h4>
             </div>
           </div>
@@ -536,7 +537,7 @@
                   </div>
                 </div>
               </div>
-          
+
               <div class="row mt-5">
                 <div class="col-12">
                   <div class="mb-3">
@@ -550,8 +551,8 @@
             </form>
           </div>
         </div>
-          <!-- Modal body container end -->
-      
+        <!-- Modal body container end -->
+
 
         <!-- Modal footer -->
         <!-- <div class="modal-footer">
@@ -572,123 +573,116 @@
   </div>
 
 
-  <footer class="footer" id="footer">
-    <div class="contact mt-4">
-      <div>
-        <img src="./img/logo1.png" alt="" width="130px" >
+  <footer class="footer " id="footer">
+    <div class="container-fluid">
+      <div class="row pt-4 md-5">
+
+        <div class="col-md-3 contact col" style="margin-top: 30px;margin-left:50px;">
+          <img src="./img/logo1.png" alt="" width="130px">
+
+
+          <p style="font-size:15px">243 新北市泰山區貴子里致遠新村55之1號</p>
+          <a style="font-size:15px" href="mailto: wunshengliao@gmail.com">EMAIL: wunshengliao@gmail.com</a>
+          <a style="font-size:15px" href="tel:+886123456789">TEL: +886-1-2345-6789</a>
+
+
+        </div>
+        <div class="font-awesome mt-5 col-md-1 col ">
+          <a aria-label="instagram" target="_blank" href="">
+            <i class="fa-brands fa-instagram  fa-2xl pt-3 " style="padding-left:50px;font-size: 40px;"></i>
+          </a>
+          <br>
+          <br>
+          <a aria-label="facebook" target="_blank" href="">
+            <i class="fa-brands fa-facebook  fa-2xl pt-4 " style="padding-left:50px;"></i>
+          </a>
+          <br>
+          <br>
+          <a class="me-5 mx-auto" aria-label="line" target="_blank" href="https://www.instagram.com/kingone_design">
+            <i class="fa-brands fa-line fa-2xl pt-4 " style="padding-left:50px"></i>
+          </a>
+          <br>
+          <br>
+          <a aria-label="Youtube" target="_blank" href="">
+            <i class="fa-brands fa-youtube  fa-2xl pt-4 " style="padding-left:48px"></i>
+          </a>
+
+        </div>
+        <div class=" mt-5 col-md-5 col " style="border-left:5px solid white">
+          <ul class="pages">
+            <li>
+              <a class="footer-header" href="">關於我們</a>
+            </li>
+            <li>
+              <a href="">起源</a>
+            </li>
+            <li>
+              <a href="">團隊</a>
+            </li>
+            <li>
+              <a href="">目標</a>
+            </li>
+
+          </ul>
+
+          <ul class="pages">
+            <li>
+              <a class="footer-header" href="">貓咪論壇</a>
+            </li>
+            <li>
+              <a class="" href="">幼貓</a>
+            </li>
+            <li>
+              <a class="" href="">成貓</a>
+            </li>
+            <li>
+              <a class="" href="">老貓</a>
+            </li>
+          </ul>
+          <ul class="pages">
+            <li>
+              <a class="footer-header" href="">購物商城</a>
+            </li>
+            <li>
+              <a class="" href="">食物</a>
+            </li>
+            <li>
+              <a class="" href="">玩具</a>
+            </li>
+            <li>
+              <a class="" href="">生活用品</a>
+            </li>
+          </ul>
+          <ul class="pages">
+            <li>
+              <a class="footer-header" href="">會員專區</a>
+            </li>
+            <li>
+              <a href="">加入會員</a>
+            </li>
+            <li>
+              <a href="">修改密碼</a>
+            </li>
+            <li>
+              <a href="">訂單查詢</a>
+            </li>
+            <li>
+
+          </ul>
+
+
+
+        </div>
+
+        <a class="footer-headerp join-us pt-1 col-md-1"
+          style="color:#ffc94a;font-size: 55px;font-weight:bolder;border:3px solid#ffb71b;text-align: center;width:150px;height:180px;margin-top:60px;"
+          href="">Join Us!</a>
 
       </div>
-
-
-
-
-      <p style="font-size:15px">243 新北市泰山區貴子里致遠新村55之1號</p>
-      <a style="font-size:15px" href="mailto: wunshengliao@gmail.com">EMAIL: wunshengliao@gmail.com</a>
-      <a style="font-size:15px" href="tel:+886123456789">TEL: +886-1-2345-6789</a>
-
-
-    </div>
-
-
-    <div class="font-awesome mt-5">
-      <a aria-label="instagram" target="_blank" href="">
-        <i class="fa-brands fa-instagram  fa-lg"></i>
-      </a>
-      <br>
-      <br>
-      <a aria-label="facebook" target="_blank" href="">
-        <i class="fa-brands fa-facebook  fa-l"></i>
-      </a>
-      <br>
-      <br>
-      <a class="me-5 mx-auto" aria-label="line" target="_blank" href="https://www.instagram.com/kingone_design">
-        <i class="fa-brands fa-line fa-l"></i>
-      </a>
-      <br>
-      <br>
-      <a aria-label="Youtube" target="_blank" href="">
-        <i class="fa-brands fa-youtube  fa-l"></i>
-      </a>
-
-    </div>
-    <div class="allPages mt-5" style="border-left:5px solid white">
-      <ul class="pages">
-        <li>
-          <a class="footer-header" href="">關於我們</a>
-        </li>
-        <li>
-          <a href="">起源</a>
-        </li>
-        <li>
-          <a href="">團隊</a>
-        </li>
-        <li>
-          <a href="">目標</a>
-        </li>
-      </ul>
-
-      <ul class="pages">
-        <li>
-          <a class="footer-header ms-4" href="">貓咪論壇</a>
-        </li>
-        <li>
-          <a class="ms-4" href="">幼貓</a>
-        </li>
-        <li>
-          <a class="ms-4" href="">成貓</a>
-        </li>
-        <li>
-          <a class="ms-4" href="">老貓</a>
-        </li>
-      </ul>
-      <ul class="pages">
-        <li>
-          <a class="footer-header ms-5" href="">購物商城</a>
-        </li>
-        <li>
-          <a class="ms-5" href="">食物</a>
-        </li>
-        <li>
-          <a class="ms-5" href="">玩具</a>
-        </li>
-        <li>
-          <a class="ms-5" href="">生活用品</a>
-        </li>
-      </ul>
-      <ul class="pages">
-        <li>
-          <a class="footer-header ms-4" href="">會員專區</a>
-        </li>
-        <li>
-          <a class="ms-4" href="">加入會員</a>
-        </li>
-        <li>
-          <a class="ms-4" href="">修改密碼</a>
-        </li>
-        <li>
-          <a class="ms-4" href="">訂單查詢</a>
-        </li>
-        <li>
-
-      </ul>
-<ul></ul>
-<ul></ul>
-
-
-      <ul class="pages ms-5">
-
-        <li>
-          <a class="footer-header mt-2 ms-5 join-us "
-            style="color:#ffc94a;font-size: 55px;font-weight:bolder;border:3px solid#ffb71b;text-align: center; width:150px;"
-            href="">Join Us!</a>
-        </li>
-
-
-      </ul>
-    </div>
   </footer>
   <div class="copyright">
     <p>© WSL Web ALL Reserved.</p>
+  </div>
   </div>
 </body>
 
