@@ -19,139 +19,9 @@
 
 
 <body>
-
-  <header class=" h-11 bg-gray container-fluid">
-    <div class="row bg-gray">
-      <div class="test col-md-2 ms-3 logo-area">
-        <a href="index.php" data-bs-toggle="modal" data-bs-target="#myModal-2">
-          <img src="./img/logo1.png" alt="" width="85%" height="100%"></a>
-      </div>
-      <div class="test col-md-2 mt-4 pt-3">
-
-        <a href="index.php"><h2 style="font-weight:600;">奇多喵合作社</h2></a>
-
-      </div>
-      <div class="col-md-4 test-1 pt-5">
-        <div class="page-link ">
-
-          <ul>
-            <li class="nav-item me-3">
-              <a href="aboutUs.php">關於我們</a>
-              <div class="unloading-bar"></div>
-              <div class="loading-bar"></div>
-            </li>
-            <li class="nav-item  me-3" style="margin-left:36px">
-              <a href="./articles.php">文章</a>
-              <div class="unloading-bar"></div>
-              <div class="loading-bar"></div>
-            </li>
-            <li class="nav-item me-3" style="margin-left:36px">
-              <a href="#store">商城</a>
-              <div class="unloading-bar"></div>
-              <div class="loading-bar"></div>
-            </li>
-            <li class="nav-item me-3" style="margin-left:36px">
-              <span>聯絡我們</span>
-              <div class="unloading-bar"></div>
-              <div class="loading-bar"></div>
-            </li>
-            <li class="nav-item" style="margin-left:36px">
-              <a class="nav-link" data-bs-toggle="modal" data-bs-target="#myModal">
-                <span> 會員登入</span>
-                <div class="unloading-bar"></div>
-                <div class="loading-bar"></div>
-              </a>
-            </li>
-          </ul>
-
-        </div>
-
-      </div>
-
-      <div class="col-md-1 pt-4 test" style="margin-top:8px;margin-left:37px">
-        <a class="shopping-cart-a" target="_blank" href="">
-          <i class="fa-sharp fa-solid fa-cart-shopping shopping-cart fa-l" style="  font-size: 2em;"></i>
-          <p class="mt-1 shopping-cart-p">Buy it !</p>
-        </a>
-
-      </div>
-
-
-      <div class="test col-md-1 pt-4 " style="margin-top:8px;margin-left:37px">
-
-        <div class="offcanvas offcanvas-end" id="demo">
-          <div class="offcanvas-header">
-            <h1 class="offcanvas-title">會員中心<img src="./img/logo1.png" alt="" width="60px"></h1>
-
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
-          </div>
-          <div class="offcanvas-body">
-            <div class="modal-header">
-              <h4 class="modal-title">請先登入</h4>
-
-
-            </div>
-
-            <!-- Modal body -->
-            <div class="modal-body">
-              <!-- 插入程式碼要有頭跟END，方便日後維護及辨識 -->
-              <!-- Modal body container.. -->
-              <div class="container mt-3">
-
-
-                <form action="/action_page.php">
-
-                  <div class="row">
-                    <div class="col-12">
-                      <div class="mb-3">
-                        <label for="price">帳號:</label>
-                        <input type="text" class="form-control" id="acc" placeholder="Enter acc" name="acc">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-12">
-                      <div class="mb-3">
-                        <label for="unit">密碼:</label>
-                        <input type="password" class="form-control" id="pw" placeholder="Enter password" name="pw">
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="row mt-5">
-                    <div class="col-12 mt-1">
-                      <div class="mb-3">
-                        <div class="d-flex gap-2">
-                          <button type="reset" class="btn btn-primary btn-secondary col-6">重置</button>
-                          <button type="submit" class="btn btn-primary btn-warning  col-6">送出</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </form>
-              </div>
-              <!-- Modal body container end -->
-            </div>
-          </div>
-        </div>
-        <div>
-
-          <i class="fa-regular fa-circle-user me-5" style=" font-size: 2em;" data-bs-toggle="offcanvas"
-            data-bs-target="#demo"></i>
-
-          <p class="mt-1 me-5 shopping-cart-p">Menbership</p>
-        </div>
-        </button>
-      </div>
-      <div class="col-md-1 test pt-4" style="margin-top:20px;margin-left:37px">
-        <form class="d-flex">
-          <input class="search-wrapper me-2 myInput " type="text" placeholder="Search">
-          <button class="btn btn-primary rounded-pill btn-bg" style="width:130px" type="button">Search</button>
-        </form>
-      </div>
-    </div>
-  </header>
-
+<?php
+include "./inc/header_index.php"
+?>
   <!-- ---- -->
   <div class="contaainer" style="background-color: 13304a;" id="carousel">
     <!-- data-bs-ride="carousel" 使用 自動輪播功能 -->
@@ -293,253 +163,20 @@
     </div>
   </div> -->
   <!-- ---- -->
-  <section class="section-products" id="store">
-    <div class="container">
-      <div class="row justify-content-center text-center">
-        <div class="col-md-8 col-lg-6">
-          <div class="header">
-            <h2><b>特色商品</b>
-
-            </h2>
-            <br>
-            <h3>超熱銷(=^-ω-^=)</h3>
-
-            <br>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <!-- Single Product -->
-        <div class="col-md-6 col-lg-4 col-xl-3">
-          <div id="product-1" class="single-product">
-            <div class="part-1">
-              <span class="new">new</span>
-              <ul>
-                <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
-                <li><a href="#"><i class="fas fa-heart"></i></a></li>
-                <li><a href="#"><i class="fas fa-plus"></i></a></li>
-                <li><a href="#"><i class="fas fa-expand"></i></a></li>
-              </ul>
-            </div>
-            <div class="part-2">
-
-              <h3 class="product-title">逗貓棒替換頭：羽毛毛條</h3>
-              <!-- <h4 class="product-old-price">NTD 400</h4> -->
-              <h4 class="product-price">NTD 35</h4>
-            </div>
-          </div>
-        </div>
-        <!-- Single Product -->
-        <div class="col-md-6 col-lg-4 col-xl-3">
-          <div id="product-2" class="single-product">
-            <div class="part-1">
-              <span class="discount">20% off</span>
-              <ul>
-                <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
-                <li><a href="#"><i class="fas fa-heart"></i></a></li>
-                <li><a href="#"><i class="fas fa-plus"></i></a></li>
-                <li><a href="#"><i class="fas fa-expand"></i></a></li>
-              </ul>
-            </div>
-            <div class="part-2">
-              <h3 class="product-title">皮繩逗貓棒</h3>
-              <h4 class="product-old-price">NTD 400</h4>
-              <h4 class="product-price">NTD 320</h4>
-            </div>
-          </div>
-        </div>
-        <!-- Single Product -->
-        <div class="col-md-6 col-lg-4 col-xl-3">
-          <div id="product-3" class="single-product">
-            <div class="part-1">
-              <ul>
-                <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
-                <li><a href="#"><i class="fas fa-heart"></i></a></li>
-                <li><a href="#"><i class="fas fa-plus"></i></a></li>
-                <li><a href="#"><i class="fas fa-expand"></i></a></li>
-              </ul>
-            </div>
-            <div class="part-2">
-              <h3 class="product-title">逗貓棒替換頭：羽毛毛條</h3>
-
-              <h4 class="product-price">NTD 220</h4>
-            </div>
-          </div>
-        </div>
-        <!-- Single Product -->
-        <div class="col-md-6 col-lg-4 col-xl-3">
-          <div id="product-4" class="single-product">
-            <div class="part-1">
-
-              <ul>
-                <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
-                <li><a href="#"><i class="fas fa-heart"></i></a></li>
-                <li><a href="#"><i class="fas fa-plus"></i></a></li>
-                <li><a href="#"><i class="fas fa-expand"></i></a></li>
-              </ul>
-            </div>
-            <div class="part-2">
-              <h3 class="product-title">Doge Daddy｜秘密花園趣食碗</h3>
-              <h4 class="product-price">NTD 220</h4>
-            </div>
-          </div>
-        </div>
-        <!-- Single Product -->
-        <div class="col-md-6 col-lg-4 col-xl-3">
-          <div id="product-5" class="single-product">
-            <div class="part-1">
-              <span class="new">new</span>
-              <ul>
-                <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
-                <li><a href="#"><i class="fas fa-heart"></i></a></li>
-                <li><a href="#"><i class="fas fa-plus"></i></a></li>
-                <li><a href="#"><i class="fas fa-expand"></i></a></li>
-              </ul>
-            </div>
-            <div class="part-2">
-              <h3 class="product-title">KONG｜三臂型塞食器S</h3>
-
-              <h4 class="product-price">NTD 399</h4>
-            </div>
-          </div>
-        </div>
-        <!-- Single Product -->
-        <div class="col-md-6 col-lg-4 col-xl-3">
-          <div id="product-6" class="single-product">
-            <div class="part-1">
-              <span class="discount">15% off</span>
-              <ul>
-                <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
-                <li><a href="#"><i class="fas fa-heart"></i></a></li>
-                <li><a href="#"><i class="fas fa-plus"></i></a></li>
-                <li><a href="#"><i class="fas fa-expand"></i></a></li>
-              </ul>
-            </div>
-            <div class="part-2">
-              <h3 class="product-title">Doge Daddy｜秘密花園趣食碗</h3>
-              <h4 class="product-old-price">NTD 400</h4>
-              <h4 class="product-price">NTD 340</h4>
-            </div>
-          </div>
-        </div>
-        <!-- Single Product -->
-        <div class="col-md-6 col-lg-4 col-xl-3">
-          <div id="product-7" class="single-product">
-            <div class="part-1">
-              <ul>
-                <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
-                <li><a href="#"><i class="fas fa-heart"></i></a></li>
-                <li><a href="#"><i class="fas fa-plus"></i></a></li>
-                <li><a href="#"><i class="fas fa-expand"></i></a></li>
-              </ul>
-            </div>
-            <div class="part-2">
-              <h3 class="product-title">Doge Daddy｜秘密花園趣食碗e</h3>
-
-              <h4 class="product-price">NTD 55</h4>
-            </div>
-          </div>
-        </div>
-        <!-- Single Product -->
-        <div class="col-md-6 col-lg-4 col-xl-3">
-          <div id="product-8" class="single-product">
-            <div class="part-1">
-              <span class="new">new</span>
-              <ul>
-                <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
-                <li><a href="#"><i class="fas fa-heart"></i></a></li>
-                <li><a href="#"><i class="fas fa-plus"></i></a></li>
-                <li><a href="#"><i class="fas fa-expand"></i></a></li>
-              </ul>
-            </div>
-            <div class="part-2">
-              <h3 class="product-title">放輕鬆｜舒芙巾</h3>
-              <h4 class="product-price">NTD 29</h4>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+<?php
+include "./inc/goods.php"
+?>
   <!-- ---- -->
-  <!-- <div class="container-fluid mt-3">
-    <div class="row">
-
-      <div class="col-sm-8 p-3 bg-warning text-center text-white">col-4</div>
-      <div class="col-sm-4 p-3 bg-success text-center text-white">col-8</div>
-    </div>
-  </div>
-
-
-  </div> -->
-  <!-- ---- -->
-
-  <!-- <div class="d-grid mt-3">
-    <div class="row">
-      <div class="btn-group col-4">
-        <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown"
-          aria-expanded="false">
-          button col-4
-        </button>
-        <ul class="dropdown-menu">
-          ...
-        </ul>
-      </div>
-      <div class="btn-group col-8">
-        <button class="btn btn-secondary btn-lg" type="button">
-          split button col-8
-        </button>
-        <button type="button" class="btn btn btn-secondary dropdown-toggle dropdown-toggle-split"
-          data-bs-toggle="dropdown" aria-expanded="false">
-          <span class="visually-hidden">Toggle Dropdown</span>
-        </button>
-        <ul class="dropdown-menu">
-          ...
-        </ul>
-      </div>
-    </div>
-  </div> -->
+ 
 
 <?php
 include "./inc/login.php"
 ?>
   
+  <?php
+include "./inc/footer.php"
+?>
 
-  <footer class="footer " id="footer">
-    <div class="container-fluid">
-      <div class="row" style="padding-top:35px">
-
-        <div class="col-md-3 contact col" style="margin-top: 30px;margin-left:100px;">
-          <img src="./img/logo1.png" alt="" width="130px">
-
-
-          <p style="font-size:15px">243 新北市泰山區貴子里致遠新村55之1號</p>
-          <a style="font-size:15px" href="mailto: wunshengliao@gmail.com">EMAIL: wunshengliao@gmail.com</a>
-          <a style="font-size:15px" href="tel:+886123456789">TEL: +886-1-2345-6789</a>
-
-
-        </div>
-        <div class="font-awesome mt-5 col-md-1 col ps-4">
-          <a aria-label="instagram" target="_blank" href="">
-            <i class="fa-brands fa-instagram  fa-2xl pt-3 " style="padding-left:25px;font-size: 40px;"></i>
-          </a>
-          <br>
-          <br>
-          <a aria-label="facebook" target="_blank" href="">
-            <i class="fa-brands fa-facebook  fa-2xl pt-4 " style="padding-left:25px;"></i>
-          </a>
-          <br>
-          <br>
-          <a  aria-label="line" target="_blank" href="https://www.instagram.com/kingone_design">
-            <i class="fa-brands fa-line fa-2xl pt-4 " style="padding-left:25px"></i>
-          </a>
-          <br>
-          <br>
-          <a aria-label="Youtube" target="_blank" href="">
-            <i class="fa-brands fa-youtube  fa-2xl pt-4 " style="padding-left:23px"></i>
-          </a>
-
-        </div>
         <div class=" mt-5 col-md-5 col" style="border-left:5px solid white;margin-left:-5px">
           <ul class="pages">
             <li>
@@ -601,20 +238,11 @@ include "./inc/login.php"
 
           </ul>
 
-
-
         </div>
 
-        <a class="footer-headerp join-us pt-1 text-center"
-        style="color:#ffc94a;font-size: 55px;font-weight:bolder;border:3px solid#ffb71b;width:150px;height:180px;margin-top:60px;margin-left:35px"
-        href="">Join Us!</a>
-
-      </div>
-  </footer>
-  <div class="copyright">
-    <p>© WSL Web ALL Reserved.</p>
-  </div>
-  </div>
+      <?php
+      include "./inc/copyright.php"
+      ?>
 </body>
 
 </html>
