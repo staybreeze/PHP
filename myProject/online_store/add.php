@@ -1,12 +1,11 @@
 <?php 
 include_once "./api/connect.php";
 ?>
-
-<!DOCTYPE html>
+        <!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <title>奇多喵合作社>關於我們</title>
+  <title>奇多喵合作社>會員中心</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -24,7 +23,7 @@ include_once "./api/connect.php";
     }
 
     .main {
-      height: 130vh;
+      height: 88vh;
     }
 
     .h3 {
@@ -58,29 +57,41 @@ include "./inc/header_aboutUs_articles.php"
 
       <div class="col-6 section ms-5 ps-5">
         <br>
-        <div class="box mt-5">
-          <h3 class="h3">&nbsp;起源</h3>
-          <p id="origin">
+        <div class="box mt-5 text-center">
 
-            奇多喵商城的誕生源自一位極為熱愛貓咪的女生，Miss
-            Lee。她和她的貓咪一同冒險，卻發現市面上的貓咪商品總是缺乏趣味。於是，她決定開創奇多喵商城，專注提供有趣又溫馨的貓咪商品，像是貓咪玩偶、趣味窩等。這裡不僅是一個購物天堂，更是貓奴們分享愛貓心得的幸福樂園。李小姐以奇多喵商城為平台，讓更多貓奴找到滿滿的愛與喜悅，讓每一隻貓咪都過上充滿趣味的生活。
-          </p>
+
+   <p class="mt-4" style="font-size:25px;font-weight:bold;text-align:center">會員註冊</p>
+                    
+      
+    <form action="./api/add_user.php" method="post" class="col-4 m-auto">
+        <div class="input-group my-1">
+            <label class="col-4  input-group-text">帳號:</label>
+            <input class="form-control"  type="text" name="acc" id="acc">
         </div>
-
-        <div class="box mt-5 pt-5">
-          <h3 class="h3">&nbsp;目標</h3>
-          <p id="cheetos">
-
-            奇多喵商城的團隊目標是在貓奴社群中建立堅實的信任和喜愛，成為貓咪商品的領先品牌。我們將透過提供獨特有趣的商品、貼心的客戶服務以及滿足各類貓奴需求的商品線，不斷擴大產品範疇，提升品牌影響力。同時，我們致力於建立一個充滿愛心、互助和尊重的工作環境，使每位團隊成員都能在這個大家庭中茁壯成長。我們的使命是讓每一位貓奴都能在奇多喵商城找到滿滿的愛和快樂。
-          </p>
-          <img id="cheetos" src="./img/cheetos8.jpg" alt="" height="400px" class="mt-5">
-          <div class="box mt-5">
-            <h3 class="h3">&nbsp;店貓－奇多（Cheetos） </h3>
-            <p>
-
-              奇多，一隻兩歲半的孟加拉豹貓，是個小男生。他的名字源自奇多餅乾，就像餅乾一樣，奇多充滿活力和甜蜜，擁有美麗的斑點和親人的性格。他是我們的快樂夥伴，帶來無盡的歡樂。 🐾🍪
-
-            </p>
+        <div class="input-group my-1">
+            <label class="col-4  input-group-text">密碼:</label>
+            <input class="form-control" type="password" name="pw" id="pw">
+        </div>
+        <div class="input-group my-1">
+            <label class="col-4  input-group-text">姓名:</label>
+            <input class="form-control" type="text" name="name" id="name">
+        </div>
+        <div class="input-group my-1">
+            <label class="col-4  input-group-text">電子郵件:</label>
+            <input class="form-control" type="text" name="email" id="email">
+        </div>
+        <div class="input-group my-1">
+            <label class="col-4  input-group-text">居住地:</label>
+            <input class="form-control" type="text" name="address" id="address">
+        </div>
+        <div>
+            <input class="btn btn-primary mx-2 mt-4" type="submit" value="送出">
+            <input class="btn btn-success mx-2 mt-4" type="reset" value="重置">
+        </div>
+    
+    
+    
+    </form>
 
           </div>
 

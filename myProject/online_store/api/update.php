@@ -24,4 +24,4 @@ $res=$User->save($_POST);
            $_SESSION['msg']="資料無異動";
          }
 
-// header("location:../index.php");
+header("location:../index.php");

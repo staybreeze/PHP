@@ -57,42 +57,72 @@
 
             <!-- Modal body -->
             <div class="modal-body">
-              <!-- 插入程式碼要有頭跟END，方便日後維護及辨識 -->
-              <!-- Modal body container.. -->
-              <div class="container mt-3">
+            <!-- 插入程式碼要有頭跟END，方便日後維護及辨識 -->
+            <!-- Modal body container.. -->
+            <div class="container mt-3">
 
+              <?php
+              if (isset($_GET['error'])) {
+                echo "<span style='color:red'>";
+                echo $_GET['error'];
+                echo "</span>";
+              }
 
-                <form action="/action_page.php">
+              ?>
+              <form action="../api/login.php" method="post">
+                <?php
+                if (!isset($_SESSION['user'])) {
+                echo '
+                <div class="row">
 
-                  <div class="row">
-                    <div class="col-12">
-                      <div class="mb-3">
-                        <label for="price">帳號:</label>
-                        <input type="text" class="form-control" id="acc" placeholder="Enter acc" name="acc">
+                  <div class="col-12">
+                    <div class="input-group mb-3 mt-4">
+
+                      <span class="input-group-text bold ms-3">帳號</span>
+                      <input type="text" class="form-control" placeholder="Account123" name="acc">
+
+                    </div>
+
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <div class="input-group mb-3">
+                      <span class="input-group-text bold ms-3">密碼</span>
+                      <input type="password" class="form-control" placeholder="****" name="pw">
+
+                    </div>
+                  </div>
+                  <a href="./add.php" style="text-align:left;text-decoration:underline;color:cadetblue" class="ms-4">加入會員</a>
+                </div>
+
+                <div class="row mt-5">
+                  <div class="col-12 mt-1">
+                    <div class="">
+                      <div class="d-flex gap-2">
+                        <button type="reset" class="btn btn-primary btn-secondary col-6">重置</button>
+                        <button type="submit" class="btn btn-primary btn-warning  col-6">送出</button>
                       </div>
                     </div>
                   </div>
-                  <div class="row">
-                    <div class="col-12">
-                      <div class="mb-3">
-                        <label for="unit">密碼:</label>
-                        <input type="password" class="form-control" id="pw" placeholder="Enter password" name="pw">
-                      </div>
-                    </div>
-                  </div>
+                </div>
+                 
+       
+    
+         ';
+                }else{
 
-                  <div class="row mt-5">
-                    <div class="col-12 mt-1">
-                      <div class="mb-3">
-                        <div class="d-flex gap-2">
-                          <button type="reset" class="btn btn-primary btn-secondary col-6">重置</button>
-                          <button type="submit" class="btn btn-primary btn-warning  col-6">送出</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </form>
+                  echo "歡迎光臨！".$_SESSION['user']."💛";
+
+
+        
+                  echo "<a href='../member.php' class='btn btn-secondary mt-4 col-7 mx-2'>修改會員資料</a>";
+                 
+                        echo "<a href='./api/logout.php' class='btn btn-warning mt-4 col-7 mx-2'>登出</a>";
+                }
+          ?>
               </div>
+              </form>
               <!-- Modal body container end -->
             </div>
           </div>

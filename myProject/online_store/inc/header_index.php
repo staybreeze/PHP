@@ -126,7 +126,7 @@
 
                     </div>
                   </div>
-                  <a href="http://" style="text-align:left;text-decoration:underline;color:cadetblue" class="ms-4">加入會員</a>
+                  <a href="./add.php" style="text-align:left;text-decoration:underline;color:cadetblue" class="ms-4">加入會員</a>
                 </div>
 
                 <div class="row mt-5">
@@ -139,67 +139,23 @@
                     </div>
                   </div>
                 </div>
-                    </form>
-            </div>
-               </form>
+                 
+       
+    
          ';
                 }else{
 
                   echo "歡迎光臨！".$_SESSION['user']."💛";
 
-                  echo '<p class="mt-3" style="font-size:larger;font-weight:bold">使用者資料</p>';?>
-                  
-                  <?php
-                  if (isset($_SESSION['msg'])) {
-                      echo "<div class='alert alert-warning text-center col-6 m-auto'>";
-                      echo $_SESSION['msg'];
-                      // 只出現一次，這樣重整不會再出現
-                      unset($_SESSION['msg']);
-                      echo "</div>";
-                  }
-                  // $sql = "select * from users where `acc`='{$_SESSION['user']}'";
-                  // $user = $pdo->query($sql)->fetch();
-                  $user=find('users',['acc'=>"{$_SESSION['user']}"]);
-              ?>
-          
-                  <form action="../api/update.php" method="post" class="col-4 m-auto">
-                      <div class="input-group my-1">
-                          <label class="col-4  input-group-text">帳號:</label>
-                          <input class="form-control" type="text" name="acc" id="acc" value="<?= $user['acc']; ?>">
-                      </div>
-                      <div class="input-group my-1">
-                          <label class="col-4  input-group-text">密碼:</label>
-                          <input class="form-control" type="password" name="pw" id="pw" value="<?= $user['pw']; ?>">
-                      </div>
-                      <div class="input-group my-1">
-                          <label class="col-4  input-group-text">姓名:</label>
-                          <input class="form-control" type="text" name="name" id="name" value="<?= $user['name']; ?>">
-                      </div>
-                      <div class="input-group my-1">
-                          <label class="col-4  input-group-text">電子郵件:</label>
-                          <input class="form-control" type="text" name="email" id="email" value="<?= $user['email']; ?>">
-                      </div>
-                      <div class="input-group my-1">
-                          <label class="col-4  input-group-text">居住地:</label>
-                          <input class="form-control" type="text" name="address" id="address" value="<?= $user['address']; ?>">
-                      </div>
-                      <div>
-                          <!-- 加入ID傳值以便update-php能在資料庫抓到對應的ID進行修改 -->
-                          <input class="form-control" type="hidden" name="id" id="id" value="<?= $user['id']; ?>">
-                          <input class="btn btn-primary mx-2 mt-3" type="submit" value="更新">
-                          <input class="btn btn-success mx-2 mt-3" type="reset" value="重置">
-                          <!-- 比較進階的做法 -->
-                          <input class="btn btn-danger mx-2 mt-3" type="button" value="刪除" onclick="location.href='../api/del_user.php?id=<?=$user['id'];?>'">
-                      </div>
-                  </div>      
-        </form>
-                  <?php
+
+        
+                  echo "<a href='../member.php' class='btn btn-secondary mt-4 col-7 mx-2'>修改會員資料</a>";
+                 
                         echo "<a href='./api/logout.php' class='btn btn-warning mt-4 col-7 mx-2'>登出</a>";
                 }
           ?>
-
-                
-
+              </div>
+              </form>
           <!-- Modal body container end -->
       
           </div>
@@ -221,3 +177,4 @@
     </div>
   </div>
 </header>
+

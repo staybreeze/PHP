@@ -2,7 +2,7 @@
 
 // 避免重複導入，因此once就好
 // include_once "../inc/connect.php";
-include_once "../inc/db.php";
+include_once "./db.php";
 
 
 
