@@ -20,13 +20,16 @@
               <div class="unloading-bar"></div>
               <div class="loading-bar"></div>
             </li>
-            <li class="nav-item me-3">
-              <a href="../api/logout.php">登出</a>
-              <div class="unloading-bar"></div>
-              <div class="loading-bar"></div>
-            </li>
+            <?php
+           if (isset($_SESSION['user'])) {
+            echo "<li>
+            <span> <a href='../api/logout.php'>登出</a></span>
+        <div class='unloading-bar'></div>
+        <div class='loading-bar'></div>
+   </li>
+   ";}
 
-
+?>
         </div>
 
       </div>

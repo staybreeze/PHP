@@ -65,7 +65,7 @@ include "./inc/header_aboutUs_articles.php"
                     echo '<p class="mt-4" style="font-size:25px;font-weight:bold;text-align:center">使用者資料</p>';
                     
                   if (isset($_SESSION['msg'])) {
-                      echo "<div class='alert alert-warning text-center col-6 m-auto'>";
+                      echo "<div class='alert alert-warning text-center col-4 m-auto'>";
                       echo $_SESSION['msg'];
                       // 只出現一次，這樣重整不會再出現
                       unset($_SESSION['msg']);
