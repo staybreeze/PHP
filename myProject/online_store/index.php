@@ -23,12 +23,12 @@
   <header class=" h-11 bg-gray container-fluid">
     <div class="row bg-gray">
       <div class="test col-md-2 ms-3 logo-area">
-        <a href="index.html" data-bs-toggle="modal" data-bs-target="#myModal-2">
+        <a href="index.php" data-bs-toggle="modal" data-bs-target="#myModal-2">
           <img src="./img/logo1.png" alt="" width="85%" height="100%"></a>
       </div>
       <div class="test col-md-2 mt-4 pt-3">
 
-        <a href="index.html"><h2 style="font-weight:600;">奇多喵合作社</h2></a>
+        <a href="index.php"><h2 style="font-weight:600;">奇多喵合作社</h2></a>
 
       </div>
       <div class="col-md-4 test-1 pt-5">
@@ -36,12 +36,12 @@
 
           <ul>
             <li class="nav-item me-3">
-              <a href="aboutUs.html">關於我們</a>
+              <a href="aboutUs.php">關於我們</a>
               <div class="unloading-bar"></div>
               <div class="loading-bar"></div>
             </li>
             <li class="nav-item  me-3" style="margin-left:36px">
-              <a href="./articles.html">文章</a>
+              <a href="./articles.php">文章</a>
               <div class="unloading-bar"></div>
               <div class="loading-bar"></div>
             </li>
@@ -500,78 +500,10 @@
     </div>
   </div> -->
 
-
-  <div class="modal" id="myModal">
-    <div class="modal-dialog">
-      <div class="modal-content">
-
-        <!-- Modal Header -->
-        <div class="modal-header">
-          <h4 class="modal-title">會員登入</h4>
-          <img src="./img/logo1.png" alt="" width="60px">
-          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-        </div>
-
-        <!-- Modal body -->
-        <div class="modal-body">
-          <!-- 插入程式碼要有頭跟END，方便日後維護及辨識 -->
-          <!-- Modal body container.. -->
-          <div class="container mt-3">
-
-
-            <form action="/action_page.php">
-
-              <div class="row">
-                <div class="col-12">
-                  <div class="mb-3">
-                    <label for="price">帳號:</label>
-                    <input type="text" class="form-control" id="acc" placeholder="Enter acc" name="acc">
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-12">
-                  <div class="mb-3">
-                    <label for="unit">密碼:</label>
-                    <input type="password" class="form-control" id="pw" placeholder="Enter password" name="pw">
-                  </div>
-                </div>
-              </div>
-
-              <div class="row mt-5">
-                <div class="col-12">
-                  <div class="mb-3">
-                    <div class="d-flex gap-2">
-                      <button type="reset" class="btn btn-primary btn-secondary col-6">重置</button>
-                      <button type="submit" class="btn btn-primary btn-warning  col-6">送出</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-        <!-- Modal body container end -->
-
-
-        <!-- Modal footer -->
-        <!-- <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-                </div> -->
-
-      </div>
-    </div>
-  </div>
-  <div class="modal" id="myModal-2">
-    <div class="modal-dialog">
-
-      <img src="./img/logo1.png" alt="" width="120%">
-
-      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-
-    </div>
-  </div>
-
+<?php
+include "./inc/login.php"
+?>
+  
 
   <footer class="footer " id="footer">
     <div class="container-fluid">
@@ -611,45 +543,45 @@
         <div class=" mt-5 col-md-5 col" style="border-left:5px solid white;margin-left:-5px">
           <ul class="pages">
             <li>
-              <a class="footer-header" href="./aboutUs.html">關於我們</a>
+              <a class="footer-header" href="./aboutUs.php">關於我們</a>
             </li>
             <li>
-              <a href="./aboutUs.html">起源</a>
+              <a href="./aboutUs.php">起源</a>
             </li>
             <li>
-              <a href="./aboutUs.html#origin">目標</a>
+              <a href="./aboutUs.php#origin">目標</a>
             </li>
             <li>
-              <a href="./aboutUs.html#cheetos">店貓－奇多（Cheetos）</a>
+              <a href="./aboutUs.php#cheetos">店貓－奇多（Cheetos）</a>
             </li>
           </ul>
 
           <ul class="pages">
             <li>
-              <a class="footer-header" href="./articles.html">貓咪文章</a>
+              <a class="footer-header" href="./articles.php">貓咪文章</a>
             </li>
             <li>
-              <a class="" href="./articles.html#">幼貓</a>
+              <a class="" href="./articles.php#">幼貓</a>
             </li>
             <li>
-              <a class="" href="./articles.html#">成貓</a>
+              <a class="" href="./articles.php#">成貓</a>
             </li>
             <li>
-              <a class="" href="./articles.html#">老貓</a>
+              <a class="" href="./articles.php#">老貓</a>
             </li>
           </ul>
           <ul class="pages">
             <li>
-              <a class="footer-header" href="./index.html#store">購物商城</a>
+              <a class="footer-header" href="./index.php#store">購物商城</a>
             </li>
             <li>
-              <a class="" href="./index.html#store">食物</a>
+              <a class="" href="./index.php#store">食物</a>
             </li>
             <li>
-              <a class=""href="./index.html#store">玩具</a>
+              <a class=""href="./index.php#store">玩具</a>
             </li>
             <li>
-              <a class="" href="./index.html#store">生活用品</a>
+              <a class="" href="./index.php#store">生活用品</a>
             </li>
           </ul>
           <ul class="pages">

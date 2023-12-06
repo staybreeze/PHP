@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>奇多喵合作社>文章>貓咪的皮膚護理學問</title>
+  <title>奇多喵合作社>關於我們</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -11,30 +11,31 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="../css/css.css">
+  <link rel="stylesheet" href="./css/css.css">
   <style>
- .aside {
+    .aside {
       background-image: url(./img/18-2500x1667.jpg);
       opacity: 0.9;
 
     }
 
     .main {
-      height: 110vh;
+      height: 130vh;
     }
 
     .h3 {
       border-left: 10px solid brown;
-      font-weight: bolder;
     }
 
-    p {
-      font-size: 25px;
-      line-height: 50px;
+
+    h3>p {
+      font-size: 20px;
+      line-height: 30px;
     }
 
-    .footer{
-      margin-top:0px;
+    .footer {
+      margin-top: 0px;
+
     }
   </style>
 </head>
@@ -45,12 +46,12 @@
   <header class=" h-11 bg-gray container-fluid">
     <div class="row bg-gray">
       <div class="test col-md-2 ms-3 logo-area">
-        <a href="../index.html" data-bs-toggle="modal" data-bs-target="#myModal-2">
-          <img src="../img/logo1.png" alt="" width="85%" height="100%"></a>
+        <a href="index.php" data-bs-toggle="modal" data-bs-target="#myModal-2">
+          <img src="./img/logo1.png" alt="" width="85%" height="100%"></a>
       </div>
       <div class="test col-md-2 mt-4 pt-3">
 
-        <a href="../index.html">
+        <a href="index.php">
           <h2 style="font-weight:600;">奇多喵合作社</h2>
         </a>
 
@@ -60,15 +61,11 @@
 
           <ul>
             <li class="nav-item me-3">
-              <a href="../index.html">回首頁</a>
+              <a href="index.php">回首頁</a>
               <div class="unloading-bar"></div>
               <div class="loading-bar"></div>
             </li>
-            <li class="nav-item me-3">
-              <a href="../articles.html">回上一頁</a>
-              <div class="unloading-bar"></div>
-              <div class="loading-bar"></div>
-            </li>
+
 
         </div>
 
@@ -87,7 +84,7 @@
 
         <div class="offcanvas offcanvas-end" id="demo">
           <div class="offcanvas-header">
-            <h1 class="offcanvas-title">會員中心<img src="../img/logo1.png" alt="" width="60px"></h1>
+            <h1 class="offcanvas-title">會員中心<img src="./img/logo1.png" alt="" width="60px"></h1>
 
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
           </div>
@@ -162,30 +159,42 @@
   <div class="container-fluid">
     <div class="row d-flex main">
       <div class="col-5 aside">
-<img src="../img/cat3.webp" alt="" width="100%" style="padding-top:70px ;">
+
       </div>
 
       <div class="col-6 section ms-5 ps-5">
         <br>
         <div class="box mt-5">
-          <h3 class="h3">&nbsp;貓咪的皮膚護理學問</h3>
-          <p class="mt-5" id="origin">
-  
-貓咪的皮膚健康對其整體幸福感至關重要，因此皮膚護理成為貓奴不可忽視的學問。首先，定期檢查貓咪的皮膚，留意是否有異常的紅腫、搔癢或脫毛現象。這有助於早期發現可能的皮膚問題，如皮膚炎、蟲害等。
-<br><br>
-保持貓咪的毛髮清潔也是皮膚健康的重要步驟。定期給予貓咪梳理，不僅有助於除去脫落的毛髮，還可以促進血液循環，提升皮膚的新陳代謝。此外，選擇適合貓咪皮膚類型的洗毛精品，進行溫和的洗澡，有助於去除灰塵和過多的皮脂。
-<br><br>
-適當的飲食也是皮膚護理的一部分。確保貓咪攝取足夠的水分，有助於保濕皮膚，減少乾燥和脫水引起的皮膚問題。同時，選用高品質的貓糧，確保營養均衡，有助於維持健康的皮膚狀態。
-<br><br>
-若發現貓咪有皮膚問題，應及時諮詢獸醫的建議，並依醫囑進行治療。總的來說，透過定期檢查、適當的梳理、清潔和均衡的飲食，貓咪的皮膚將能保持良好狀態，使牠們在每個時刻都能展現出健康和自信。</p>
+          <h3 class="h3">&nbsp;起源</h3>
+          <p id="origin">
+
+            奇多喵商城的誕生源自一位極為熱愛貓咪的女生，Miss
+            Lee。她和她的貓咪一同冒險，卻發現市面上的貓咪商品總是缺乏趣味。於是，她決定開創奇多喵商城，專注提供有趣又溫馨的貓咪商品，像是貓咪玩偶、趣味窩等。這裡不僅是一個購物天堂，更是貓奴們分享愛貓心得的幸福樂園。李小姐以奇多喵商城為平台，讓更多貓奴找到滿滿的愛與喜悅，讓每一隻貓咪都過上充滿趣味的生活。
+          </p>
         </div>
 
+        <div class="box mt-5 pt-5">
+          <h3 class="h3">&nbsp;目標</h3>
+          <p id="cheetos">
 
-        <div class="col-1"></div>
+            奇多喵商城的團隊目標是在貓奴社群中建立堅實的信任和喜愛，成為貓咪商品的領先品牌。我們將透過提供獨特有趣的商品、貼心的客戶服務以及滿足各類貓奴需求的商品線，不斷擴大產品範疇，提升品牌影響力。同時，我們致力於建立一個充滿愛心、互助和尊重的工作環境，使每位團隊成員都能在這個大家庭中茁壯成長。我們的使命是讓每一位貓奴都能在奇多喵商城找到滿滿的愛和快樂。
+          </p>
+          <img id="cheetos" src="./img/cheetos8.jpg" alt="" height="400px" class="mt-5">
+          <div class="box mt-5">
+            <h3 class="h3">&nbsp;店貓－奇多（Cheetos） </h3>
+            <p>
+
+              奇多，一隻兩歲半的孟加拉豹貓，是個小男生。他的名字源自奇多餅乾，就像餅乾一樣，奇多充滿活力和甜蜜，擁有美麗的斑點和親人的性格。他是我們的快樂夥伴，帶來無盡的歡樂。 🐾🍪
+
+            </p>
+
+          </div>
+
+          <div class="col-1"></div>
+        </div>
       </div>
     </div>
   </div>
-
   <div class="modal" id="myModal">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -193,7 +202,7 @@
         <!-- Modal Header -->
         <div class="modal-header">
           <h4 class="modal-title">會員登入</h4>
-          <img src="../img/logo1.png" alt="" width="60px">
+          <img src="./img/logo1.png" alt="" width="60px">
           <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
         </div>
 
@@ -250,7 +259,7 @@
   <div class="modal" id="myModal-2">
     <div class="modal-dialog">
 
-      <img src="../img/logo1.png" alt="" width="120%">
+      <img src="./img/logo1.png" alt="" width="120%">
 
       <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
 
@@ -258,12 +267,12 @@
   </div>
 
 
-  <footer class="footer " id="footer">
+  <footer class="footer" id="footer">
     <div class="container-fluid">
       <div class="row" style="padding-top:35px">
 
         <div class="col-md-3 contact col" style="margin-top: 30px;margin-left:100px;">
-          <img src="../img/logo1.png" alt="" width="130px">
+          <img src="./img/logo1.png" alt="" width="130px">
 
 
           <p style="font-size:15px">243 新北市泰山區貴子里致遠新村55之1號</p>
@@ -296,52 +305,51 @@
         <div class=" mt-5 col-md-5 col" style="border-left:5px solid white;margin-left:-5px">
           <ul class="pages">
             <li>
-              <a class="footer-header" href="../aboutUs.html#">關於我們</a>
+              <a class="footer-header" href="#">關於我們</a>
             </li>
             <li>
-              <a href="../aboutUs.html#">起源</a>
+              <a href="#">起源</a>
             </li>
             <li>
-              <a href="../aboutUs.html#origin">目標</a>
+              <a href="#origin">目標</a>
             </li>
             <li>
-              <a href="../aboutUs.html#cheetos">店貓－奇多（Cheetos）</a>
+              <a href="#cheetos">店貓－奇多（Cheetos）</a>
             </li>
 
           </ul>
 
           <ul class="pages">
             <li>
-              <a class="footer-header" href="../articles.html#">貓咪文章</a>
+              <a class="footer-header" href="./articles.php#">貓咪文章</a>
             </li>
             <li>
-              <a class="" href="../articles.html#">幼貓</a>
+              <a class="" href="./articles.php#">幼貓</a>
             </li>
             <li>
-              <a class="" href="../articles.html#">成貓</a>
+              <a class="" href="./articles.php#">成貓</a>
             </li>
             <li>
-              <a class="" href="../articles.html#">老貓</a>
-            </li>
-          </ul>
-          <ul class="pages">
-            <li>
-              <a class="footer-header" href="../index.html#store">購物商城</a>
-            </li>
-            <li>
-              <a class="" href="../index.html#store">食物</a>
-            </li>
-            <li>
-              <a class=""href="../index.html#store">玩具</a>
-            </li>
-            <li>
-              <a class="" href="../index.html#store">生活用品</a>
+              <a class="" href="./articles.php#">老貓</a>
             </li>
           </ul>
           <ul class="pages">
             <li>
-              <a class="footer-header" href=""  data-bs-toggle="offcanvas"
-              data-bs-target="#demo">會員專區</a>
+              <a class="footer-header" href="./index.php#store">購物商城</a>
+            </li>
+            <li>
+              <a class="" href="./index.php#store">食物</a>
+            </li>
+            <li>
+              <a class="" href="./index.php#store">玩具</a>
+            </li>
+            <li>
+              <a class="" href="articles.php">生活用品</a>
+            </li>
+          </ul>
+          <ul class="pages">
+            <li>
+              <a class="footer-header" href="" data-bs-toggle="offcanvas" data-bs-target="#demo">會員專區</a>
             </li>
             <li>
               <a href="">加入會員</a>
@@ -372,4 +380,4 @@
   </div>
 </body>
 
-</html>
+  </html>

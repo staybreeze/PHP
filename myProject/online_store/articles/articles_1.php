@@ -28,7 +28,7 @@
       font-weight: bolder;
     }
 
-    p {
+    h3>p {
       font-size: 25px;
       line-height: 50px;
     }
@@ -45,12 +45,12 @@
   <header class=" h-11 bg-gray container-fluid">
     <div class="row bg-gray">
       <div class="test col-md-2 ms-3 logo-area">
-        <a href="../index.html" data-bs-toggle="modal" data-bs-target="#myModal-2">
+        <a href="../index.php" data-bs-toggle="modal" data-bs-target="#myModal-2">
           <img src="../img/logo1.png" alt="" width="85%" height="100%"></a>
       </div>
       <div class="test col-md-2 mt-4 pt-3">
 
-        <a href="../index.html">
+        <a href="../index.php">
           <h2 style="font-weight:600;">奇多喵合作社</h2>
         </a>
 
@@ -60,12 +60,12 @@
 
           <ul>
             <li class="nav-item me-3">
-              <a href="../index.html">回首頁</a>
+              <a href="../index.php">回首頁</a>
               <div class="unloading-bar"></div>
               <div class="loading-bar"></div>
             </li>
             <li class="nav-item me-3">
-              <a href="../articles.html">回上一頁</a>
+              <a href="../articles.php">回上一頁</a>
               <div class="unloading-bar"></div>
               <div class="loading-bar"></div>
             </li>
@@ -297,46 +297,46 @@
         <div class=" mt-5 col-md-5 col" style="border-left:5px solid white;margin-left:-5px">
           <ul class="pages">
             <li>
-              <a class="footer-header" href="../aboutUs.html#">關於我們</a>
+              <a class="footer-header" href="../aboutUs.php#">關於我們</a>
             </li>
             <li>
-              <a href="../aboutUs.html#">起源</a>
+              <a href="../aboutUs.php#">起源</a>
             </li>
             <li>
-              <a href="../aboutUs.html#origin">目標</a>
+              <a href="../aboutUs.php#origin">目標</a>
             </li>
             <li>
-              <a href="../aboutUs.html#cheetos">店貓－奇多（Cheetos）</a>
+              <a href="../aboutUs.php#cheetos">店貓－奇多（Cheetos）</a>
             </li>
 
           </ul>
 
           <ul class="pages">
             <li>
-              <a class="footer-header" href="../articles.html#">貓咪文章</a>
+              <a class="footer-header" href="../articles.php#">貓咪文章</a>
             </li>
             <li>
-              <a class="" href="../articles.html#">幼貓</a>
+              <a class="" href="../articles.php#">幼貓</a>
             </li>
             <li>
-              <a class="" href="../articles.html#">成貓</a>
+              <a class="" href="../articles.php#">成貓</a>
             </li>
             <li>
-              <a class="" href="../articles.html#">老貓</a>
+              <a class="" href="../articles.php#">老貓</a>
             </li>
           </ul>
           <ul class="pages">
             <li>
-              <a class="footer-header" href="../index.html#store">購物商城</a>
+              <a class="footer-header" href="../index.php#store">購物商城</a>
             </li>
             <li>
-              <a class="" href="../index.html#store">食物</a>
+              <a class="" href="../index.php#store">食物</a>
             </li>
             <li>
-              <a class=""href="../index.html#store">玩具</a>
+              <a class=""href="../index.php#store">玩具</a>
             </li>
             <li>
-              <a class="" href="../index.html#store">生活用品</a>
+              <a class="" href="../index.php#store">生活用品</a>
             </li>
           </ul>
           <ul class="pages">

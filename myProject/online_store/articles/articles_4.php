@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>奇多喵合作社>文章>探索貓咪的時光隧道</title>
+  <title>奇多喵合作社>文章>從幼到老：貓咪生命的三個重要階段</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -28,7 +28,8 @@
       font-weight: bolder;
     }
 
-    p {
+ 
+    h3>p {
       font-size: 25px;
       line-height: 50px;
     }
@@ -45,12 +46,12 @@
   <header class=" h-11 bg-gray container-fluid">
     <div class="row bg-gray">
       <div class="test col-md-2 ms-3 logo-area">
-        <a href="../index.html" data-bs-toggle="modal" data-bs-target="#myModal-2">
+        <a href="../index.php" data-bs-toggle="modal" data-bs-target="#myModal-2">
           <img src="../img/logo1.png" alt="" width="85%" height="100%"></a>
       </div>
       <div class="test col-md-2 mt-4 pt-3">
 
-        <a href="../index.html">
+        <a href="../index.php">
           <h2 style="font-weight:600;">奇多喵合作社</h2>
         </a>
 
@@ -60,12 +61,12 @@
 
           <ul>
             <li class="nav-item me-3">
-              <a href="../index.html">回首頁</a>
+              <a href="../index.php">回首頁</a>
               <div class="unloading-bar"></div>
               <div class="loading-bar"></div>
             </li>
             <li class="nav-item me-3">
-              <a href="../articles.html">回上一頁</a>
+              <a href="../articles.php">回上一頁</a>
               <div class="unloading-bar"></div>
               <div class="loading-bar"></div>
             </li>
@@ -162,21 +163,27 @@
   <div class="container-fluid">
     <div class="row d-flex main">
       <div class="col-5 aside">
-<img src="../img/cat2.jpeg" alt="" width="100%" style="padding-top:70px ;">
+<img src="../img/cat11.webp" alt="" width="100%" style="padding-top:70px ;">
       </div>
 
       <div class="col-6 section ms-5 ps-5">
         <br>
         <div class="box mt-5">
-          <h3 class="h3">&nbsp;探索貓咪的時光隧道</h3>
+          <h3 class="h3">&nbsp;從幼到老：貓咪生命的三個重要階段</h3>
           <p class="mt-5" id="origin">
-            在探索貓咪的時光隧道中，我們隨著牠們一同經歷幼貓、成貓和老貓的三個重要階段。幼貓時，我們應提供溫暖的環境和高品質的幼貓糧，建立深厚的情感連結。透過遊戲和互動，培養牠們好奇心，為未來奠定穩固基礎。
+            貓咪的生命旅程有如一幅美麗的畫卷，分為幼貓、成貓和老貓三個重要階段。在幼貓時期，我們需要提供充足的愛與關懷，確保牠們在成長過程中得到良好的照顧。選擇高品質的幼貓糧，滿足牠們的營養需求，並建立深厚的人貓關係，透過遊戲和互動培養出活潑好奇的性格。
 <br><br>
-            成貓時，我們要更全面地照顧貓咪。均衡營養的飲食、豐富的運動和心理刺激，是確保貓咪維持活力和健康的關鍵。成貓期是牠們展現獨立性和品格的時期，透過主動的參與，共同度過充實而愉快的時光。
+            當貓咪邁入成貓階段，我們需要更全面的照顧。提供均衡營養的飲食，鼓勵規律運動，同時關注心理健康。成貓時期是貓咪最為活潑和好奇的階段，透過提供豐富的遊戲和挑戰，可以保持其身心的活力。
             <br><br>
-            老貓的階段需要更多的柔情和細心照顧。選擇適合老貓的食物，提供安逸的環境，並給予額外的情感陪伴。老貓期是懷舊和安詳的階段，透過維護健康、提供愛心，讓牠們安心地度過晚年。
+            老貓階段需要更多的柔情和細心。選擇適合老貓的食物，補充關節保健成分，提供舒適的環境，以減輕老貓可能面臨的生理壓力。給予更多的陪伴和愛，定期醫療檢查，以確保老貓的健康和舒適。
             <br><br>
-            這個全方位照護指南旨在引導主人深入了解每個階段的貓咪需求，提供最貼心的照顧。透過時光隧道的探索，我們共同見證貓咪在不同階段展現的美好，為牠們的生命時光留下溫馨和珍貴的回憶。 </p>
+            從幼到老，每個階段都有其獨特的需求和美好。透過主人的細心照顧，貓咪可以在每個階段都綻放出最美好的生命光華。成就一個幸福、健康的貓咪生命旅程，是主人最大的心願。
+            
+            
+            
+            
+            
+            </p>
         </div>
 
 
@@ -295,46 +302,46 @@
         <div class=" mt-5 col-md-5 col" style="border-left:5px solid white;margin-left:-5px">
           <ul class="pages">
             <li>
-              <a class="footer-header" href="../aboutUs.html#">關於我們</a>
+              <a class="footer-header" href="../aboutUs.php#">關於我們</a>
             </li>
             <li>
-              <a href="../aboutUs.html#">起源</a>
+              <a href="../aboutUs.php#">起源</a>
             </li>
             <li>
-              <a href="../aboutUs.html#origin">目標</a>
+              <a href="../aboutUs.php#origin">目標</a>
             </li>
             <li>
-              <a href="../aboutUs.html#cheetos">店貓－奇多（Cheetos）</a>
+              <a href="../aboutUs.php#cheetos">店貓－奇多（Cheetos）</a>
             </li>
 
           </ul>
 
           <ul class="pages">
             <li>
-              <a class="footer-header" href="../articles.html#">貓咪文章</a>
+              <a class="footer-header" href="../articles.php#">貓咪文章</a>
             </li>
             <li>
-              <a class="" href="../articles.html#">幼貓</a>
+              <a class="" href="../articles.php#">幼貓</a>
             </li>
             <li>
-              <a class="" href="../articles.html#">成貓</a>
+              <a class="" href="../articles.php#">成貓</a>
             </li>
             <li>
-              <a class="" href="../articles.html#">老貓</a>
+              <a class="" href="../articles.php#">老貓</a>
             </li>
           </ul>
           <ul class="pages">
             <li>
-              <a class="footer-header" href="../index.html#store">購物商城</a>
+              <a class="footer-header" href="../index.php#store">購物商城</a>
             </li>
             <li>
-              <a class="" href="../index.html#store">食物</a>
+              <a class="" href="../index.php#store">食物</a>
             </li>
             <li>
-              <a class=""href="../index.html#store">玩具</a>
+              <a class=""href="../index.php#store">玩具</a>
             </li>
             <li>
-              <a class="" href="../index.html#store">生活用品</a>
+              <a class="" href="../index.php#store">生活用品</a>
             </li>
           </ul>
           <ul class="pages">
@@ -371,4 +378,4 @@
   </div>
 </body>
 
-</html>
+  </html>

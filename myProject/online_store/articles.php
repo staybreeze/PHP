@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>奇多喵合作社>關於我們</title>
+  <title>奇多喵合作社>文章</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -20,22 +20,33 @@
     }
 
     .main {
-      height: 130vh;
+      height: 105vh;
     }
 
     .h3 {
       border-left: 10px solid brown;
+      font-size: x-large;
+      font-weight: bolder;
     }
 
-    p {
+  
+    h3>p {
       font-size: 20px;
       line-height: 30px;
     }
 
     .footer {
       margin-top: 0px;
+    }
+
+    .box {
+      margin-top: 50px;
+      width: 33%;
+      height: 33%;
 
     }
+
+
   </style>
 </head>
 
@@ -45,12 +56,12 @@
   <header class=" h-11 bg-gray container-fluid">
     <div class="row bg-gray">
       <div class="test col-md-2 ms-3 logo-area">
-        <a href="index.html" data-bs-toggle="modal" data-bs-target="#myModal-2">
+        <a href="index.php" data-bs-toggle="modal" data-bs-target="#myModal-2">
           <img src="./img/logo1.png" alt="" width="85%" height="100%"></a>
       </div>
       <div class="test col-md-2 mt-4 pt-3">
 
-        <a href="index.html">
+        <a href="index.php">
           <h2 style="font-weight:600;">奇多喵合作社</h2>
         </a>
 
@@ -60,7 +71,7 @@
 
           <ul>
             <li class="nav-item me-3">
-              <a href="index.html">回首頁</a>
+              <a href="index.php">回首頁</a>
               <div class="unloading-bar"></div>
               <div class="loading-bar"></div>
             </li>
@@ -155,118 +166,64 @@
   </header>
 
   <!-- ---- -->
-  <div class="container-fluid">
-    <div class="row d-flex main">
-      <div class="col-5 aside">
+  <div class="container">
+    <div class="d-flex main flex-wrap">
+      <div class="box">
+        <h3 class="h3">&nbsp;幼貓照護指南：啟蒙與關愛的開始</h3>
+        <a href="./articles/articles_1.php"><img class="pt-3" src="./img/kitten.jpg" alt="" width="375px"
+            height="300px"></a>
+
+        <a href="./articles/articles_1.php"><input class="btn btn-warning mt-3" type="submit" value="觀看文章"></a>
 
       </div>
+      <div class="box">
+        <h3 class="h3">&nbsp;成貓照護指南：健康與活力的秘訣</h3>
+        <a href="./articles/articles_2.php"><img class="pt-3" src="./img/adult.jpg" alt="" width="375px" height="300px"></a>
 
-      <div class="col-6 section ms-5 ps-5">
-        <br>
-        <div class="box mt-5">
-          <h3 class="h3">&nbsp;起源</h3>
-          <p id="origin">
+        <a href="./articles/articles_2.php"><input class="btn btn-warning mt-3" type="submit" value="觀看文章"></a>
 
-            奇多喵商城的誕生源自一位極為熱愛貓咪的女生，Miss
-            Lee。她和她的貓咪一同冒險，卻發現市面上的貓咪商品總是缺乏趣味。於是，她決定開創奇多喵商城，專注提供有趣又溫馨的貓咪商品，像是貓咪玩偶、趣味窩等。這裡不僅是一個購物天堂，更是貓奴們分享愛貓心得的幸福樂園。李小姐以奇多喵商城為平台，讓更多貓奴找到滿滿的愛與喜悅，讓每一隻貓咪都過上充滿趣味的生活。
-          </p>
-        </div>
-
-        <div class="box mt-5 pt-5">
-          <h3 class="h3">&nbsp;目標</h3>
-          <p id="cheetos">
-
-            奇多喵商城的團隊目標是在貓奴社群中建立堅實的信任和喜愛，成為貓咪商品的領先品牌。我們將透過提供獨特有趣的商品、貼心的客戶服務以及滿足各類貓奴需求的商品線，不斷擴大產品範疇，提升品牌影響力。同時，我們致力於建立一個充滿愛心、互助和尊重的工作環境，使每位團隊成員都能在這個大家庭中茁壯成長。我們的使命是讓每一位貓奴都能在奇多喵商城找到滿滿的愛和快樂。
-          </p>
-          <img id="cheetos" src="./img/cheetos8.jpg" alt="" height="400px" class="mt-5">
-          <div class="box mt-5">
-            <h3 class="h3">&nbsp;店貓－奇多（Cheetos） </h3>
-            <p>
-
-              奇多，一隻兩歲半的孟加拉豹貓，是個小男生。他的名字源自奇多餅乾，就像餅乾一樣，奇多充滿活力和甜蜜，擁有美麗的斑點和親人的性格。他是我們的快樂夥伴，帶來無盡的歡樂。 🐾🍪
-
-            </p>
-
-          </div>
-
-          <div class="col-1"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="modal" id="myModal">
-    <div class="modal-dialog">
-      <div class="modal-content">
-
-        <!-- Modal Header -->
-        <div class="modal-header">
-          <h4 class="modal-title">會員登入</h4>
-          <img src="./img/logo1.png" alt="" width="60px">
-          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-        </div>
-
-        <!-- Modal body -->
-        <div class="modal-body">
-          <!-- 插入程式碼要有頭跟END，方便日後維護及辨識 -->
-          <!-- Modal body container.. -->
-          <div class="container mt-3">
-
-
-            <form action="/action_page.php">
-
-              <div class="row">
-                <div class="col-12">
-                  <div class="mb-3">
-                    <label for="price">帳號:</label>
-                    <input type="text" class="form-control" id="acc" placeholder="Enter acc" name="acc">
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-12">
-                  <div class="mb-3">
-                    <label for="unit">密碼:</label>
-                    <input type="password" class="form-control" id="pw" placeholder="Enter password" name="pw">
-                  </div>
-                </div>
-              </div>
-
-              <div class="row mt-5">
-                <div class="col-12">
-                  <div class="mb-3">
-                    <div class="d-flex gap-2">
-                      <button type="reset" class="btn btn-primary btn-secondary col-6">重置</button>
-                      <button type="submit" class="btn btn-primary btn-warning  col-6">送出</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-        <!-- Modal body container end -->
-
-
-        <!-- Modal footer -->
-        <!-- <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-                </div> -->
 
       </div>
-    </div>
-  </div>
-  <div class="modal" id="myModal-2">
-    <div class="modal-dialog">
+      <div class="box">
+        <h3 class="h3">&nbsp;老貓照護指南：柔情伴隨，溫馨陪伴</h3>
+        <a href="./articles/articles_3.php"><img class="pt-3" src="./img/cat4.jpg" alt="" width="375px" height="300px"></a>
 
-      <img src="./img/logo1.png" alt="" width="120%">
+        <a href="./articles/articles_3.php"><input class="btn btn-warning mt-3" type="submit" value="觀看文章"></a>
 
-      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+
+      </div>
+      <div class="box">
+        <h3 class="h3">&nbsp;從幼到老：貓咪生命的三個重要階段</h3>
+        <a href="./articles/articles_4.php"><img class="pt-3" src="./img/cat11.webp" alt="" width="375px" height="300px"></a>
+
+        <a href="./articles/articles_4.php"><input class="btn btn-warning mt-3" type="submit" value="觀看文章"></a>
+
+
+      </div>
+      <div class="box">
+        <h3 class="h3">&nbsp;探索貓咪的時光隧道</h3>
+        <a href="./articles/articles_5.php"><img class="pt-3" src="./img/cat2.jpeg" alt="" width="375px" height="300px"></a>
+
+        <a href="./articles/articles_5.php"><input class="btn btn-warning mt-3" type="submit" value="觀看文章"></a>
+
+      </div>
+      <div class="box">
+        <h3 class="h3">&nbsp;貓咪的皮膚護理學問</h3>
+        <a href="./articles/articles_6.php"><img class="pt-3" src="./img/cat3.webp" alt="" width="375px" height="300px"></a>
+
+        <a href="./articles/articles_6.php"><input class="btn btn-warning mt-3" type="submit" value="觀看文章"></a>
+
+      </div>
 
     </div>
   </div>
 
+  <?php
+include "./inc/login.php"
+?>
+  
 
-  <footer class="footer" id="footer">
+  <footer class="footer " id="footer">
     <div class="container-fluid">
       <div class="row" style="padding-top:35px">
 
@@ -304,46 +261,46 @@
         <div class=" mt-5 col-md-5 col" style="border-left:5px solid white;margin-left:-5px">
           <ul class="pages">
             <li>
-              <a class="footer-header" href="#">關於我們</a>
+              <a class="footer-header" href="./aboutUs.php#">關於我們</a>
             </li>
             <li>
-              <a href="#">起源</a>
+              <a href="./aboutUs.php#">起源</a>
             </li>
             <li>
-              <a href="#origin">目標</a>
+              <a href="./aboutUs.php#origin">目標</a>
             </li>
             <li>
-              <a href="#cheetos">店貓－奇多（Cheetos）</a>
+              <a href="./aboutUs.php#cheetos">店貓－奇多（Cheetos）</a>
             </li>
 
           </ul>
 
           <ul class="pages">
             <li>
-              <a class="footer-header" href="./articles.html#">貓咪文章</a>
+              <a class="footer-header" href="#">貓咪文章</a>
             </li>
             <li>
-              <a class="" href="./articles.html#">幼貓</a>
+              <a class="" href="#">幼貓</a>
             </li>
             <li>
-              <a class="" href="./articles.html#">成貓</a>
+              <a class="" href="#">成貓</a>
             </li>
             <li>
-              <a class="" href="./articles.html#">老貓</a>
+              <a class="" href="#">老貓</a>
             </li>
           </ul>
           <ul class="pages">
             <li>
-              <a class="footer-header" href="./index.html#store">購物商城</a>
+              <a class="footer-header" href="./index.php#store">購物商城</a>
             </li>
             <li>
-              <a class="" href="./index.html#store">食物</a>
+              <a class="" href="./index.php#store">食物</a>
             </li>
             <li>
-              <a class="" href="./index.html#store">玩具</a>
+              <a class="" href="./index.php#store">玩具</a>
             </li>
             <li>
-              <a class="" href="articles.html">生活用品</a>
+              <a class="" href="./index.php#store">生活用品</a>
             </li>
           </ul>
           <ul class="pages">
@@ -379,4 +336,4 @@
   </div>
 </body>
 
-</html>
+  </html>
