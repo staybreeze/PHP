@@ -83,8 +83,9 @@ include "../inc/header_article.php"
   </div>
 
   <?php
-include "../inc/login.php"
+include "../inc/login_article.php"
 ?>
+
 
   <?php
 include "../inc/footer_article.php"
