@@ -32,9 +32,9 @@ include_once "../api/connect.php";
     }
 
   
-    h3>p {
-      font-size: 25px;
-      line-height: 50px;
+    .box>p {
+      font-size: 20px;
+      line-height: 40px;
     }
 
     .footer{

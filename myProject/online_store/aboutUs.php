@@ -24,17 +24,16 @@ include_once "./api/connect.php";
     }
 
     .main {
-      height: 130vh;
+      height: 140vh;
     }
 
     .h3 {
       border-left: 10px solid brown;
     }
 
-
-    h3>p {
+    .box>p {
       font-size: 20px;
-      line-height: 30px;
+      line-height: 40px;
     }
 
     .footer {
