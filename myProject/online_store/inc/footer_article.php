@@ -84,10 +84,10 @@
               data-bs-target="#demo">會員專區</a>
             </li>
             <li>
-              <a href="">加入會員</a>
+            <a href="../add.php">加入會員</a>
             </li>
             <li>
-              <a href="">修改密碼</a>
+              <a href="" data-bs-toggle="modal" data-bs-target="#myModal">修改密碼</a>
             </li>
             <li>
               <a href="">訂單查詢</a>
