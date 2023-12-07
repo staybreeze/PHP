@@ -16,7 +16,7 @@
         <div class="container mt-3">
 
 
-        <form action="../api/login.php" method="post">
+        <form action="./api/login.php" method="post">
             <?php
             if (isset($_GET['error'])) {
               echo "<span style='color:red'>";
@@ -72,7 +72,7 @@
   <div class="modal-dialog">
 
     <img src="./img/logo1.png" alt="" width="120%">
-    <img src="../img/logo1.png" alt="" width="120%">
+    <!-- <img src="../img/logo1.png" alt="" width="120%"> -->
 
     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
 

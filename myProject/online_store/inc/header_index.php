@@ -42,7 +42,7 @@
 
               <?php
               if (isset($_SESSION['user'])) {
-                echo "<span> <a href='../api/logout.php'>登出</a></span>
+                echo "<span> <a href='./api/logout.php'>登出</a></span>
             <div class='unloading-bar'></div>
             <div class='loading-bar'></div>
        ";
@@ -102,7 +102,7 @@
               }
 
               ?>
-              <form action="../api/login.php" method="post">
+              <form action="./api/login.php" method="post">
                 <?php
                 if (!isset($_SESSION['user'])) {
                 echo '
@@ -149,7 +149,7 @@
 
 
         
-                  echo "<a href='../member.php' class='btn btn-secondary mt-4 col-7 mx-2'>修改會員資料</a>";
+                  echo "<a href='./member.php' class='btn btn-secondary mt-4 col-7 mx-2'>修改會員資料</a>";
                  
                         echo "<a href='./api/logout.php' class='btn btn-warning mt-4 col-7 mx-2'>登出</a>";
                 }

@@ -1,5 +1,6 @@
 <?php 
-include_once "./api/connect.php";
+// include_once "./api/connect.php";
+include_once "./api/db.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -173,7 +174,7 @@ include "./inc/goods.php"
  
 
 <?php
-include "./inc/login.php"
+include "./inc/login_form.php"
 ?>
   
   <?php

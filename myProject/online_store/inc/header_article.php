@@ -68,7 +68,7 @@
             <!-- Modal body -->
             <div class="modal-body">
             <!-- 插入程式碼要有頭跟END，方便日後維護及辨識 -->
-            <!-- Modal body container.. -->
+            <!-- Modal body container. -->
             <div class="container mt-3">
 
               <?php
@@ -103,7 +103,7 @@
 
                     </div>
                   </div>
-                  <a href="./add.php" style="text-align:left;text-decoration:underline;color:cadetblue" class="ms-4">加入會員</a>
+                  <a href="../add.php" style="text-align:left;text-decoration:underline;color:cadetblue" class="ms-4">加入會員</a>
                 </div>
 
                 <div class="row mt-5">
@@ -128,7 +128,7 @@
         
                   echo "<a href='../member.php' class='btn btn-secondary mt-4 col-7 mx-2'>修改會員資料</a>";
                  
-                        echo "<a href='./api/logout.php' class='btn btn-warning mt-4 col-7 mx-2'>登出</a>";
+                        echo "<a href='../api/logout.php' class='btn btn-warning mt-4 col-7 mx-2'>登出</a>";
                 }
           ?>
               </div>

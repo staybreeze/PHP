@@ -5,7 +5,7 @@
       <!-- Modal Header -->
       <div class="modal-header">
         <h4 class="modal-title">會員登入</h4>
-        <img src="./img/logo1.png" alt="" width="60px">
+        <img src="../img/logo1.png" alt="" width="60px">
         <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
       </div>
 
@@ -40,7 +40,7 @@
                   <input type="password" class="form-control" id="pw" placeholder="Enter password" name="pw">
                 </div>
               </div>
-                          <a href="./add.php" style="padding-left:0px;text-decoration:underline;color:cadetblue" class="ms-4">加入會員</a>
+                          <a href="../add.php" style="padding-left:0px;text-decoration:underline;color:cadetblue" class="ms-4">加入會員</a>
                 </div>
             </div>
 
@@ -71,7 +71,7 @@
 <div class="modal" id="myModal-2">
   <div class="modal-dialog">
 
-    <img src="./img/logo1.png" alt="" width="120%">
+    <!-- <img src="./img/logo1.png" alt="" width="120%"> -->
     <img src="../img/logo1.png" alt="" width="120%">
 
     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>

@@ -75,7 +75,7 @@ include "./inc/header_aboutUs_articles.php"
                   // $user = $pdo->query($sql)->fetch();
                   $user=find('users',['acc'=>"{$_SESSION['user']}"]);
               ?>
-           <form action="../api/update.php" method="post" class="col-4 m-auto pt-3">
+           <form action="./api/update.php" method="post" class="col-4 m-auto pt-3">
                       <div class="input-group my-1">
                           <label class="col-4  input-group-text">帳號:</label>
                           <input class="form-control" type="text" name="acc" id="acc" value="<?= $user['acc']; ?>">
@@ -102,7 +102,7 @@ include "./inc/header_aboutUs_articles.php"
                           <input class="btn btn-primary mx-2 mt-5" type="submit" value="更新"  onclick="submitInnerData()">
                           <input class="btn btn-success mx-2 mt-5" type="reset" value="重置">
                           <!-- 比較進階的做法 -->
-                          <input class="btn btn-danger mx-2 mt-5" type="button" value="刪除" onclick="location.href='../api/del_user.php?id=<?=$user['id'];?>'">
+                          <input class="btn btn-danger mx-2 mt-5" type="button" value="刪除" onclick="location.href='./api/del_user.php?id=<?=$user['id'];?>'">
                       </div>
                       <a href='./api/logout.php' class='btn btn-warning mt-4 col-9 mx-2'>登出</a>
         </form>
@@ -191,16 +191,16 @@ include "./inc/header_aboutUs_articles.php"
         <div class=" mt-5 col-md-5 col" style="border-left:5px solid white;margin-left:-5px">
           <ul class="pages">
             <li>
-              <a class="footer-header" href="#">關於我們</a>
+              <a class="footer-header" href="./aboutUs.php#">關於我們</a>
             </li>
             <li>
-              <a href="#">起源</a>
+              <a href="./aboutUs.php#">起源</a>
             </li>
             <li>
-              <a href="#origin">目標</a>
+              <a href="./aboutUs.php#origin">目標</a>
             </li>
             <li>
-              <a href="#cheetos">店貓－奇多（Cheetos）</a>
+              <a href="./aboutUs.php#cheetos">店貓－奇多（Cheetos）</a>
             </li>
 
           </ul>
