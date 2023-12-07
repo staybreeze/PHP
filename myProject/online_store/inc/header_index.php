@@ -1,17 +1,17 @@
 <header class=" h-11 bg-gray container-fluid">
   <div class="row bg-gray">
-    <div class="test col-md-2 ms-3 logo-area">
+    <div class="test col-xxl-2 col-xl-6 col-12 ms-3 logo-area">
       <a href="index.php" data-bs-toggle="modal" data-bs-target="#myModal-2">
         <img src="./img/logo1.png" alt="" width="85%" height="100%"></a>
     </div>
-    <div class="test col-md-2 mt-4 pt-3">
+    <div class="test col-xxl-2 col-xl-6 col-12 mt-4 pt-3 header-title">
 
       <a href="index.php">
         <h2 style="font-weight:600;">奇多喵合作社</h2>
       </a>
 
     </div>
-    <div class="col-md-4 test-1 pt-5">
+    <div class="col-xxl-4 col-xl-12 col-12 test-1 pt-5 header-group">
       <div class="page-link ">
 
         <ul>
@@ -64,7 +64,7 @@
 
     </div>
 
-    <div class="col-md-1 pt-4 test" style="margin-top:8px;margin-left:37px">
+    <div class="col-xxl-1 col-xl-2 col-2 pt-4 test" style="margin-top:8px;margin-left:37px">
       <a class="shopping-cart-a" target="_blank" href="">
         <i class="fa-sharp fa-solid fa-cart-shopping shopping-cart fa-l" style="  font-size: 2em;"></i>
         <p class="mt-1 shopping-cart-p">Buy it !</p>
@@ -73,7 +73,7 @@
     </div>
 
 
-    <div class="test col-md-1 pt-4 " style="margin-top:8px;margin-left:37px">
+    <div class="test col-xxl-1 col-xl-2 col-2 pt-4 " style="margin-top:8px;margin-left:37px">
 
       <div class="offcanvas offcanvas-end" id="demo">
         <div class="offcanvas-header">
@@ -169,7 +169,7 @@
       </div>
       </button>
     </div>
-    <div class="col-md-1 test pt-4" style="margin-top:20px;margin-left:37px">
+    <div class="col-xxl-1 col-xl-2 col-2 test pt-4" style="margin-top:20px;margin-left:37px">
       <form class="d-flex">
         <input class="search-wrapper me-2 myInput " type="text" placeholder="Search">
         <button class="btn btn-primary rounded-pill btn-bg" style="width:130px" type="button">Search</button>

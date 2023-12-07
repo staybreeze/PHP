@@ -15,7 +15,11 @@ include_once "./api/db.php";
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="./css/css.css">
+    <link rel="stylesheet" media="screen and (max-width: 1100px)" href="./css/smallscreen.css">
+<link rel="stylesheet" media="screen and (max-width: 1400px)" href="./css/middlescreen.css">
+<link rel="stylesheet" media="screen and (max-width:1899px)" href="./css/2nd_screen.css">
+<link rel="stylesheet" media="screen and (min-width: 1900px)" href="./css/bigscreen.css">
+
   <style>
 
   </style>
@@ -27,7 +31,7 @@ include_once "./api/db.php";
 include "./inc/header_index.php"
 ?>
   <!-- ---- -->
-  <div class="contaainer" style="background-color: 13304a;" id="carousel">
+  <div class="contaainer caroisel" style="background-color: 13304a;" id="carousel">
     <!-- data-bs-ride="carousel" 使用 自動輪播功能 -->
     <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">

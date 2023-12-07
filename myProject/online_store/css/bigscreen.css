@@ -209,6 +209,11 @@
     color: #fff; */
 
   }
+  @media only screen and (max-width: 1000px) {
+    .footer {
+      background-color: #fe302f;
+    }
+  }
 footer> .row{
   background-color: rgb(107, 62, 2)
 }
@@ -574,3 +579,7 @@ margin-top:7px;
 /* footer .row>.col{
   border:5px solid black;
 } */
+
+.join-us{
+  color:#ffc94a;font-size: 55px;font-weight:bolder;border:3px solid#ffb71b;width:150px;height:180px;margin-top:60px;margin-left:35px
+}
