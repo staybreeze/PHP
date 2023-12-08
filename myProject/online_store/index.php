@@ -19,9 +19,9 @@ include_once "./api/db.php";
     <!-- <link rel="stylesheet" media="screen and (max-width: 800px)" href="./css/6th_screen.css"> -->
     <!-- <link rel="stylesheet" media="screen and (max-width  : 1200px)" href="./css/5th_screen.css"> -->
     <!-- <link rel="stylesheet" media="screen and (max-width: 1200px)" href="./css/smallscreen.css"> -->
-<link rel="stylesheet" media="screen and (max-width: 1400px)" href="./css/small_screen.css">
-<link rel="stylesheet" media="screen and (max-width:1899px)" href="./css/middle_screen.css">
-<link rel="stylesheet" media="screen and (min-width: 1900px)" href="./css/big_screen.css">
+<link rel="stylesheet" media="screen and (max-width: 1000px)" href="./css/small_screen.css">
+<link rel="stylesheet" media="screen and (max-width:1600px)" href="./css/middle_screen.css">
+<link rel="stylesheet" media="screen and (min-width: 1600px)" href="./css/big_screen.css">
 
   <style>
 

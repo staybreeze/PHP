@@ -209,7 +209,7 @@ width:350px;
 
   footer {
     position: relative;
-    height: 140vh;
+    height: 65vh;
     
     background-color: rgb(107, 62, 2);
     /* padding: 30px 7px 5px 5px;
@@ -614,3 +614,4 @@ nav{
 height:3vh;
 position: fixed;
 }
+

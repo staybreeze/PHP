@@ -56,7 +56,7 @@
     transition: .4s
   }
 
-  header .page-link>ul>li>a {
+  header.page-link>ul>li>a {
     text-decoration: none;
     color: #fff;
     transition: .4s;
@@ -86,12 +86,12 @@
 
 
 
-  header .page-link li:hover {
+  header  .page-link li:hover {
     cursor: pointer
   }
 
-  header .page-link li:hover a,
-  header .page-link li:hover span {
+  header .menu-list  .page-link li:hover a,
+  header .menu-list  .page-link li:hover span {
     color: #ffb71b
   }
 .contact{
@@ -106,7 +106,7 @@ width:350px;
 
 
   @media screen and (max-width: 1400px) {
-    .header-group,.header-title,.buy-icon,.member-icon,.search-icon{
+    .header-group,.buy-icon,.member-icon,.search-icon{
       display: none;
     }}
   
@@ -180,8 +180,8 @@ width:350px;
   }
 
   .modal-dialog {
-    margin-left: 650px;
-    margin-top: 170px;
+    margin-left: 70px;
+    margin-top: 300px;
   }
 
 
@@ -220,7 +220,7 @@ width:350px;
 
   footer {
     position: relative;
-    height: 88vh;
+    height: 65vh;
     
     background-color: rgb(107, 62, 2);
     /* padding: 30px 7px 5px 5px;
@@ -235,11 +235,20 @@ width:350px;
     color: #fff; */
 
   }
-  @media screen and (min-width: 551px) {
+  @media screen and (min-width: 1200px) {
     .footer{
       height: 65vh;
     }}
 
+    @media screen and (max-width: 1200px) {
+      .footer{
+        height: 115vh;
+      }}
+
+      @media screen and (max-width: 550px) {
+        .footer{
+          height: 88vh;
+        }}
 
 footer> .row{
   background-color: rgb(107, 62, 2);
@@ -620,9 +629,9 @@ display: none
   width:170px;
   height:195px;
 position:absolute;
-top:90px;
+top:330px;
 /* left:800px; */
-right:180px;
+left:180px;
 }
 
 @media screen and (max-width: 780px) {
@@ -630,15 +639,33 @@ right:180px;
     display: none;
   }}
 
+  @media screen and (max-width: 1200px) {
+    .join-us{
+      top:330px;
+      /* left:800px; */
+      left:270px;
+    }}
+
+
+
 .header-title{
   position: absolute;
-  top:0px
+  top:40px;
+  left:200px
 }
 
 
+.header-title2{
+  position: absolute;
+  top:40px;
+  left:500px
+}
 
-.header-title{
-  margin-left:100px;
+
+.header-title3{
+  position: absolute;
+  top:28px;
+  left:550px
 }
 
 .header-group{
@@ -651,6 +678,7 @@ right:180px;
 }
 header{
   height:20px;
+  position: relative;
 }
 
 .logo2{
@@ -659,3 +687,100 @@ header{
   width:125px;
   height:104px;
 }
+
+/*
+選單線
+*/
+.line {
+  width: 24px;
+  height: 24px;
+  /* background: rgb(216, 162, 90); */
+  cursor: pointer;
+  display: block;
+  padding: 16px;
+  padding-top:5px;
+  position: fixed;
+  z-index: 2;
+}
+.line .menu,
+.line .menu::before,
+.line .menu::after {
+  background: white;
+  content: '';
+  display: block;
+  height: 3px;
+  position: absolute;
+  transition: background ease .3s, top ease .3s .3s, transform ease .3s;
+  width: 30px;
+}
+.line .menu {
+  left: 400px;
+  top: -48px;
+}
+
+.line .menu::before {
+  top: -6px;
+}
+
+.line .menu::after {
+  top: 6px;
+}
+/*
+點選選單變叉叉
+*/
+#menu:checked + .line .menu {
+  background: transparent;
+}
+
+#menu:checked + .line .menu::before {
+  transform: rotate(45deg);
+}
+
+#menu:checked + .line .menu::after {
+  transform: rotate(-45deg);
+}
+
+#menu:checked + .line .menu::before,
+#menu:checked + .line .menu::after {
+  top: 0;
+  transition: top ease .3s, transform ease .3s .3s;
+}
+
+/*
+選單開合
+*/
+#menu:checked ~ .menu-list {
+  width: 620px;
+}
+
+.menu-list {
+  width: 0px;
+  height: 20vh;
+  background: #12304a;
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, .1); */
+  padding-top: 70px;
+  margin-top: 3px;
+  position: fixed;
+  z-index: 1;
+  transition: all .6s;
+  overflow: hidden;
+}
+/*
+選單向外推
+*/
+.menu-list ul {
+  list-style: none;
+  padding-top:10px;
+  padding: 0;
+}
+.menu-list ul>li{
+  display:block;
+  width:100px;
+}
+/*
+隱藏核許框
+*/
+input#menu {
+display: none;
+}
+
