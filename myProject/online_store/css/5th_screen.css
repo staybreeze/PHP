@@ -93,12 +93,12 @@
   header .page-link li:hover span {
     color: #ffb71b
   }
-/* .contact{
+.contact{
   position: absolute;
 width:350px;
-  left:150px;
-  /* top:50px; */
-
+  left:230px;
+  top:40px;
+}
   .font-awesome{
     position: absolute;
     right:50px;
@@ -208,7 +208,7 @@ width:350px;
 
   footer {
     position: relative;
-    height: 80vh;
+    height: 10vh;
     
     background-color: rgb(107, 62, 2);
     /* padding: 30px 7px 5px 5px;

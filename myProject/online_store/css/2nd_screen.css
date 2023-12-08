@@ -94,11 +94,19 @@
     color: #ffb71b
   }
 .contact{
-  position: absolute;
-  top:50px;
+  /* position: absolute; */
+  top:300px;
 width:350px;
-  right:350px
+  left:350px
 }
+@media screen and (max-width: 550px) {
+  .contact{
+    display: none;
+  }}
+
+
+
+
   .font-awesome{
     position: absolute;
     right:50px;
@@ -208,7 +216,7 @@ width:350px;
 
   footer {
     position: relative;
-    height: 80vh;
+    height: 90vh;
     
     background-color: rgb(107, 62, 2);
     /* padding: 30px 7px 5px 5px;
@@ -223,6 +231,11 @@ width:350px;
     color: #fff; */
 
   }
+  @media screen and (min-width: 551px) {
+    .footer{
+      height: 65vh;
+    }}
+
 
 footer> .row{
   background-color: rgb(107, 62, 2);
@@ -585,6 +598,10 @@ height:50%;
 width:8%;
 margin-top:7px;
   }
+  @media screen and (max-width: 1400px) {
+    .logo-area{
+      width:25%;
+    }}
 
 /* footer .row>.col{
   border:5px solid black;
@@ -598,10 +615,16 @@ margin-top:7px;
   width:170px;
   height:195px;
 position:absolute;
-top:350px;
+top:90px;
 /* left:800px; */
-right:100px;
+right:180px;
 }
+
+@media screen and (max-width: 780px) {
+  .join-us{
+    display: none;
+  }}
+
 .header-title{
   position: absolute;
   top:0px

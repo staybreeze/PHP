@@ -93,12 +93,12 @@
   header .page-link li:hover span {
     color: #ffb71b
   }
-/* .contact{
+.contact{
   position: absolute;
 width:350px;
-  left:150px;
-  /* top:50px; */
-
+  left:100px;
+  top:450px;
+}
   .font-awesome{
     position: absolute;
     right:50px;
@@ -598,8 +598,8 @@ margin-top:7px;
   width:115px;
   height:130px;
 position:absolute;
-top:470px;
-left:580px;
+top:100px;
+left:330px;
 }
 .header-title{
   position: absolute;
