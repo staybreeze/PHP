@@ -1,8 +1,9 @@
-<header class=" h-11 bg-gray container-fluid">
+<header class="h-11 bg-gray container-fluid header">
   <div class="row bg-gray">
+
     <div class="test col-xxl-2 col-xl-6 col-12 ms-3 logo-area">
       <a href="index.php" data-bs-toggle="modal" data-bs-target="#myModal-2">
-        <img src="./img/logo1.png" alt="" width="85%" height="100%"></a>
+        <img class="logo" src="./img/logo1.png" alt="" width="85%" height="100%"></a>
     </div>
     <div class="test col-xxl-2 col-xl-6 col-12 mt-4 pt-3 header-title">
 
@@ -64,7 +65,7 @@
 
     </div>
 
-    <div class="col-xxl-1 col-xl-2 col-2 pt-4 test" style="margin-top:8px;margin-left:37px">
+    <div class="col-xxl-1 col-xl-2 col-2 pt-4 test buy-icon" style="margin-top:8px;margin-left:37px">
       <a class="shopping-cart-a" target="_blank" href="">
         <i class="fa-sharp fa-solid fa-cart-shopping shopping-cart fa-l" style="  font-size: 2em;"></i>
         <p class="mt-1 shopping-cart-p">Buy it !</p>
@@ -73,7 +74,7 @@
     </div>
 
 
-    <div class="test col-xxl-1 col-xl-2 col-2 pt-4 " style="margin-top:8px;margin-left:37px">
+    <div class="test col-xxl-1 col-xl-2 col-2 pt-4  member-icon" style="margin-top:8px;margin-left:37px">
 
       <div class="offcanvas offcanvas-end" id="demo">
         <div class="offcanvas-header">
@@ -105,7 +106,7 @@
               <form action="./api/login.php" method="post">
                 <?php
                 if (!isset($_SESSION['user'])) {
-                echo '
+                  echo '
                 <div class="row">
 
                   <div class="col-12">
@@ -143,21 +144,21 @@
        
     
          ';
-                }else{
+                } else {
 
-                  echo "歡迎光臨！".$_SESSION['user']."💛";
+                  echo "歡迎光臨！" . $_SESSION['user'] . "💛";
 
 
-        
+
                   echo "<a href='./member.php' class='btn btn-secondary mt-4 col-7 mx-2'>修改會員資料</a>";
-                 
-                        echo "<a href='./api/logout.php' class='btn btn-warning mt-4 col-7 mx-2'>登出</a>";
+
+                  echo "<a href='./api/logout.php' class='btn btn-warning mt-4 col-7 mx-2'>登出</a>";
                 }
-          ?>
-              </div>
-              </form>
-          <!-- Modal body container end -->
-      
+                ?>
+            </div>
+            </form>
+            <!-- Modal body container end -->
+
           </div>
         </div>
       </div>
@@ -169,7 +170,7 @@
       </div>
       </button>
     </div>
-    <div class="col-xxl-1 col-xl-2 col-2 test pt-4" style="margin-top:20px;margin-left:37px">
+    <div class="col-xxl-1 col-xl-2 col-2 test pt-4 search-icon" style="margin-top:20px;margin-left:37px">
       <form class="d-flex">
         <input class="search-wrapper me-2 myInput " type="text" placeholder="Search">
         <button class="btn btn-primary rounded-pill btn-bg" style="width:130px" type="button">Search</button>
@@ -178,3 +179,11 @@
   </div>
 </header>
 
+<header class="h-11 bg-gray container-fluid header2">
+
+
+
+    <img class="logo2" src="./img/logo1.png" alt="">
+
+
+              </header>

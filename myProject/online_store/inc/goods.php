@@ -1,5 +1,5 @@
 <section class="section-products" id="store">
-    <div class="container">
+    <div class="container goods">
         <div class="row justify-content-center text-center">
             <div class="col-md-8 col-lg-6">
                 <div class="header">

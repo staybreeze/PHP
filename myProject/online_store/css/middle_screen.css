@@ -23,6 +23,7 @@
   .h-11 {
     height: 12.5vh;
   }
+  
 
   .myInput {
     border: none;
@@ -97,15 +98,18 @@
   /* position: absolute; */
   top:300px;
 width:350px;
-  left:350px
+  left:400px
 }
-@media screen and (max-width: 550px) {
-  .contact{
-    display: none;
-  }}
 
 
+  
 
+
+  @media screen and (max-width: 1400px) {
+    .header-group,.header-title,.buy-icon,.member-icon,.search-icon{
+      display: none;
+    }}
+  
 
   .font-awesome{
     position: absolute;
@@ -600,7 +604,8 @@ margin-top:7px;
   }
   @media screen and (max-width: 1400px) {
     .logo-area{
-      width:25%;
+   
+display: none
     }}
 
 /* footer .row>.col{
@@ -630,13 +635,7 @@ right:180px;
   top:0px
 }
 
-.carousel{
-  margin-top:0px;}
 
-@media screen and (max-width: 1400px) {
-  .carousel{
-    margin-top:280px;
-  }}
 
 .header-title{
   margin-left:100px;
@@ -645,4 +644,18 @@ right:180px;
 .header-group{
 
   margin-left:200px;
+}
+
+.header{
+  display: none;
+}
+header{
+  height:20px;
+}
+
+.logo2{
+  padding-top:8px;
+  padding-left:25px;
+  width:125px;
+  height:104px;
 }

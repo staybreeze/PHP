@@ -94,19 +94,12 @@
     color: #ffb71b
   }
 .contact{
-  /* position: absolute; */
+  position: absolute;
   top:300px;
 width:350px;
-  left:350px
+  /* left:150px; */
+  /* display: none; */
 }
-@media screen and (max-width: 550px) {
-  .contact{
-    display: none;
-  }}
-
-
-
-
   .font-awesome{
     position: absolute;
     right:50px;
@@ -216,7 +209,7 @@ width:350px;
 
   footer {
     position: relative;
-    height: 88vh;
+    height: 140vh;
     
     background-color: rgb(107, 62, 2);
     /* padding: 30px 7px 5px 5px;
@@ -231,11 +224,6 @@ width:350px;
     color: #fff; */
 
   }
-  @media screen and (min-width: 551px) {
-    .footer{
-      height: 65vh;
-    }}
-
 
 footer> .row{
   background-color: rgb(107, 62, 2);
@@ -307,7 +295,6 @@ footer> .row{
 
 
 
-
   footer .pages li a {
     padding: 12px 0;
     display: block
@@ -317,6 +304,8 @@ footer> .row{
     footer .pages li a:hover {
       color: #ffc94a
     }
+
+
   }
 
 
@@ -594,14 +583,10 @@ color:#ffc94a;
 
   .logo-area{
 
-height:50%;
-width:8%;
+height:80%;
+width:15%;
 margin-top:7px;
   }
-  @media screen and (max-width: 1400px) {
-    .logo-area{
-      width:25%;
-    }}
 
 /* footer .row>.col{
   border:5px solid black;
@@ -615,34 +600,17 @@ margin-top:7px;
   width:170px;
   height:195px;
 position:absolute;
-top:90px;
-/* left:800px; */
-right:180px;
+/* top:100px; */
+/* left:465px; */
+/* right:100px; */
 }
-
-@media screen and (max-width: 780px) {
-  .join-us{
-    display: none;
-  }}
-
 .header-title{
   position: absolute;
   top:0px
 }
 
-.carousel{
-  margin-top:0px;}
 
-@media screen and (max-width: 1400px) {
-  .carousel{
-    margin-top:280px;
-  }}
-
-.header-title{
-  margin-left:100px;
-}
-
-.header-group{
-
-  margin-left:200px;
+nav{
+height:3vh;
+position: fixed;
 }
