@@ -114,7 +114,7 @@ width:350px;
   .font-awesome{
     position: absolute;
     right:50px;
-    top:45px;
+    top:80px;
   }
   .pages{
     /* position: absolute; */
@@ -219,7 +219,7 @@ width:350px;
   }
 
   footer {
-    position: relative;
+    /* position: relative; */
     height: 65vh;
     
     background-color: rgb(107, 62, 2);
@@ -657,15 +657,15 @@ left:180px;
 
 .header-title2{
   position: absolute;
-  top:40px;
-  left:500px
+  top:35px;
+  left:520px
 }
 
 
 .header-title3{
   position: absolute;
   top:28px;
-  left:550px
+  left:600px;
 }
 
 .header-group{
@@ -676,10 +676,10 @@ left:180px;
 .header{
   display: none;
 }
-header{
+/* header{
   height:20px;
-  position: relative;
-}
+  position: fixed;
+} */
 
 .logo2{
   padding-top:8px;
@@ -783,4 +783,5 @@ header{
 input#menu {
 display: none;
 }
+
 

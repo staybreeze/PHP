@@ -1,5 +1,5 @@
 
-<header class=" h-11 bg-gray container-fluid">
+<header class=" h-11 bg-gray container-fluid header">
     <div class="row bg-gray">
       <div class="test col-md-2 ms-3 logo-area">
         <a href="../index.php" data-bs-toggle="modal" data-bs-target="#myModal-2">
@@ -154,3 +154,90 @@
       </div>
     </div>
   </header>
+
+  <header class="h-11 bg-gray container-fluid header2 ">
+
+
+
+
+  <img class="logo2" src="../img/logo1.png" alt="">
+  <div class="header-title">
+
+    <a href="index.php">
+      <h2 style="font-weight:600;">奇多喵合作社</h2>
+    </a>
+
+  </div>
+
+  <div class="header-title2 ms-2 pb-2">
+
+  <a class="shopping-cart-a" target="_blank" href="">
+      <i class="fa-sharp fa-solid fa-cart-shopping shopping-cart fa-l" style="  font-size: 2em;"></i>
+      <p class=" shopping-cart-p ms-1">Buy it !</p>
+    </a>
+
+</div>
+
+
+
+<div class="header-title3 ms-2 pt-1">
+
+
+  
+  <?php
+
+
+
+if (isset($_SESSION['user'])) {
+  echo '<a href="../member.php"><i class="fa-regular fa-circle-user ms-3" style="font-size: 2em;"></i></a>';
+  
+  }else{
+    echo '<i class="fa-regular fa-circle-user ms-3" style="font-size: 2em;"  data-bs-toggle="modal" data-bs-target="#myModal"></i>';
+}
+?>
+  <p class="mt-1 me-5 shopping-cart-p">Menbership</p>
+</div>
+</button>
+</div>
+
+</div>
+
+
+  <nav class="nav-box">
+    <input type="checkbox" id="menu">
+    <label for="menu" class="line">
+      <div class="menu"></div>
+    </label>
+
+    <div class="menu-list">
+      <div class="page-link ">
+
+        <ul>
+        <li class="nav-item me-3">
+              <a href="../index.php" style="color:white">回首頁</a>
+              <div class="unloading-bar"></div>
+              <div class="loading-bar"></div>
+            </li>
+            <li class="nav-item me-3">
+              <a href="../articles.php" style="color:white">回上一頁</a>
+              <div class="unloading-bar"></div>
+              <div class="loading-bar"></div>
+            </li>
+            <?php
+              if (isset($_SESSION['user'])) {
+                echo "<li>
+                <span> <a href='../api/logout.php' style='color:white'>登出</a></span>
+            <div class='unloading-bar'></div>
+            <div class='loading-bar'></div>
+       </li>
+       ";}
+
+?>
+
+
+        </ul>
+
+      </div>
+  </nav>
+  
+</header>

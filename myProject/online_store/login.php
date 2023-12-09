@@ -62,10 +62,10 @@ include "./inc/header_aboutUs_articles.php"
         <div class="box mt-5 text-center">
 
 
-   <p class="mt-4" style="font-size:25px;font-weight:bold;text-align:center">會員註冊</p>
+   <p class="mt-4" style="font-size:25px;font-weight:bold;text-align:center">會員登入</p>
                     
       
-    <form action="./api/add_user.php" method="post" class="col-4 m-auto">
+    <form action="./api/login.php" method="post" class="col-4 m-auto">
         <div class="input-group my-1">
             <label class="col-4  input-group-text w-100">帳號:</label>
             <input class="form-control"  type="text" name="acc" id="acc">
@@ -74,18 +74,7 @@ include "./inc/header_aboutUs_articles.php"
             <label class="col-4  input-group-text w-100 mt-3">密碼:</label>
             <input class="form-control" type="password" name="pw" id="pw">
         </div>
-        <div class="input-group my-1">
-            <label class="col-4  input-group-text w-100 mt-3">姓名:</label>
-            <input class="form-control" type="text" name="name" id="name">
-        </div>
-        <div class="input-group my-1">
-            <label class="col-4  input-group-text w-100 mt-3">電子郵件:</label>
-            <input class="form-control" type="text" name="email" id="email">
-        </div>
-        <div class="input-group my-1">
-            <label class="col-4  input-group-text w-100 mt-3">居住地:</label>
-            <input class="form-control" type="text" name="address" id="address">
-        </div>
+
         <div>
             <input class="btn btn-primary mx-2 mt-4" type="submit" value="送出">
             <input class="btn btn-success mx-2 mt-4" type="reset" value="重置">

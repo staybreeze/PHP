@@ -14,7 +14,9 @@ include_once "../api/connect.php";
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="../css/css.css">
+    <link rel="stylesheet" media="screen and (max-width: 1000px)" href="../css/small_screen.css">
+<link rel="stylesheet" media="screen and (max-width:1600px)" href="../css/middle_screen.css">
+<link rel="stylesheet" media="screen and (min-width: 1600px)" href="../css/big_screen.css">
   <style>
  .aside {
       background-image: url(./img/18-2500x1667.jpg);

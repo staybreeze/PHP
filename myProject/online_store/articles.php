@@ -14,7 +14,9 @@ include_once "./api/connect.php";
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="./css/css.css">
+    <link rel="stylesheet" media="screen and (max-width: 1000px)" href="./css/small_screen.css">
+<link rel="stylesheet" media="screen and (max-width:1600px)" href="./css/middle_screen.css">
+<link rel="stylesheet" media="screen and (min-width: 1600px)" href="./css/big_screen.css">
   <style>
     .aside {
       background-image: url(./img/18-2500x1667.jpg);
@@ -22,9 +24,9 @@ include_once "./api/connect.php";
 
     }
 
-    .main {
+    /* .main {
       height: 105vh;
-    }
+    } */
 
     .h3 {
       border-left: 10px solid brown;
@@ -39,7 +41,7 @@ include_once "./api/connect.php";
     }
 
     .footer {
-      margin-top: 0px;
+      margin-top: 50px;
     }
 
     .box {
@@ -62,8 +64,8 @@ include "./inc/header_aboutUs_articles.php"
 
   <!-- ---- -->
   <div class="container">
-    <div class="d-flex main flex-wrap">
-      <div class="box">
+    <div class="d-flex flex-wrap row" >
+      <div class="col-md-8 col-lg-6  col-xl-4 mt-5">
         <h3 class="h3">&nbsp;幼貓照護指南：啟蒙與關愛的開始</h3>
         <a href="./articles/article_1.php"><img class="pt-3" src="./img/kitten.jpg" alt="" width="375px"
             height="300px"></a>
@@ -71,7 +73,7 @@ include "./inc/header_aboutUs_articles.php"
         <a href="./articles/article_1.php"><input class="btn btn-warning mt-3" type="submit" value="觀看文章"></a>
 
       </div>
-      <div class="box">
+      <div class="col-md-8 col-lg-6 col-xl-4 mt-5">
         <h3 class="h3">&nbsp;成貓照護指南：健康與活力的秘訣</h3>
         <a href="./articles/article_2.php"><img class="pt-3" src="./img/adult.jpg" alt="" width="375px" height="300px"></a>
 
@@ -79,15 +81,14 @@ include "./inc/header_aboutUs_articles.php"
 
 
       </div>
-      <div class="box">
+      <div class="col-md-8 col-lg-6 col-xl-4 mt-5">
         <h3 class="h3">&nbsp;老貓照護指南：柔情伴隨，溫馨陪伴</h3>
         <a href="./articles/article_3.php"><img class="pt-3" src="./img/cat4.jpg" alt="" width="375px" height="300px"></a>
 
         <a href="./articles/article_3.php"><input class="btn btn-warning mt-3" type="submit" value="觀看文章"></a>
 
-
-      </div>
-      <div class="box">
+        </div>
+      <div class="col-md-8 col-lg-6  col-xl-4 mt-5">
         <h3 class="h3">&nbsp;從幼到老：貓咪生命的三個重要階段</h3>
         <a href="./articles/article_4.php"><img class="pt-3" src="./img/cat11.webp" alt="" width="375px" height="300px"></a>
 
@@ -95,18 +96,19 @@ include "./inc/header_aboutUs_articles.php"
 
 
       </div>
-      <div class="box">
+      <div class="col-md-8 col-lg-6 col-xl-4 mt-5">
         <h3 class="h3">&nbsp;探索貓咪的時光隧道</h3>
         <a href="./articles/article_5.php"><img class="pt-3" src="./img/cat2.jpeg" alt="" width="375px" height="300px"></a>
 
         <a href="./articles/article_5.php"><input class="btn btn-warning mt-3" type="submit" value="觀看文章"></a>
 
       </div>
-      <div class="box">
+      <div class="col-md-8 col-lg-6 col-xl-4 mt-5">
         <h3 class="h3">&nbsp;貓咪的皮膚護理學問</h3>
         <a href="./articles/article_6.php"><img class="pt-3" src="./img/cat3.webp" alt="" width="375px" height="300px"></a>
 
         <a href="./articles/article_6.php"><input class="btn btn-warning mt-3" type="submit" value="觀看文章"></a>
+
 
       </div>
 
@@ -187,8 +189,12 @@ include "./inc/login_form.php"
         </div>
 
         <?php
+include "./inc/login_form.php"
+?>
+        <?php
       include "./inc/copyright.php"
       ?>
+      
 </body>
 
   </html>

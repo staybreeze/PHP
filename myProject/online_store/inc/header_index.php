@@ -193,114 +193,37 @@
 
   </div>
 
-  <div class="header-title2 ms-2 pb-2">
+  <div class="header-title2">
 
   <a class="shopping-cart-a" target="_blank" href="">
       <i class="fa-sharp fa-solid fa-cart-shopping shopping-cart fa-l" style="  font-size: 2em;"></i>
-      <p class=" shopping-cart-p ms-1">Buy it !</p>
+      <p class=" shopping-cart-p ps-1">Buy it !</p>
     </a>
 
 </div>
 
 
 
-<div class="header-title3 ms-2 pb-2">
-
-<div class="" style="margin-top:8px;margin-left:37px">
-
-<div class="offcanvas" id="demo">
-  <div class="offcanvas-header">
-    <h1 class="offcanvas-title">會員中心<img src="./img/logo1.png" alt="" width="60px"></h1>
-
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
-  </div>
-  <div class="offcanvas-body">
-    <div class="modal-header">
-      <h4 class="modal-title"></h4>
-
-
-    </div>
-
-    <!-- Modal body -->
-    <div class="modal-body">
-      <!-- 插入程式碼要有頭跟END，方便日後維護及辨識 -->
-      <!-- Modal body container.. -->
-      <div class="container mt-3">
-
-        <?php
-        if (isset($_GET['error'])) {
-          echo "<span style='color:red'>";
-          echo $_GET['error'];
-          echo "</span>";
-        }
-
-        ?>
-        <form action="./api/login.php" method="post">
-          <?php
-          if (!isset($_SESSION['user'])) {
-            echo '
-          <div class="row">
-
-            <div class="col-12">
-              <div class="input-group mb-3 mt-4">
-
-                <span class="input-group-text bold ms-3">帳號</span>
-                <input type="text" class="form-control" placeholder="Account123" name="acc">
-
-              </div>
-
-            </div>
-          </div>
-          <div class="row">
-            <div class="col">
-              <div class="input-group mb-3">
-                <span class="input-group-text bold ms-3">密碼</span>
-                <input type="password" class="form-control" placeholder="****" name="pw">
-
-              </div>
-            </div>
-            <a href="./add.php" style="text-align:left;text-decoration:underline;color:cadetblue" class="ms-4">加入會員</a>
-          </div>
-
-          <div class="row mt-5">
-            <div class="col-12 mt-1">
-              <div class="">
-                <div class="d-flex gap-2">
-                  <button type="reset" class="btn btn-primary btn-secondary col-6">重置</button>
-                  <button type="submit" class="btn btn-primary btn-warning  col-6">送出</button>
-                </div>
-              </div>
-            </div>
-          </div>
-           
- 
-
-   ';
-          } else {
-
-            echo "歡迎光臨！" . $_SESSION['user'] . "💛";
+<div class="header-title3 ms-2 pb-2 ps-3 pt-1">
 
 
 
-            echo "<a href='./member.php' class='btn btn-secondary mt-4 col-7 mx-2'>修改會員資料</a>";
+  
 
-            echo "<a href='./api/logout.php' class='btn btn-warning mt-4 col-7 mx-2'>登出</a>";
-          }
-          ?>
-      </div>
-      </form>
-      <!-- Modal body container end -->
+<?php
 
-    </div>
-  </div>
-</div>
-<div>
+if (isset($_SESSION['user'])) {
+  echo '<a href="./member.php"><i class="fa-regular fa-circle-user ms-3" style="font-size: 2em;"></i></a>';
+  
+  }else{
+    echo '<i class="fa-regular fa-circle-user ms-3" style="font-size: 2em;"  data-bs-toggle="modal" data-bs-target="#myModal"></i>';
+}
+?>
 
-  <i class="fa-regular fa-circle-user ms-3" style=" font-size: 2em;" data-bs-toggle="offcanvas" data-bs-target="#demo"></i>
+
 
   <p class="mt-1 me-5 shopping-cart-p">Menbership</p>
-</div>
-</button>
+
 </div>
 
 </div>

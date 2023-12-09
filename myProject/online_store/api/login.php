@@ -46,7 +46,7 @@ if (empty($_POST['acc']) || empty($_POST['pw'])) {
 if($res){
     $_SESSION['user']=$acc;
     header("location:../index.php");
-    echo 'test';
+
   
 }else{
     header('location:../index.php?error=帳號密碼錯誤');
