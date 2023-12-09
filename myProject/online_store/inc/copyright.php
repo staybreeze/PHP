@@ -1,8 +1,9 @@
-<a class="footer-header join-us pt-1 text-center"
+<<a class="footer-header pt-1 text-center join-us" 
        
         href="">Join Us!</a>
 
       </div>
+    
   </footer>
   <div class="copyright">
     <p>© WSL Web ALL Reserved.</p>

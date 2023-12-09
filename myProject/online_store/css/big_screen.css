@@ -194,7 +194,7 @@
   }
 
   footer {
-    /* position: relative; */
+    position: relative;
     height: 40vh;
     
     background-color: rgb(107, 62, 2);
@@ -343,7 +343,7 @@ footer> .row{
 
 
   .join-us:hover {
-
+    color:#ffc94a;
     -webkit-animation-name: fa-shake;
     animation-name: fa-shake;
     -webkit-animation-delay: var(--fa-animation-delay, 0s);
