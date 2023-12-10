@@ -16,7 +16,7 @@
 
           <ul>
             <li class="nav-item me-3">
-              <a href="index.php" style="color:white">回首頁</a>
+              <a href="./index.php" >回首頁</a>
               <div class="unloading-bar"></div>
               <div class="loading-bar"></div>
             </li>
@@ -205,7 +205,7 @@ if (isset($_SESSION['user'])) {
 
         <ul>
         <li class="nav-item me-3">
-              <a href="../index.php">回首頁</a>
+              <a href="./index.php">回首頁</a>
               <div class="unloading-bar"></div>
               <div class="loading-bar"></div>
             </li>

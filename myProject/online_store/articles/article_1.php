@@ -18,11 +18,7 @@ include_once "../api/connect.php";
 <link rel="stylesheet" media="screen and (max-width:1600px)" href="../css/middle_screen.css">
 <link rel="stylesheet" media="screen and (min-width: 1600px)" href="../css/big_screen.css">
   <style>
- .aside {
-      background-image: url(./img/18-2500x1667.jpg);
-      opacity: 0.9;
 
-    }
 
     .main {
       height: 100vh;

@@ -17,7 +17,7 @@
 
         <ul>
           <li class="nav-item me-3">
-            <a href="aboutUs.php" style="color:white">關於我們</a>
+            <a href="aboutUs.php">關於我們</a>
             <div class="unloading-bar"></div>
             <div class="loading-bar"></div>
           </li>
@@ -239,27 +239,27 @@ if (isset($_SESSION['user'])) {
       <div class="page-link ">
 
         <ul>
-          <li class="nav-item me-3" style="color:white">
+          <li class="nav-item me-3" >
             <a href="aboutUs.php">關於我們</a>
             <div class="unloading-bar"></div>
             <div class="loading-bar"></div>
           </li>
-          <li class="nav-item  me-3" style="margin-left:36px;color:white">
+          <li class="nav-item  me-3" style="margin-left:36px">
             <a href="./articles.php">文章</a>
             <div class="unloading-bar"></div>
             <div class="loading-bar"></div>
           </li>
-          <li class="nav-item me-3" style="margin-left:36px;color:white">
+          <li class="nav-item me-3" style="margin-left:36px">
             <a href="#store">商城</a>
             <div class="unloading-bar"></div>
             <div class="loading-bar"></div>
           </li>
-          <li class="nav-item me-3" style="margin-left:36px;color:white">
+          <li class="nav-item me-3" style="margin-left:36px">
             <span>聯絡我們</span>
             <div class="unloading-bar"></div>
             <div class="loading-bar"></div>
           </li>
-          <li class="nav-item" style="margin-left:36px;color:white">
+          <li class="nav-item" style="margin-left:36px">
 
 
             <a class="nav-link" data-bs-toggle="modal" data-bs-target="#myModal">

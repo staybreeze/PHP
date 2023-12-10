@@ -23,7 +23,6 @@
   .h-11 {
     height: 12.5vh;
   }
-  
 
   .myInput {
     border: none;
@@ -86,42 +85,24 @@
 
 
 
-  header  .page-link li:hover {
+  header .page-link li:hover {
     cursor: pointer
   }
 
-  header   .page-link li:hover a,
-  header  .page-link li:hover span {
+  header .page-link li:hover a,
+  header .page-link li:hover span {
     color: #ffb71b
   }
-.contact{
-  /* position: absolute; */
-  top:300px;
+/* .contact{
+  position: absolute;
 width:350px;
-  left:400px
-}
-
-
-@media screen and (min-width: 550px) {
-  .contact{
-    position: absolute;
-    top:300px;
-  width:350px;
-    left:250px
-  }}
-
-
-
-  @media screen and (max-width: 1400px) {
-    .header-group,.buy-icon,.member-icon,.search-icon{
-      display: none;
-    }}
-  
+  left:150px;
+  /* top:50px; */
 
   .font-awesome{
     position: absolute;
     right:50px;
-    top:80px;
+    top:45px;
   }
   .pages{
     /* position: absolute; */
@@ -187,8 +168,8 @@ width:350px;
   }
 
   .modal-dialog {
-    margin-left: 70px;
-    margin-top: 300px;
+    margin-left: 650px;
+    margin-top: 170px;
   }
 
 
@@ -227,7 +208,7 @@ width:350px;
 
   footer {
     position: relative;
-    height: 65vh;
+    height: 80vh;
     
     background-color: rgb(107, 62, 2);
     /* padding: 30px 7px 5px 5px;
@@ -242,22 +223,6 @@ width:350px;
     color: #fff; */
 
   }
-  @media screen and (min-width: 1200px) {
-    .footer{
-      height: 65vh;
-    }}
-
-    @media screen and (max-width: 1200px) {
-      .footer{
-        height: 85vh;
-      }}
-
-      @media screen and (max-width: 780px) {
-        .footer{
-          height: 68vh;
-        }}
-
-        
 
 footer> .row{
   background-color: rgb(107, 62, 2);
@@ -616,187 +581,33 @@ color:#ffc94a;
 
   .logo-area{
 
-height:50%;
-width:8%;
+height:80%;
+width:15%;
 margin-top:7px;
   }
-  @media screen and (max-width: 1400px) {
-    .logo-area{
-   
-display: none
-    }}
 
 /* footer .row>.col{
   border:5px solid black;
 } */
 
-
 .join-us{
   color:#ffc94a;
-  font-size: 60px;
+  font-size: 40px;
   font-weight:bolder;
   border:3px solid#ffb71b;
-  width:170px;
-  height:195px;
+  width:115px;
+  height:130px;
 position:absolute;
-top:130px;
-/* left:800px; */
-left:180px;
+top:470px;
+left:580px;
 }
-
-@media screen and (max-width: 780px) {
-  .join-us{
-    display: none;
-  }}
-
-  @media screen and (max-width: 1200px) {
-    .join-us{
-      top:130px;
-      /* left:800px; */
-      left:650px;
-    }}
-
-    @media screen and (min-width: 1200px) {
-      .join-us{
-        top:130px;
-        /* left:800px; */
-        left:900px;
-      }}
-
 .header-title{
   position: absolute;
-  top:40px;
-  left:200px
+  top:0px
 }
-
-
-.header-title2{
-  position: absolute;
-  top:35px;
-  left:520px
+header{
+  position:-ms-page
 }
-
-
-.header-title3{
-  position: absolute;
-  top:28px;
-  left:600px;
+.carousel{
+  margin-top:200px;
 }
-
-.header-group{
-
-  margin-left:200px;
-}
-
-.header{
-  display: none;
-}
-/* header{
-  height:20px;
-  position: fixed;
-} */
-
-.logo2{
-  padding-top:8px;
-  padding-left:25px;
-  width:125px;
-  height:104px;
-}
-
-/*
-選單線
-*/
-.line {
-  width: 24px;
-  height: 24px;
-  /* background: rgb(216, 162, 90); */
-  cursor: pointer;
-  display: block;
-  padding: 16px;
-  padding-top:5px;
-  position: fixed;
-  z-index: 2;
-}
-.line .menu,
-.line .menu::before,
-.line .menu::after {
-  background: white;
-  content: '';
-  display: block;
-  height: 3px;
-  position: absolute;
-  transition: background ease .3s, top ease .3s .3s, transform ease .3s;
-  width: 30px;
-}
-.line .menu {
-  left: 400px;
-  top: -48px;
-}
-
-.line .menu::before {
-  top: -6px;
-}
-
-.line .menu::after {
-  top: 6px;
-}
-/*
-點選選單變叉叉
-*/
-#menu:checked + .line .menu {
-  background: transparent;
-}
-
-#menu:checked + .line .menu::before {
-  transform: rotate(45deg);
-}
-
-#menu:checked + .line .menu::after {
-  transform: rotate(-45deg);
-}
-
-#menu:checked + .line .menu::before,
-#menu:checked + .line .menu::after {
-  top: 0;
-  transition: top ease .3s, transform ease .3s .3s;
-}
-
-/*
-選單開合
-*/
-#menu:checked ~ .menu-list {
-  width: 620px;
-}
-
-.menu-list {
-  width: 0px;
-  height: 20vh;
-  background: #12304a;
-  /* box-shadow: 0 2px 4px rgba(0, 0, 0, .1); */
-  padding-top: 70px;
-  margin-top: 16px;
-  position: fixed;
-  z-index: 1;
-  transition: all .6s;
-  overflow: hidden;
-}
-/*
-選單向外推
-*/
-.menu-list ul {
-  list-style: none;
-  padding-top:10px;
-  padding: 0;
-}
-.menu-list ul>li{
-  display:block;
-  width:100px;
-}
-/*
-隱藏核許框
-*/
-input#menu {
-display: none;
-}
-
-

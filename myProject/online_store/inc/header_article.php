@@ -1,72 +1,72 @@
-
 <header class=" h-11 bg-gray container-fluid header">
-    <div class="row bg-gray">
-      <div class="test col-md-2 ms-3 logo-area">
-        <a href="../index.php" data-bs-toggle="modal" data-bs-target="#myModal-2">
-          <img src="../img/logo1.png" alt="" width="85%" height="100%"></a>
-      </div>
-      <div class="test col-md-2 mt-4 pt-3">
+  <div class="row bg-gray">
+    <div class="test col-md-2 ms-3 logo-area">
+      <a href="../index.php" data-bs-toggle="modal" data-bs-target="#myModal-2">
+        <img src="../img/logo1.png" alt="" width="85%" height="100%"></a>
+    </div>
+    <div class="test col-md-2 mt-4 pt-3">
 
-        <a href="../index.php">
-          <h2 style="font-weight:600;">奇多喵合作社</h2>
-        </a>
+      <a href="../index.php">
+        <h2 style="font-weight:600;">奇多喵合作社</h2>
+      </a>
 
-      </div>
-      <div class="col-md-4 test-1 pt-5">
-        <div class="page-link ">
+    </div>
+    <div class="col-md-4 test-1 pt-5">
+      <div class="page-link ">
 
-          <ul>
-            <li class="nav-item me-3">
-              <a href="../index.php">回首頁</a>
-              <div class="unloading-bar"></div>
-              <div class="loading-bar"></div>
-            </li>
-            <li class="nav-item me-3">
-              <a href="../articles.php">回上一頁</a>
-              <div class="unloading-bar"></div>
-              <div class="loading-bar"></div>
-            </li>
-            <?php
-              if (isset($_SESSION['user'])) {
-                echo "<li>
+        <ul>
+          <li class="nav-item me-3">
+            <a href="../index.php">回首頁</a>
+            <div class="unloading-bar"></div>
+            <div class="loading-bar"></div>
+          </li>
+          <li class="nav-item me-3">
+            <a href="../articles.php">回上一頁</a>
+            <div class="unloading-bar"></div>
+            <div class="loading-bar"></div>
+          </li>
+          <?php
+          if (isset($_SESSION['user'])) {
+            echo "<li>
                 <span> <a href='../api/logout.php'>登出</a></span>
             <div class='unloading-bar'></div>
             <div class='loading-bar'></div>
        </li>
-       ";}
+       ";
+          }
 
-?>
+          ?>
 
+      </div>
+
+    </div>
+
+    <div class="col-md-1 pt-4 test" style="margin-top:8px;margin-left:37px">
+      <a class="shopping-cart-a" target="_blank" href="">
+        <i class="fa-sharp fa-solid fa-cart-shopping shopping-cart fa-l" style="  font-size: 2em;"></i>
+        <p class="mt-1 shopping-cart-p">Buy it !</p>
+      </a>
+
+    </div>
+
+
+    <div class="test col-md-1 pt-4 " style="margin-top:8px;margin-left:37px">
+
+      <div class="offcanvas offcanvas-end" id="demo">
+        <div class="offcanvas-header">
+          <h1 class="offcanvas-title">會員中心<img src="../img/logo1.png" alt="" width="60px"></h1>
+
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
         </div>
-
-      </div>
-
-      <div class="col-md-1 pt-4 test" style="margin-top:8px;margin-left:37px">
-        <a class="shopping-cart-a" target="_blank" href="">
-          <i class="fa-sharp fa-solid fa-cart-shopping shopping-cart fa-l" style="  font-size: 2em;"></i>
-          <p class="mt-1 shopping-cart-p">Buy it !</p>
-        </a>
-
-      </div>
+        <div class="offcanvas-body">
+          <div class="modal-header">
+            <h4 class="modal-title">請先登入</h4>
 
 
-      <div class="test col-md-1 pt-4 " style="margin-top:8px;margin-left:37px">
-
-        <div class="offcanvas offcanvas-end" id="demo">
-          <div class="offcanvas-header">
-            <h1 class="offcanvas-title">會員中心<img src="../img/logo1.png" alt="" width="60px"></h1>
-
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
           </div>
-          <div class="offcanvas-body">
-            <div class="modal-header">
-              <h4 class="modal-title">請先登入</h4>
 
-
-            </div>
-
-            <!-- Modal body -->
-            <div class="modal-body">
+          <!-- Modal body -->
+          <div class="modal-body">
             <!-- 插入程式碼要有頭跟END，方便日後維護及辨識 -->
             <!-- Modal body container. -->
             <div class="container mt-3">
@@ -82,7 +82,7 @@
               <form action="../api/login.php" method="post">
                 <?php
                 if (!isset($_SESSION['user'])) {
-                echo '
+                  echo '
                 <div class="row">
 
                   <div class="col-12">
@@ -120,42 +120,41 @@
        
     
          ';
-                }else{
+                } else {
 
-                  echo "歡迎光臨！".$_SESSION['user']."💛";
+                  echo "歡迎光臨！" . $_SESSION['user'] . "💛";
 
 
-        
+
                   echo "<a href='../member.php' class='btn btn-secondary mt-4 col-7 mx-2'>修改會員資料</a>";
-                 
-                        echo "<a href='../api/logout.php' class='btn btn-warning mt-4 col-7 mx-2'>登出</a>";
+
+                  echo "<a href='../api/logout.php' class='btn btn-warning mt-4 col-7 mx-2'>登出</a>";
                 }
-          ?>
-              </div>
-              </form>
-              <!-- Modal body container end -->
+                ?>
             </div>
+            </form>
+            <!-- Modal body container end -->
           </div>
         </div>
-        <div>
-
-          <i class="fa-regular fa-circle-user me-5" style=" font-size: 2em;" data-bs-toggle="offcanvas"
-            data-bs-target="#demo"></i>
-
-          <p class="mt-1 me-5 shopping-cart-p">Menbership</p>
-        </div>
-        </button>
       </div>
-      <div class="col-md-1 test pt-4" style="margin-top:20px;margin-left:37px">
-        <form class="d-flex">
-          <input class="search-wrapper me-2 myInput " type="text" placeholder="Search">
-          <button class="btn btn-primary rounded-pill btn-bg" style="width:130px" type="button">Search</button>
-        </form>
+      <div>
+
+        <i class="fa-regular fa-circle-user me-5" style=" font-size: 2em;" data-bs-toggle="offcanvas" data-bs-target="#demo"></i>
+
+        <p class="mt-1 me-5 shopping-cart-p">Menbership</p>
       </div>
+      </button>
     </div>
-  </header>
+    <div class="col-md-1 test pt-4" style="margin-top:20px;margin-left:37px">
+      <form class="d-flex">
+        <input class="search-wrapper me-2 myInput " type="text" placeholder="Search">
+        <button class="btn btn-primary rounded-pill btn-bg" style="width:130px" type="button">Search</button>
+      </form>
+    </div>
+  </div>
+</header>
 
-  <header class="h-11 bg-gray container-fluid header2 ">
+<header class="h-11 bg-gray container-fluid header2 ">
 
 
 
@@ -163,7 +162,7 @@
   <img class="logo2" src="../img/logo1.png" alt="">
   <div class="header-title">
 
-    <a href="index.php">
+    <a href="../index.php">
       <h2 style="font-weight:600;">奇多喵合作社</h2>
     </a>
 
@@ -171,36 +170,35 @@
 
   <div class="header-title2 ms-2 pb-2">
 
-  <a class="shopping-cart-a" target="_blank" href="">
+    <a class="shopping-cart-a" target="_blank" href="">
       <i class="fa-sharp fa-solid fa-cart-shopping shopping-cart fa-l" style="  font-size: 2em;"></i>
       <p class=" shopping-cart-p ms-1">Buy it !</p>
     </a>
 
-</div>
+  </div>
 
 
 
-<div class="header-title3 ms-2 pt-1">
-
-
-  
-  <?php
+  <div class="header-title3 ms-2 pt-1">
 
 
 
-if (isset($_SESSION['user'])) {
-  echo '<a href="../member.php"><i class="fa-regular fa-circle-user ms-3" style="font-size: 2em;"></i></a>';
-  
-  }else{
-    echo '<i class="fa-regular fa-circle-user ms-3" style="font-size: 2em;"  data-bs-toggle="modal" data-bs-target="#myModal"></i>';
-}
-?>
-  <p class="mt-1 me-5 shopping-cart-p">Menbership</p>
-</div>
-</button>
-</div>
+    <?php
 
-</div>
+
+
+    if (isset($_SESSION['user'])) {
+      echo '<a href="../member.php"><i class="fa-regular fa-circle-user ms-3" style="font-size: 2em;"></i></a>';
+    } else {
+      echo '<i class="fa-regular fa-circle-user ms-3" style="font-size: 2em;"  data-bs-toggle="modal" data-bs-target="#myModal"></i>';
+    }
+    ?>
+    <p class="mt-1 me-5 shopping-cart-p">Menbership</p>
+  </div>
+  </button>
+  </div>
+
+  </div>
 
 
   <nav class="nav-box">
@@ -214,27 +212,26 @@ if (isset($_SESSION['user'])) {
 
         <ul>
         <li class="nav-item me-3">
-              <a href="../index.php" style="color:white">回首頁</a>
+              <a href="../index.php">回首頁</a>
               <div class="unloading-bar"></div>
               <div class="loading-bar"></div>
             </li>
+
             <li class="nav-item me-3">
-              <a href="../articles.php" style="color:white">回上一頁</a>
+              <a href="../articles.php">回上一頁</a>
               <div class="unloading-bar"></div>
               <div class="loading-bar"></div>
             </li>
             <?php
               if (isset($_SESSION['user'])) {
                 echo "<li>
-                <span> <a href='../api/logout.php' style='color:white'>登出</a></span>
+                <span> <a href='../api/logout.php'>登出</a></span>
             <div class='unloading-bar'></div>
             <div class='loading-bar'></div>
        </li>
        ";}
 
 ?>
-
-
         </ul>
 
       </div>
