@@ -1,7 +1,7 @@
 <?php
 date_default_timezone_set('Asia/Taipei');
-$dsn = "mysql:host=localhost;charset=utf8;dbname=s1120421";
-$pdo = new PDO($dsn, 's1120421', 's1120421');
+$dsn = "mysql:host=localhost;charset=utf8;dbname=db91";
+$pdo = new PDO($dsn, 'root', '');
 session_start();
 
 ?>
