@@ -1,56 +1,82 @@
-<header class=" h-11 bg-gray container-fluid header">
+
+
+<header class="h-11 bg-gray container-fluid header">
   <div class="row bg-gray">
-    <div class="test col-md-2 ms-3 logo-area">
+
+    <div class="test col-xxl-2 col-xl-6 col-12 ms-3 logo-area">
       <a href="../index.php" data-bs-toggle="modal" data-bs-target="#myModal-2">
-        <img src="../img/logo1.png" alt="" width="85%" height="100%"></a>
+        <img class="logo" src="../img/logo1.png" alt="" width="85%" height="100%"></a>
     </div>
-    <div class="test col-md-2 mt-4 pt-3">
+    <div class="test col-xxl-2 col-xl-6 col-12 mt-4 pt-3 header-title">
 
       <a href="../index.php">
         <h2 style="font-weight:600;">奇多喵合作社</h2>
       </a>
 
     </div>
-    <div class="col-md-4 test-1 pt-5">
+    <div class="col-xxl-4 col-xl-12 col-12 test-1 pt-5 header-group">
       <div class="page-link ">
 
         <ul>
           <li class="nav-item me-3">
-            <a href="../index.php">回首頁</a>
+            <a href="aboutUs.php">關於我們</a>
             <div class="unloading-bar"></div>
             <div class="loading-bar"></div>
           </li>
-          <li class="nav-item me-3">
-            <a href="../articles.php">回上一頁</a>
+          <li class="nav-item  me-3" style="margin-left:36px">
+            <a href="../articles.php">文章</a>
             <div class="unloading-bar"></div>
             <div class="loading-bar"></div>
           </li>
-          <?php
-          if (isset($_SESSION['user'])) {
-            echo "<li>
-                <span> <a href='../api/logout.php'>登出</a></span>
+          <li class="nav-item me-3" style="margin-left:36px">
+            <a href="#store">商城</a>
+            <div class="unloading-bar"></div>
+            <div class="loading-bar"></div>
+          </li>
+          <li class="nav-item me-3" style="margin-left:36px">
+            <span>聯絡我們</span>
+            <div class="unloading-bar"></div>
+            <div class="loading-bar"></div>
+          </li>
+          <li class="nav-item" style="margin-left:36px">
+
+
+            <a class="nav-link" data-bs-toggle="modal" data-bs-target="#myModal">
+
+              <?php
+              if (isset($_SESSION['user'])) {
+                echo "<span> <a href='./api/logout.php'>登出</a></span>
             <div class='unloading-bar'></div>
             <div class='loading-bar'></div>
-       </li>
        ";
-          }
+              } else {
 
-          ?>
+
+                echo '<span> 會員登入</span>
+              <div class="unloading-bar"></div>
+              <div class="loading-bar"></div>';
+              }
+              ?>
+
+            </a>
+
+          </li>
+        </ul>
 
       </div>
 
     </div>
 
-    <div class="col-md-1 pt-4 test" style="margin-top:8px;margin-left:37px">
+    <div class="col-xxl-1 col-xl-2 col-2 pt-4 test buy-icon" style="margin-top:8px;margin-left:37px">
       <a class="shopping-cart-a" target="_blank" href="">
-        <i class="fa-sharp fa-solid fa-cart-shopping shopping-cart fa-l" style="  font-size: 2em;"></i>
+       <a href="../cart.php"> <i class="fa-sharp fa-solid fa-cart-shopping shopping-cart fa-l" style="  font-size: 2em;"></i></a>
         <p class="mt-1 shopping-cart-p">Buy it !</p>
       </a>
 
     </div>
 
 
-    <div class="test col-md-1 pt-4 " style="margin-top:8px;margin-left:37px">
+    <div class="test col-xxl-1 col-xl-2 col-2 pt-4  member-icon" style="margin-top:8px;margin-left:37px">
 
       <div class="offcanvas offcanvas-end" id="demo">
         <div class="offcanvas-header">
@@ -60,7 +86,7 @@
         </div>
         <div class="offcanvas-body">
           <div class="modal-header">
-            <h4 class="modal-title">請先登入</h4>
+            <h4 class="modal-title"></h4>
 
 
           </div>
@@ -68,7 +94,7 @@
           <!-- Modal body -->
           <div class="modal-body">
             <!-- 插入程式碼要有頭跟END，方便日後維護及辨識 -->
-            <!-- Modal body container. -->
+            <!-- Modal body container.. -->
             <div class="container mt-3">
 
               <?php
@@ -126,14 +152,15 @@
 
 
 
-                  echo "<a href='../member.php' class='btn btn-secondary mt-4 col-7 mx-2'>修改會員資料</a>";
+                  echo "<a href='./member.php' class='btn btn-secondary mt-4 col-7 mx-2'>修改會員資料</a>";
 
-                  echo "<a href='../api/logout.php' class='btn btn-warning mt-4 col-7 mx-2'>登出</a>";
+                  echo "<a href='./api/logout.php' class='btn btn-warning mt-4 col-7 mx-2'>登出</a>";
                 }
                 ?>
             </div>
             </form>
             <!-- Modal body container end -->
+
           </div>
         </div>
       </div>
@@ -145,7 +172,7 @@
       </div>
       </button>
     </div>
-    <div class="col-md-1 test pt-4" style="margin-top:20px;margin-left:37px">
+    <div class="col-xxl-1 col-xl-2 col-2 test pt-4 search-icon" style="margin-top:20px;margin-left:37px">
       <form class="d-flex">
         <input class="search-wrapper me-2 myInput " type="text" placeholder="Search">
         <button class="btn btn-primary rounded-pill btn-bg" style="width:130px" type="button">Search</button>
@@ -168,37 +195,40 @@
 
   </div>
 
-  <div class="header-title2 ms-2 pb-2">
+  <div class="header-title2">
 
-    <a class="shopping-cart-a" target="_blank" href="">
+  <a class="shopping-cart-a" target="_blank" href="">
       <i class="fa-sharp fa-solid fa-cart-shopping shopping-cart fa-l" style="  font-size: 2em;"></i>
-      <p class=" shopping-cart-p ms-1">Buy it !</p>
+      <p class=" shopping-cart-p ps-1">Buy it !</p>
     </a>
 
-  </div>
+</div>
 
 
 
-  <div class="header-title3 ms-2 pt-1">
+<div class="header-title3 ms-2 pb-2 ps-3 pt-1">
 
 
 
-    <?php
+  
+
+<?php
+
+if (isset($_SESSION['user'])) {
+  echo '<a href="../member.php"><i class="fa-regular fa-circle-user ms-3" style="font-size: 2em;"></i></a>';
+  
+  }else{
+    echo '<i class="fa-regular fa-circle-user ms-3" style="font-size: 2em;"  data-bs-toggle="modal" data-bs-target="#myModal"></i>';
+}
+?>
 
 
 
-    if (isset($_SESSION['user'])) {
-      echo '<a href="../member.php"><i class="fa-regular fa-circle-user ms-3" style="font-size: 2em;"></i></a>';
-    } else {
-      echo '<i class="fa-regular fa-circle-user ms-3" style="font-size: 2em;"  data-bs-toggle="modal" data-bs-target="#myModal"></i>';
-    }
-    ?>
-    <p class="mt-1 me-5 shopping-cart-p">Menbership</p>
-  </div>
-  </button>
-  </div>
+  <p class="mt-1 me-5 shopping-cart-p">Menbership</p>
 
-  </div>
+</div>
+
+</div>
 
 
   <nav class="nav-box">
@@ -210,28 +240,32 @@
     <div class="menu-list">
       <div class="page-link ">
 
-        <ul>
-        <li class="nav-item me-3">
-              <a href="../index.php">回首頁</a>
-              <div class="unloading-bar"></div>
-              <div class="loading-bar"></div>
-            </li>
-
-            <li class="nav-item me-3">
-              <a href="../articles.php">回上一頁</a>
-              <div class="unloading-bar"></div>
-              <div class="loading-bar"></div>
-            </li>
-            <?php
-              if (isset($_SESSION['user'])) {
-                echo "<li>
+      <ul>
+          <li class="nav-item me-3">
+            <a href="../index.php">回首頁</a>
+            <div class="unloading-bar"></div>
+            <div class="loading-bar"></div>
+          </li>
+          <li class="nav-item me-3">
+            <a href="../articles.php">回上一頁</a>
+            <div class="unloading-bar"></div>
+            <div class="loading-bar"></div>
+          </li>
+          <?php
+          if (isset($_SESSION['user'])) {
+            echo "<li>
                 <span> <a href='../api/logout.php'>登出</a></span>
             <div class='unloading-bar'></div>
             <div class='loading-bar'></div>
        </li>
-       ";}
+       ";
+          }
 
-?>
+          ?>
+
+            </a>
+
+          </li>
         </ul>
 
       </div>
