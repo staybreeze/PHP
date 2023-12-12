@@ -75,7 +75,8 @@ include "./inc/header_aboutUs_articles.php"
                   }
                   // $sql = "select * from users where `acc`='{$_SESSION['user']}'";
                   // $user = $pdo->query($sql)->fetch();
-                  $user=find('users',['acc'=>"{$_SESSION['user']}"]);
+                  // $user=find('users',['acc'=>"{$_SESSION['user']}"]);
+                  $user=$User->find(['acc'=>"{$_SESSION['user']}"]);
               ?>
            <form action="./api/update.php" method="post" class="col-4 m-auto pt-3">
                       <div class="input-group my-1">
