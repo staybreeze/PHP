@@ -1,5 +1,5 @@
 <?php 
-include_once "./api/connect.php";
+include_once "./api/db.php";
 ?>
 
 <!DOCTYPE html>

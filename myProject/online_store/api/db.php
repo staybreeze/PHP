@@ -5,7 +5,7 @@ session_start();
 class db
 {
 
-    protected $dsn = "mysql:host=localhost;charset=utf8;dbname=db91";
+    protected $dsn = "mysql:host=localhost;charset=utf8;dbname=member";
     protected $pdo;
     protected $table;
 
@@ -264,3 +264,4 @@ function dd($array)
 // 使用物件導向要先實例化(new)
 // 物件的變數建議用大寫的方式做區隔，以便未來設其他變數時不會強碰
 $User=new DB('users');
+$Good=new DB('good');

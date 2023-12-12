@@ -67,7 +67,7 @@
 
     <div class="col-xxl-1 col-xl-2 col-2 pt-4 test buy-icon" style="margin-top:8px;margin-left:37px">
       <a class="shopping-cart-a" target="_blank" href="">
-        <i class="fa-sharp fa-solid fa-cart-shopping shopping-cart fa-l" style="  font-size: 2em;"></i>
+       <a href="./cart.php"> <i class="fa-sharp fa-solid fa-cart-shopping shopping-cart fa-l" style="  font-size: 2em;"></i></a>
         <p class="mt-1 shopping-cart-p">Buy it !</p>
       </a>
 

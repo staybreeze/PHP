@@ -51,7 +51,14 @@ include_once "./api/db.php";
 
     }
 
-
+    table{
+      width:100vw;
+      /* height:100vh; */
+    }
+table,tr,td{
+  border:1px solid black;
+  text-align: center;
+}
   </style>
 </head>
 
@@ -63,57 +70,58 @@ include "./inc/header_aboutUs_articles.php"
 ?>
 
   <!-- ---- -->
-  <div class="container">
-    <div class="d-flex flex-wrap row" >
-      <div class="col-md-8 col-lg-6  col-xl-4 mt-5">
-        <h3 class="h3">&nbsp;幼貓照護指南：啟蒙與關愛的開始</h3>
-        <a href="./articles/article_1.php"><img class="pt-3" src="./img/kitten.jpg" alt="" width="375px"
-            height="300px"></a>
+  <div class="container mt-5">
+  
+      <form action="" method="post">
+      <table class="table">
+        <tr>
+          <th style="width:8%">ID</th>
+        <th style="width:40%">商品</th>
+        <th style="width:15%">單價</th>
+        <th style="width:15%">數量</th>
+        <th style="width:15%">小計</th>
+        <th>刪除</th>
+      </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>
+            <input class="btn btn-danger" type="button" value="刪除">
+          </td>
+        </tr>
+        <tr>
+          <td colspan="4">總計</td>
+     
+          <td colspan="2"></td>
+          <!-- <td></td> -->
+          <!-- <td></td> -->
+          <!-- <td></td>
+          <td></td> -->
+        </tr>
+    
 
-        <a href="./articles/article_1.php"><input class="btn btn-warning mt-3" type="submit" value="觀看文章"></a>
+        <tr>
+          <!-- <td></td>
+     
+          <td></td>
+          <td></td>
+      
+          <td></td> -->
+           <td colspan="5">   
+       
+    </td>
+    <td>
+      <input class="btn btn-warning" type="submit" value="送出">
+</td>
+        </tr>
 
-      </div>
-      <div class="col-md-8 col-lg-6 col-xl-4 mt-5">
-        <h3 class="h3">&nbsp;成貓照護指南：健康與活力的秘訣</h3>
-        <a href="./articles/article_2.php"><img class="pt-3" src="./img/adult.jpg" alt="" width="375px" height="300px"></a>
-
-        <a href="./articles/article_2.php"><input class="btn btn-warning mt-3" type="submit" value="觀看文章"></a>
-
-
-      </div>
-      <div class="col-md-8 col-lg-6 col-xl-4 mt-5">
-        <h3 class="h3">&nbsp;老貓照護指南：柔情伴隨，溫馨陪伴</h3>
-        <a href="./articles/article_3.php"><img class="pt-3" src="./img/cat4.jpg" alt="" width="375px" height="300px"></a>
-
-        <a href="./articles/article_3.php"><input class="btn btn-warning mt-3" type="submit" value="觀看文章"></a>
-
-        </div>
-      <div class="col-md-8 col-lg-6  col-xl-4 mt-5">
-        <h3 class="h3">&nbsp;從幼到老：貓咪生命的三個重要階段</h3>
-        <a href="./articles/article_4.php"><img class="pt-3" src="./img/cat11.webp" alt="" width="375px" height="300px"></a>
-
-        <a href="./articles/article_4.php"><input class="btn btn-warning mt-3" type="submit" value="觀看文章"></a>
-
-
-      </div>
-      <div class="col-md-8 col-lg-6 col-xl-4 mt-5">
-        <h3 class="h3">&nbsp;探索貓咪的時光隧道</h3>
-        <a href="./articles/article_5.php"><img class="pt-3" src="./img/cat2.jpeg" alt="" width="375px" height="300px"></a>
-
-        <a href="./articles/article_5.php"><input class="btn btn-warning mt-3" type="submit" value="觀看文章"></a>
-
-      </div>
-      <div class="col-md-8 col-lg-6 col-xl-4 mt-5">
-        <h3 class="h3">&nbsp;貓咪的皮膚護理學問</h3>
-        <a href="./articles/article_6.php"><img class="pt-3" src="./img/cat3.webp" alt="" width="375px" height="300px"></a>
-
-        <a href="./articles/article_6.php"><input class="btn btn-warning mt-3" type="submit" value="觀看文章"></a>
-
-
-      </div>
-
+      </table>
+    </form>
     </div>
-  </div>
+ 
 
   <?php
 include "./inc/login_form.php"
