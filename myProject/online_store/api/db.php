@@ -44,7 +44,7 @@ class db
             }
 
             $sql .= $other;
-            echo 'all=>' . $sql;
+            // echo 'all=>' . $sql;
             $rows = $this->pdo->query($sql)->fetchAll(PDO::FETCH_ASSOC);
             return $rows;
         } else {

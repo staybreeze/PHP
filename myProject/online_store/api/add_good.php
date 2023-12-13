@@ -1,15 +1,22 @@
 <?php
 include_once "./db.php";
 
-$good = $Good->find($_sess['id']);
-$user = $User->find($_SESSION['user']['id']);
+$good = $Good->find($_GET['id']);
 
-$customer = [
-    'id' => $user['id'],
-    'customer_id' => $user['acc'],
+
+
+
+$customerResult = $Customer->save([
+    'customer_id' => $_SESSION['user'],
     'product_id' => $good['id'],
-    'quantity' => '1'
-];
+    'quantity' => 1
+]);
 
-$customer = $Customer->save($customer);
-echo $customer['id'];  // 或者 echo $customer['customer_id'];
+
+
+
+echo "<pre>";
+print_r($customerResult);
+echo "</pre>";
+
+header("location:../index.php#store");

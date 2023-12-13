@@ -46,7 +46,7 @@
                             <li><a href="#"><i class="fas fa-heart"></i></a></li>
 
 
-                            <li><a href="./api/add_good?id="><i class="fas fa-plus"></i></a></li>
+                            <li><a href="./api/add_good.php?id=2"><i class="fas fa-plus"></i></a></li>
                             <li><a href="#"><i class="fas fa-expand"></i></a></li>
                         </ul>
                     </div>
@@ -64,7 +64,7 @@
                         <ul>
                              <li><a href="./cart.php"><i class="fas fa-shopping-cart"></i></a></li>
                             <li><a href="#"><i class="fas fa-heart"></i></a></li>
-                            <li><a href="./api/add_good"><i class="fas fa-plus"></i></a></li>
+                            <li><a href="./api/add_good.php?id=3"><i class="fas fa-plus"></i></a></li>
                             <li><a href="#"><i class="fas fa-expand"></i></a></li>
                         </ul>
                     </div>
@@ -83,7 +83,7 @@
                         <ul>
                              <li><a href="./cart.php"><i class="fas fa-shopping-cart"></i></a></li>
                             <li><a href="#"><i class="fas fa-heart"></i></a></li>
-                            <li><a href="./api/add_good"><i class="fas fa-plus"></i></a></li>
+                            <li><a href="./api/add_good.php?id=4"><i class="fas fa-plus"></i></a></li>
                             <li><a href="#"><i class="fas fa-expand"></i></a></li>
                         </ul>
                     </div>
@@ -101,7 +101,7 @@
                         <ul>
                              <li><a href="./cart.php"><i class="fas fa-shopping-cart"></i></a></li>
                             <li><a href="#"><i class="fas fa-heart"></i></a></li>
-                            <li><a href="./api/add_good"><i class="fas fa-plus"></i></a></li>
+                            <li><a href="./api/add_good.php?id=5"><i class="fas fa-plus"></i></a></li>
                             <li><a href="#"><i class="fas fa-expand"></i></a></li>
                         </ul>
                     </div>
@@ -120,7 +120,7 @@
                         <ul>
                              <li><a href="./cart.php"><i class="fas fa-shopping-cart"></i></a></li>
                             <li><a href="#"><i class="fas fa-heart"></i></a></li>
-                            <li><a href="./api/add_good"><i class="fas fa-plus"></i></a></li>
+                            <li><a href="./api/add_good.php?id=6"><i class="fas fa-plus"></i></a></li>
                             <li><a href="#"><i class="fas fa-expand"></i></a></li>
                         </ul>
                     </div>
@@ -138,7 +138,7 @@
                         <ul>
                              <li><a href="./cart.php"><i class="fas fa-shopping-cart"></i></a></li>
                             <li><a href="#"><i class="fas fa-heart"></i></a></li>
-                            <li><a href="./api/add_good"><i class="fas fa-plus"></i></a></li>
+                            <li><a href="./api/add_good.php?id=7"><i class="fas fa-plus"></i></a></li>
                             <li><a href="#"><i class="fas fa-expand"></i></a></li>
                         </ul>
                     </div>
@@ -157,7 +157,7 @@
                         <ul>
                              <li><a href="./cart.php"><i class="fas fa-shopping-cart"></i></a></li>
                             <li><a href="#"><i class="fas fa-heart"></i></a></li>
-                            <li><a href="./api/add_good"><i class="fas fa-plus"></i></a></li>
+                            <li><a href="./api/add_good.php?id=8"><i class="fas fa-plus"></i></a></li>
                             <li><a href="#"><i class="fas fa-expand"></i></a></li>
                         </ul>
                     </div>
