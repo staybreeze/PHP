@@ -130,13 +130,13 @@ include "./inc/login_form.php"
   <?php
       include "./inc/footer.php"
       ?>
-        <div class=" mt-5 col-md-5 col" style="border-left:5px solid white;margin-left:-5px">
+        <div class=" mt-5 col-md-5 col footer-pages" style="border-left:5px solid white">
           <ul class="pages">
             <li>
-              <a class="footer-header" href="./aboutUs.php#">關於我們</a>
+              <a class="footer-header" href="./aboutUs.php">關於我們</a>
             </li>
             <li>
-              <a href="./aboutUs.php#">起源</a>
+              <a href="./aboutUs.php">起源</a>
             </li>
             <li>
               <a href="./aboutUs.php#origin">目標</a>
@@ -144,21 +144,20 @@ include "./inc/login_form.php"
             <li>
               <a href="./aboutUs.php#cheetos">店貓－奇多（Cheetos）</a>
             </li>
-
           </ul>
 
           <ul class="pages">
             <li>
-              <a class="footer-header" href="#">貓咪文章</a>
+              <a class="footer-header" href="./articles.php">貓咪文章</a>
             </li>
             <li>
-              <a class="" href="#">幼貓</a>
+              <a class="" href="./articles.php#">幼貓</a>
             </li>
             <li>
-              <a class="" href="#">成貓</a>
+              <a class="" href="./articles.php#">成貓</a>
             </li>
             <li>
-              <a class="" href="#">老貓</a>
+              <a class="" href="./articles.php#">老貓</a>
             </li>
           </ul>
           <ul class="pages">
@@ -169,7 +168,7 @@ include "./inc/login_form.php"
               <a class="" href="./index.php#store">食物</a>
             </li>
             <li>
-              <a class="" href="./index.php#store">玩具</a>
+              <a class=""href="./index.php#store">玩具</a>
             </li>
             <li>
               <a class="" href="./index.php#store">生活用品</a>
@@ -177,10 +176,10 @@ include "./inc/login_form.php"
           </ul>
           <ul class="pages">
             <li>
-              <a class="footer-header" href="" data-bs-toggle="offcanvas" data-bs-target="#demo">會員專區</a>
+              <a class="footer-header" href="" data-bs-toggle="modal" data-bs-target="#myModal">會員專區</a>
             </li>
             <li>
-            <a href="./add.php">加入會員</a>
+              <a href="./add.php">加入會員</a>
             </li>
             <li>
               <a href="" data-bs-toggle="modal" data-bs-target="#myModal">修改密碼</a>
@@ -191,8 +190,6 @@ include "./inc/login_form.php"
             <li>
 
           </ul>
-
-
 
         </div>
 
