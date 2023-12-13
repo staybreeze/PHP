@@ -197,7 +197,7 @@
   <div class="header-title2">
 
   <a class="shopping-cart-a" target="_blank" href="">
-      <i class="fa-sharp fa-solid fa-cart-shopping shopping-cart fa-l" style="  font-size: 2em;"></i>
+  <a href="./cart.php"> <i class="fa-sharp fa-solid fa-cart-shopping shopping-cart fa-l" style="  font-size: 2em;"></i></a>
       <p class=" shopping-cart-p ps-1">Buy it !</p>
     </a>
 
