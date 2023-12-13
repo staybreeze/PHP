@@ -264,4 +264,5 @@ function dd($array)
 // 使用物件導向要先實例化(new)
 // 物件的變數建議用大寫的方式做區隔，以便未來設其他變數時不會強碰
 $User=new DB('users');
-$Good=new DB('good');
+$Good=new DB('goods');
+$Customer=new DB('customers');

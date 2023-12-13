@@ -22,7 +22,7 @@
                         <ul>
                             <li><a href="./cart.php"><i class="fas fa-shopping-cart"></i></a></li>
                             <li><a href="#"><i class="fas fa-heart"></i></a></li>
-                            <li><a href="./api/add_good"><i class="fas fa-plus"></i></a></li>
+                            <li><a href="./api/add_good.php?id=1"><i class="fas fa-plus"></i></a></li>
                             <li><a href="#"><i class="fas fa-expand"></i></a></li>
                         </ul>
                     </div>
@@ -143,7 +143,7 @@
                         </ul>
                     </div>
                     <div class="part-2">
-                        <h3 class="product-title">Doge Daddy｜秘密花園趣食碗e</h3>
+                        <h3 class="product-title">CIAO｜貓咪肉泥 訓練獎勵好幫手</h3>
 
                         <h4 class="product-price">NTD 55</h4>
                     </div>
