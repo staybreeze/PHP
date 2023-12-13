@@ -5,6 +5,8 @@
 
   body {
     overflow-x: hidden;
+    display: grid;
+ 
 
   }
 
@@ -226,8 +228,8 @@ width:350px;
   }
 
   footer {
-    position: relative;
-    height: 65vh;
+    /* position: absolute; */
+    height: 80vh;
     
     background-color: rgb(107, 62, 2);
     /* padding: 30px 7px 5px 5px;
@@ -252,9 +254,9 @@ width:350px;
         height: 85vh;
       }}
 
-      @media screen and (max-width: 780px) {
+      @media screen and (max-width: 580px) {
         .footer{
-          height: 68vh;
+          height: 100vh;
         }}
 
         

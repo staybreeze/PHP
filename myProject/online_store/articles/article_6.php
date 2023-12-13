@@ -21,7 +21,7 @@ include_once "../api/db.php";
 
 
     .main {
-      height: 110vh;
+      height: 100%;
     }
 
     .h3 {
