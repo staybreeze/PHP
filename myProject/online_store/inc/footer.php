@@ -1,5 +1,5 @@
 <footer class="footer " id="footer">
-  <div class="container-fluid ">
+  <div class="container-fluid">
     <div class="row d-flex" style="padding-top:35px">
 
       <div class="col-md-3 contact col" style="margin-top: 30px;margin-left:100px;">

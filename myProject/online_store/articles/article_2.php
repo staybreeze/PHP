@@ -18,7 +18,7 @@ include_once "../api/db.php";
   <style>
 
     .main {
-      height: 100%;
+      height: 100vh;
     }
 
     .h3 {

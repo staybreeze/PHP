@@ -1,5 +1,5 @@
 <?php
-include_once "./db.php";
+include_once "../api/connect.php";
 unset($_SESSION['user']);
 
 

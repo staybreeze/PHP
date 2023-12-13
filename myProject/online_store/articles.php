@@ -24,9 +24,9 @@ include_once "./api/db.php";
 
     }
 
-    .main {
-      height: 100%;
-    }
+    /* .main {
+      height: 105vh;
+    } */
 
     .h3 {
       border-left: 10px solid brown;
