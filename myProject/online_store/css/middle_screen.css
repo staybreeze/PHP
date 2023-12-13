@@ -753,7 +753,7 @@ a:hover {
 選單線
 */
 .line {
-  width: 24px;
+  width: 12px;
   height: 24px;
   /* background: rgb(216, 162, 90); */
   cursor: pointer;
@@ -770,7 +770,7 @@ a:hover {
   background: white;
   content: '';
   display: block;
-  height: 3px;
+  height: 2px;
   position: absolute;
   transition: background ease .3s, top ease .3s .3s, transform ease .3s;
   width: 30px;
@@ -785,6 +785,9 @@ a:hover {
   top: -6px;
 }
 
+.line .menu::after {
+  top: 6px;
+}
 .line .menu::after {
   top: 6px;
 }
