@@ -26,7 +26,7 @@ include_once "./api/db.php";
     }
 
     .main {
-      height: 160vh;
+      height: 100%;
     }
 
     .h3 {
@@ -73,7 +73,7 @@ include "./inc/header_aboutUs_articles.php"
 
             奇多喵合作社的團隊目標是在貓奴社群中建立堅實的信任和喜愛，成為貓咪商品的領先品牌。我們將透過提供獨特有趣的商品、貼心的客戶服務以及滿足各類貓奴需求的商品線，不斷擴大產品範疇，提升品牌影響力。同時，我們致力於建立一個充滿愛心、互助和尊重的工作環境，使每位團隊成員都能在這個大家庭中茁壯成長。我們的使命是讓每一位貓奴都能在奇多喵合作社找到滿滿的愛和快樂。
           </p>
-          <img id="cheetos" src="./img/cheetos8.jpg" alt="" height="400px" class="mt-5">
+          <img id="cheetos" src="./img/cheetos8.jpg" alt="" width="100%" height="100%" class="mt-5">
           <div class="box mt-5">
             <h3 class="h3">&nbsp;店貓－奇多（Cheetos） </h3>
             <p>
@@ -163,7 +163,7 @@ include "./inc/header_aboutUs_articles.php"
   <?php
       include "./inc/footer.php"
       ?>
-        <div class=" mt-5 col-md-5 col" style="border-left:5px solid white;margin-left:-5px">
+        <div class=" mt-5 col-md-5 col footer-pages" style="border-left:5px solid white">
           <ul class="pages">
             <li>
               <a class="footer-header" href="#">關於我們</a>

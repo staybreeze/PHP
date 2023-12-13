@@ -188,7 +188,7 @@ include "./inc/login_form.php"
 include "./inc/footer.php"
 ?>
 
-        <div class=" mt-5 col-md-5 col" style="border-left:5px solid white;margin-left:-5px">
+        <div class=" mt-5 col-md-5 col footer-pages" style="border-left:5px solid white">
           <ul class="pages">
             <li>
               <a class="footer-header" href="./aboutUs.php">關於我們</a>
