@@ -61,7 +61,13 @@ include "./inc/header_aboutUs_articles.php"
         <br>
         <div class="box mt-5 text-center">
 
+<?php
+if (isset($_GET['error'])) {
 
+  echo "<span style='color:red'>請先登入會員再購買商品喔！</span>";
+}
+
+?>
    <p class="mt-4" style="font-size:25px;font-weight:bold;text-align:center">會員登入</p>
                     
       
@@ -79,7 +85,7 @@ include "./inc/header_aboutUs_articles.php"
             <input class="btn btn-primary mx-2 mt-4" type="submit" value="送出">
             <input class="btn btn-success mx-2 mt-4" type="reset" value="重置">
         </div>
-    
+        <br>    <br>    <br>    <br>
     
     
     </form>
@@ -134,6 +140,7 @@ include "./inc/header_aboutUs_articles.php"
                     <div class="d-flex gap-2">
                       <button type="reset" class="btn btn-primary btn-secondary col-6">重置</button>
                       <button type="submit" class="btn btn-primary btn-warning  col-6">送出</button>
+                    <br>
                     </div>
                   </div>
                 </div>
