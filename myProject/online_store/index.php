@@ -237,13 +237,13 @@ include "./inc/footer.php"
               <a class="footer-header" href="" data-bs-toggle="modal" data-bs-target="#myModal">會員專區</a>
             </li>
             <li>
-              <a href="./add.php">加入會員</a>
+              <a href="add.php">加入會員</a>
             </li>
             <li>
-              <a href="" data-bs-toggle="modal" data-bs-target="#myModal">修改密碼</a>
+              <a href="member.php">修改密碼</a>
             </li>
             <li>
-              <a href="">訂單查詢</a>
+              <a href="cart.php">訂單查詢</a>
             </li>
             <li>
 

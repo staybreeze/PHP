@@ -48,6 +48,12 @@ include_once "./api/db.php";
 
 <body>
 <?php
+            if (isset($_SESSION['user'])) {
+
+              header("location:member.php");
+            }
+  ?>
+<?php
 include "./inc/header_aboutUs_articles.php"
 ?>
   <!-- ---- -->
@@ -91,7 +97,7 @@ include "./inc/header_aboutUs_articles.php"
             <input class="btn btn-success mx-2 mt-4" type="reset" value="重置">
         </div>
     
-    
+        <br>    <br>    <br>
     
     </form>
 
@@ -223,16 +229,16 @@ include "./inc/header_aboutUs_articles.php"
           </ul>
           <ul class="pages">
             <li>
-              <a class="footer-header" href="" data-bs-toggle="offcanvas" data-bs-target="#demo">會員專區</a>
+              <a class="footer-header" href="" data-bs-toggle="modal" data-bs-target="#myModal">會員專區</a>
             </li>
             <li>
-            <a href="./add.php">加入會員</a>
+              <a href="add.php">加入會員</a>
             </li>
             <li>
-              <a href="" data-bs-toggle="modal" data-bs-target="#myModal">修改密碼</a>
+              <a href="member.php">修改密碼</a>
             </li>
             <li>
-              <a href="">訂單查詢</a>
+              <a href="cart.php">訂單查詢</a>
             </li>
             <li>
 

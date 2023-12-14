@@ -60,6 +60,11 @@ include_once "./api/db.php";
       border: 1px solid black;
       text-align: center;
     }
+
+    .bg-myColor{
+
+      background-color:#f8ede0
+    }
   </style>
 </head>
 
@@ -76,12 +81,12 @@ include_once "./api/db.php";
     <form action="" method="post">
       <table class="table">
         <tr>
-          <th style="width:8%">ID</th>
-          <th style="width:40%">商品</th>
-          <th style="width:15%">單價</th>
-          <th style="width:15%">數量</th>
-          <th style="width:15%">小計</th>
-          <th>刪除</th>
+          <th style="width:8%;background-color:#f8ede0">ID</th>
+          <th style="width:40% ;background-color:#f8ede0">商品</th>
+          <th style="width:15%;background-color:#f8ede0">單價</th>
+          <th style="width:15%;background-color:#f8ede0">數量</th>
+          <th style="width:15%;background-color:#f8ede0">小計</th>
+          <th style="background-color:#f8ede0">刪除</th>
         </tr>
 
         <?php
@@ -201,21 +206,21 @@ include_once "./api/db.php";
       </li>
     </ul>
     <ul class="pages">
-      <li>
-        <a class="footer-header" href="" data-bs-toggle="modal" data-bs-target="#myModal">會員專區</a>
-      </li>
-      <li>
-        <a href="./add.php">加入會員</a>
-      </li>
-      <li>
-        <a href="" data-bs-toggle="modal" data-bs-target="#myModal">修改密碼</a>
-      </li>
-      <li>
-        <a href="">訂單查詢</a>
-      </li>
-      <li>
+            <li>
+              <a class="footer-header" href="" data-bs-toggle="modal" data-bs-target="#myModal">會員專區</a>
+            </li>
+            <li>
+              <a href="add.php">加入會員</a>
+            </li>
+            <li>
+              <a href="member.php">修改密碼</a>
+            </li>
+            <li>
+              <a href="cart.php">訂單查詢</a>
+            </li>
+            <li>
 
-    </ul>
+          </ul>
 
   </div>
 

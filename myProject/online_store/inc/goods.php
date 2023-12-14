@@ -16,9 +16,13 @@
         <div class="row">
             <!-- Single Product -->
             <div class="col-md-6 col-lg-4 col-xl-3">
+            <?php
+            // $rows=$Good->all();
+            //         foreach($rows as$row) {   ?>
                 <div id="product-1" class="single-product">
                     <div class="part-1">
                         <span class="new">new</span>
+              
                         <ul>
                             <li><a href="./cart.php"><i class="fas fa-shopping-cart"></i></a></li>
                             <li><a href="#"><i class="fas fa-heart"></i></a></li>
@@ -69,7 +73,8 @@
                         </ul>
                     </div>
                     <div class="part-2">
-                        <h3 class="product-title">逗貓棒替換頭：羽毛毛條</h3>
+                        <h3 class="product-title">KONG｜Solo Toy：貓草玩具刺蝟
+</h3>
 
                         <h4 class="product-price">NTD 220</h4>
                     </div>
@@ -88,7 +93,8 @@
                         </ul>
                     </div>
                     <div class="part-2">
-                        <h3 class="product-title">Doge Daddy｜秘密花園趣食碗</h3>
+                        <h3 class="product-title">KONG｜Solo Toy：貓草玩具胡蘿蔔
+</h3>
                         <h4 class="product-price">NTD 220</h4>
                     </div>
                 </div>
@@ -166,6 +172,8 @@
                         <h4 class="product-price">NTD 29</h4>
                     </div>
                 </div>
+                <?php
+                    // }    ?>
             </div>
         </div>
     </div>
