@@ -109,8 +109,8 @@ include_once "./api/db.php";
 
             <td  class="pt-3" ><?= $row['id'];?></td>
             <td class="pt-3"><?= $row['name'];?></td>
-            <td class="pt-3"><?= $row['quatity'];?></td>
             <td class="pt-3"><?= $row['price'];?></td>
+            <td class="pt-3"><?= $row['quatity'];?></td>
             <td class="pt-3"><?= $total=($row['quatity'] * $row['price'])?></td>
 
             <td>
@@ -126,7 +126,7 @@ include_once "./api/db.php";
         <tr>
           <td colspan="4"  class="pt-3">總計</td>
 
-          <td colspan="2"  class="pt-3"><?= $totalPrice;?></td>
+          <td colspan="2"  class="pt-3">NTD&nbsp;&nbsp;<?= $totalPrice;?></td>
           <!-- <td></td> -->
           <!-- <td></td> -->
           <!-- <td></td>
