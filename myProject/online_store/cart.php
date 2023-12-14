@@ -109,7 +109,7 @@ include_once "./api/db.php";
             <td class="pt-3"><?= $total=($row['quatity'] * $row['price'])?></td>
 
             <td>
-              <a href="../api/del_good.php?id=<?=$row['id'];?>"><input class="btn btn-danger" type="button" value="刪除"></a>
+              <a href="./api/del_good.php?id=<?=$row['id'];?>"><input class="btn btn-danger" type="button" value="刪除"></a>
             </td>
           </tr>
           <?php

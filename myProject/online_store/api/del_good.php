@@ -7,8 +7,11 @@ include_once "./db.php";
 
 // $pdo->exec($sql);
 
-$Good->del($_GET['id']);
+// 錯誤的
+// $Customer->del(['product_id' => $_GET['id'], 'customer_id' => $_SESSION['user']]);
 
+
+$Customer->del(['product_id' => $_GET['id'], 'customer_id' => $_SESSION['user']]);
 
 
 header("location:../cart.php");
