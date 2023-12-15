@@ -77,7 +77,7 @@
               <a class="" href="../index.php#store">玩具</a>
             </li>
             <li>
-              <a class="" href="articles.php">生活用品</a>
+              <a class="" href="../index.php#store">生活用品</a>
             </li>
           </ul>
           <ul class="pages">

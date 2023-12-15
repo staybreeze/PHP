@@ -75,7 +75,7 @@ include_once "./api/db.php";
 <?php
 
 if(!isset($_SESSION['user'])){
-  header("location:../login.php?error=請先登入會員");
+  header("location:./login.php?error=請先登入會員");
 }
 
 ?>
