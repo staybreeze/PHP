@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+
+<body>
+
+
+
+  <script>
+    let orderArr = [
+  {'s20231226001': '1000'},
+  {'s20231226002': '5000'},
+  {'s20231226003': '20000'},
+];
+
+let total = 0;  // 初始化總金額
+
+orderArr.forEach(function (value, key) {
+    // 在 orderArr 陣列中，每個物件都包含一個鍵值對，鍵是訂單編號，
+    // 值是金額。在這個 forEach 迴圈中，
+    // 我們使用 Object.keys(value)[0] 取得訂單編號，
+    // 並使用 value[Object.keys(value)[0]] 取得對應的金額。
+    // 這個金額被賦值給 amount 變數。
+  let amount = parseInt(value[Object.keys(value)]);
+  console.log('訂單', Object.keys(value));
+  console.log('金額', amount);
+  total += amount;
+});
+
+console.log('總金額', total);
+
+
+    let data = [
+      {
+        'order': 's20231226001',
+        'price': 1000,
+      },
+      {
+        'order': 's20231226002',
+        'price': 5000,
+      },
+      {
+        'order': 's20231226003',
+        'price': 20000,
+      }
+    ];
+    console.log('data', data);
+    let sum = 0;
+    data.forEach(function (value, key) {
+      console.log('key', key);
+      console.log('value', value);
+      console.log('value.price', value.price);
+      sum += value.price;
+    });
+
+    console.log('sum', sum);
+
+
+
+
+  </script>
+</body>
+
+</html>
