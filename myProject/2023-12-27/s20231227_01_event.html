@@ -19,11 +19,11 @@
     }
 
     .bg-pink {
-      background-color: lightpink;
+      background-color: lightpink !important;
     }
 
     .bg-blue {
-      background-color: lightblue;
+      background-color: lightblue !important;
     }
   </style>
 </head>
@@ -51,6 +51,16 @@
     </div>
   </div>
 
+<br>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+       <input type="text" name="" id="myInput" class="form-control">
+
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script>
     function myBtn2Fun(data) {
@@ -61,6 +71,8 @@
 
     const myBtn = document.getElementById('myBtn');
     const box = document.getElementById('box');
+    const myInput = document.getElementById('myInput');
+
 
     // 1.
     // myBtn
@@ -89,6 +101,17 @@
     });
 
 
+    // form input
+
+    myInput.addEventListener('focus',function(){
+      console.log('myInput focus');
+      this.setAttribute('class', 'form-control bg-blue');
+    })
+
+    myInput.addEventListener('blur',function(){
+      console.log('myInput blur');
+      this.setAttribute('class', 'form-control  bg-pink');
+    })
 
 
   </script>
