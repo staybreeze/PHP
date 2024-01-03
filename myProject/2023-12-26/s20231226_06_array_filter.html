@@ -25,7 +25,17 @@
     let newData = [];
 
 
-    // > 4
+
+    //     // > 4
+    // filter 方法接受一個回調函數作為參數。這個回調函數接受兩個參數：
+
+    // value: 當前遍歷到的陣列元素的值。
+    // key（可選）: 當前遍歷到的陣列元素的索引（位置）。
+    // 回調函數的內容是 return value > 4;，
+    // 這表示它將返回一個布林值，表示陣列中的元素是否大於 4。
+
+    // filter 方法會遍歷陣列中的每個元素，將每個元素傳遞給回調函數進行判斷。
+    // 當回調函數返回 true 時，filter 方法將該元素添加到一個新的陣列中。
     newData = data.filter((value, key) => {
       return value > 4;
     });
@@ -33,14 +43,21 @@
     console.log('newData', newData);
 
     // > 5
-    // data.forEach(value => {
-    //   if (value > 5) {
-    //     console.log('value', value);
-    //     newData.push(value);
-    //   }
-    // });
+    data.forEach(value => {
+      if (value > 5) {
+        console.log('value', value);
 
-    // console.log('newData', newData);
+
+        // 這行程式碼 newData.push(value); 是在上一個 filter 方法的回調函數內部使用的，它的作用是將符合條件的元素 value 添加到新的陣列 newData 中。
+
+        // 在 filter 方法中，當回調函數返回 true 時，表示當前的 value 滿足條件，需要被保留在新的陣列中。因此，這個 newData.push(value); 的語句就是將符合條件的元素添加到 newData 陣列中。
+        newData.push(value);
+      }
+    });
+
+
+
+    console.log('newData', newData);
 
 
 
