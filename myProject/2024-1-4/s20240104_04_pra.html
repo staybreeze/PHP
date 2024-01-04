@@ -20,10 +20,10 @@
 <body>
 
     <div class="container mt-3">
+        <h2>旅遊網</h2>
+        <p>Image at the top (card-img-top):</p>
         <div class="row">
             <div class="col">
-                <h2>旅遊網</h2>
-                <p>Image at the top (card-img-top):</p>
                 <div class="card" style="width:400px">
                     <img class="card-img-top" src="https://picsum.photos/id/26/400/300" alt="Card image"
                         style="width:100%">
@@ -35,15 +35,60 @@
                             saepe facere
                             excepturi vero similique.</p>
                         <button id="myBtn" data-price="1000" data-level="C" type="button"
-                            class="btn btn-primary">取得優惠價</button>
-                        <div id="myBox" class="box text-danger mt-2">
-                            <span id="mySpan">Lorem ipsum dolor sit amet.</span>
+                            class="my-Btn btn btn-primary">取得優惠價</button>
+                        <div id="myBox" class="my-Box box text-danger mt-2">
+                            <span class="my-Span" id="mySpan">Lorem ipsum dolor sit amet.</span>
                         </div>
                     </div>
+
                 </div>
+
                 <br>
             </div>
+            <div class="col">
+                <div class="card" style="width:400px">
+                    <img class="card-img-top" src="https://picsum.photos/id/26/400/300" alt="Card image"
+                        style="width:100%">
+                    <div class="card-body">
+                        <h4 class="card-title">巴黎</h4>
+                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa quos, ut
+                            necessitatibus
+                            dicta debitis beatae expedita rem neque natus, velit, error excepturi sint commodi! Ratione
+                            saepe facere
+                            excepturi vero similique.</p>
+                        <button id="myBtn" data-price="19000" data-level="B" type="button"
+                            class="my-Btn btn btn-primary">取得優惠價</button>
+                        <div id="myBox" class="my-Box box text-danger mt-2">
+                            <span class="my-Span" id="mySpan">Lorem ipsum dolor sit amet.</span>
+                        </div>
+                    </div>
 
+                </div>
+
+                <br>
+            </div>
+            <div class="col">
+                <div class="card" style="width:400px">
+                    <img class="card-img-top" src="https://picsum.photos/id/26/400/300" alt="Card image"
+                        style="width:100%">
+                    <div class="card-body">
+                        <h4 class="card-title">紐約</h4>
+                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa quos, ut
+                            necessitatibus
+                            dicta debitis beatae expedita rem neque natus, velit, error excepturi sint commodi! Ratione
+                            saepe facere
+                            excepturi vero similique.</p>
+                        <button id="myBtn" data-price="10000" data-level="A" type="button"
+                            class="my-Btn btn btn-primary">取得優惠價</button>
+                        <div id="myBox" class="my-Box box text-danger mt-2">
+                            <span class="my-Span" id="mySpan">Lorem ipsum dolor sit amet.</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <br>
+            </div>
         </div>
     </div>
 
@@ -54,9 +99,9 @@
     <script>
         $(document).ready(function () {
             // 綁定
-            const myBtn = $('#myBtn');
-            const myBox = $('#myBox');
-            const mySpan = $('#mySpan');
+            const myBtn = $('.my-Btn');
+            const myBox = $('.my-Box');
+            const mySpan = $('.my-Span');
 
             // 製作會員等級物件
             const levelObj = {
@@ -71,6 +116,8 @@
             myBox.hide();
 
             myBtn.click(function () {
+
+
                 console.log('myBtn ok');
                 console.log('this', this);
                 let getDataPrice = Number($(this).attr('data-price'));
@@ -81,11 +128,21 @@
                 // 讓data-level與levelObj產生關聯
                 let result = getDataPrice * levelObj[getDataLevel];
                 console.log('result', result);
+
+
+                const nowCardBody = $(this).parent();
+        const nowMyBox = nowCardBody.find('.my-Box');
+        const nowMySpan = nowCardBody.find('.my-Span');
+
+        console.log(nowMyBox)
+
                 // 移除BUTTON
-                $(this).remove();
+                // $(this).remove();
+
+
                 // BUTTON移除後，顯示指定文字
-                myBox.show();
-                mySpan.text(`原價:${getDataPrice} , 優惠價 ${result}`)
+                nowMyBox.show();
+        nowMySpan.text(`原價:${getDataPrice} , 優惠價 ${result}`)
 
             });
 
