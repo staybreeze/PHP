@@ -104,6 +104,8 @@
 
   <script>
     $(document).ready(function () {
+
+      // ----綁定----
       const num1 = $('.my-num1');
       const num2 = $('.my-num2');
       const opt = $('.my-opt');
@@ -115,6 +117,7 @@
       console.log('opt', opt);
       console.log('myBtn', myBtn);
 
+      // ----event----
       myBtn.click(function () {
         console.log('this', this);
         console.log('$(this)', $(this));
@@ -122,6 +125,7 @@
         console.log('$(this).parent().parent()', $(this).parent().parent());
         console.log('$(this).parent().parent().parent()', $(this).parent().parent().parent());
 
+        // 用class做活，需要用this生成各自的now
         const nowRow = $(this).parent().parent().parent();
         const nowNum1 = nowRow.find('.my-num1');
         const nowNum2 = nowRow.find('.my-num2');
@@ -129,6 +133,7 @@
         const nowResultSpan = nowRow.find('.result-span');
         console.log('nowNum1', nowNum1);
 
+        // 取值以便+-*/
         let getNum1Value = Number(nowNum1.val());
         let getNum2Value = Number(nowNum2.val());
         let getOptValue = Number(nowOpt.val());
@@ -136,7 +141,7 @@
         console.log('getNum1Value typeof', typeof (getNum1Value));
 
         // string method length 
-        if (num1.val().length <= 0 || num2.val().length <= 0) {
+        if (nowNum1.val().length <= 0 || nowNum2.val().length <= 0) {
           alert('empty?');
           return false;
         }
@@ -145,6 +150,8 @@
         console.log('getNum1Value', getNum1Value);
         console.log('getNum2Value', getNum2Value);
         console.log('getOptValue', getOptValue);
+
+        // 用switch生成opt
         let result = 0;
         switch (getOptValue) {
           case 1:
