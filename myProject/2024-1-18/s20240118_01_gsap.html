@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GSAP - tween 補間動畫</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.css' />
+    <style>
+        body {
+            padding-bottom: 500px;
+        }
+
+        h3 {
+            margin: 20px 0;
+        }
+
+        .box1,
+        .box2,
+        .box3,
+        .box4,
+        .box5,
+        .box6,
+        .box7,
+        .box8,
+        .box9,
+        .box10,
+        .box11 {
+            width: 50px;
+            height: 50px;
+            background-color: black;
+            margin: 5px;
+        }
+
+        .box2 {
+            background-color: red;
+        }
+
+        .box3 {
+            background-color: green;
+        }
+
+        .box4 {
+            background-color: blue;
+        }
+    </style>
+
+</head>
+<div class="conatainer">
+    <h1>1.選擇目標</h1>
+    <div class="box1"></div>
+
+    <h1>2.選擇群組使用陣列</h1>
+    <div class="box2"></div>
+    <div class="box2"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box3"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    <div class="box4"></div>
+    <div class="box4"></div>
+
+    <h1>3.設定CSS屬性</h1>
+    <div class="box5" style="margin:auto;font-size:0px">57748</div>
+    <p id="word">
+        探索市場價圖書館，考察第一，暴力網頁班模擬靜靜很熱，貼圖平時免費高速會有，一股一座右鍵無關，它們誘惑有限責任大連打造一把跟着和平島，家電即將看法公里上了結構失敗來了網通，可惜真實性努力理由從此主要一眼，國務院便是讓他增長驚人各類辦公大大回覆，依法研發，透。
+    </p>
+
+    <h1>4.設定動畫屬性</h1>
+    <div class="box6"></div>
+    <button id="play">play</button>
+    <button id="pause">pause</button>
+</div>
+
+<body>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js'></script>
+    <script src="./gsap/gsap.js"></script>
+    <script>
+        // 1.選擇目標--------------------------------
+        //抓目標有三種方式
+        const b1 = document.querySelector('.box1')//js
+        const b2 = $('.box1')//jq
+        const tween1 = gsap.to(b1, {
+            x: 500,
+            duration: 3
+        })//(目標,選項物件)
+
+        // 2.選擇群組使用陣列-----------------------------
+        // 類陣列(像陣列的東西)
+        const dom1 = document.querySelectorAll('.box2')
+        const dom2 = document.querySelectorAll('.box3')
+        const dom3 = document.querySelectorAll('.box4')
+
+        const jq1 = $('.box2')
+        const jq2 = $('.box3')
+        const jq3 = $('.box4')
+
+        // const tween2 = gsap.to([dom1,dom2,dom3],{
+        //     x: 500,
+        //     duration: 3
+        // })
+
+        // const tween2 = gsap.to([jq1,jq2,jq3],{
+        //     x: 500,
+        //     duration: 3
+        // })
+
+        // gsap推薦的方法
+        const tween2 = gsap.to('.box2, .box3, .box4', {
+            x: 500,
+            duration: 3
+
+        })
+
+        // 3.設定CSS屬性-----------------------------------
+        const tween3 = gsap.to('.box5', {
+            x: 100,//transLateX
+            y: 100,//transLateY
+            rotation: 720,//rotate
+            scale: 2,//scale
+            width: 100,
+            height: '100px',//字串要加上單位
+            border: '10px solid red',//用字串
+            boxShadow: '0 0 10px rgba(255,0,0,1)',//兩個字以上的要用駝峰式命名法
+            backgroundColor: 'transparent',
+            backdropFilter: 'blur(2px)',
+            fontSize: 100
+        })
+
+        const word = gsap.to('#word', {
+            // color:'red',
+            color: 'random([red,green,blue])',//隨機顏色，使用random([])，為一字串
+            fontWeight: 'bold',
+            fontSize: '1.5rem',
+            lightHeight: 2,
+            letterSpacing: '0.5rem'
+        })
+
+        // 4.設定動畫屬性--------------------------------------
+        // const tween4 = gsap.to('.box6', {
+        //     x: 500,
+        //     duration: 3,
+        //     delay: 3,//屬於初始播放的延遲時間
+        //     repeat: 2,//重複兩次+初始播放，共三次
+        //     repeat: -1,//無限播放
+        //     repeatDelay: 2,//repeat的delay，不是初始播放的
+        // })
+
+        // const tween4 = gsap.to('.box6', {
+        //     // x: '+=100',//相對位置
+        //     x:'random(0,100)',//隨機位置
+        //     repeatRefresh: 'ture',//重複播放時，會記錄前一次的狀態再執行，需與相對位置、隨機搭配使用
+        //     repeat: -1,//無限播放
+        // })
+        // const tween4 = gsap.to('.box6', {
+        //     x: 500,
+        //     repeat: -1,//無限播放
+        //     duration:1,
+        //     yoyo:'true',//會重覆播放時，會來回播放
+        // })
+        const tween4 = gsap.to('.box6', {
+            duration: 2.5,
+            // ease: "steps(12)",
+             ease: "back",
+            y: -500,
+            x: 500, 
+            yoyo: 'true',//會重覆播放時，會來回播放
+            repeat: -1,
+            ease: "steps(5)", // 動畫速率
+    })
+
+    // tween 提供許多方法來控制動畫
+    // https://gsap.com/docs/v3/GSAP/Tween
+    $('#play').on('click', function () {
+      tween4.play()
+    })
+    $('#pause').on('click', function () {
+      tween4.pause()
+    })
+    </script>
+</body>
+
+</html>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.js'></script>
