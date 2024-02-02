@@ -13,19 +13,43 @@
 </head>
 
 <body>
-  <div class="container" id="myContainer">
+  <!-- area
+: 
+"北部"
+city
+: 
+"新北市"
+id
+: 
+14
+location
+: 
+"新北市土城區自強街31之2號"
+name
+: 
+"大黑松小倆口牛軋糖創意博物館"
+web
+: 
+"www.9420.com.tw" -->
+  <div class="container-fluid" id="myContainer">
     <div class="row">
-      <div class="col-2">
+      <div class="col-1">
         id
       </div>
       <div class="col-2">
         name
       </div>
-      <div class="col-2">
-        price
+      <div class="col-1">
+        area
       </div>
-      <div class="col-6">
+      <div class="col-1">
+        city
+      </div>
+      <div class="col-4">
         location
+      </div>
+      <div class="col-3">
+        web
       </div>
     </div>
     <!-- <div class="row">
@@ -33,13 +57,19 @@
         1
       </div>
       <div class="col-2">
-        amy
+        name
       </div>
       <div class="col-2">
-        10000
+        area
       </div>
-      <div class="col-6">
-        台北 台中 高雄
+      <div class="col-2">
+        city
+      </div>
+      <div class="col-2">
+        location
+      </div>
+      <div class="col-2">
+        web
       </div>
     </div> -->
   </div>
@@ -65,11 +95,38 @@
         dataType: "json",
         success: function (res) {
           console.log('res', res);
-          console.log('res[12]', res[12]);
-          console.log('res[12].id', res[12].id);
-          console.log('res[12].name', res[12].name);
-          console.log('res[12].location', res[12].location);
-          console.log('res[12].web', res[12].web);
+          // jq each array
+          $.each(res, function (key, value) {
+            console.log('key', key);
+            console.log('value', value);
+            let content = `
+              <div class="row">
+                <div class="col-1">
+                  ${value.id}
+                </div>
+                <div class="col-2">
+                  ${value.name}
+                </div>
+                <div class="col-1">
+                  ${value.area}
+                </div>
+                <div class="col-1">
+                  ${value.city}
+                </div>
+                <div class="col-4">
+                  ${value.location}
+                </div>
+                <div class="col-3">
+                  ${value.web}
+                </div>
+              </div>
+            `;
+            myContainer.append(content);
+          });
+
+
+
+
         }
       });
 
