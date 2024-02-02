@@ -10,6 +10,31 @@
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<style>
+  .btn-primary{
+    background-color: white;
+    color:brown;
+    border:1px solid brown
+  }
+  .btn-primary:hover{
+    background-color: antiquewhite;
+    color:brown;
+    border:1px dotted antiquewhite;
+  }
+  .btn-success{
+    background-color: antiquewhite;
+    color:brown;
+    border:1px dotted antiquewhite;
+  }
+  .btn-success:hover{
+    background-color: white;
+    color:brown;
+    border:1px solid brown
+  }
+  .btn-warning{
+    background-color: gold;
+  }
+</style>
 </head>
 
 <body>
@@ -20,26 +45,26 @@
         <button id="sumBtn" type="button" class="btn btn-danger d-none " data-name="咖啡" data-price="100" data-img="24">
           合計
         </button>
-        <button type="button" class="myBtn btn btn-primary" data-name="咖啡" data-price="100" data-img="24">
+        <button type="button" class="myBtn btn btn-primary" data-name="咖啡" data-price="100" data-img="1">
           咖啡
         </button>
-        <button type="button" class="myBtn btn btn-primary" data-name="花茶" data-price="200" data-img="25">
+        <button type="button" class="myBtn btn btn-primary" data-name="花茶" data-price="200" data-img="2">
           花茶
         </button>
-        <button type="button" class="myBtn btn btn-primary" data-name="礦泉水" data-price="50" data-img="26">
+        <button type="button" class="myBtn btn btn-primary" data-name="礦泉水" data-price="50" data-img="3">
           礦泉水
         </button>
       </div>
     </div>
     <div class="row mt-3">
       <div class="col">
-        <button type="button" class="myBtn btn btn-success" data-name="手工餅乾" data-price="120" data-img="35" data-id="1">
+        <button type="button" class="myBtn btn btn-success" data-name="手工餅乾" data-price="120" data-img="4" data-id="1">
           手工餅乾
         </button>
-        <button type="button" class="myBtn btn btn-success" data-name="吐司" data-price="65" data-img="36">
+        <button type="button" class="myBtn btn btn-success" data-name="吐司" data-price="65" data-img="5">
           吐司
         </button>
-        <button type="button" class="myBtn btn btn-success" data-name="馬卡龍" data-price="50" data-img="37">
+        <button type="button" class="myBtn btn btn-success" data-name="馬卡龍" data-price="50" data-img="6">
           馬卡龍
         </button>
       </div>
@@ -74,7 +99,7 @@
             小計 : <span>100</span>
           </td>
           <td class="text-start">
-            <button type="button" class="cloneBtn btn btn-warning">Clone</button>
+            <button type="button" class="cloneBtn btn btn-warning">Copy</button>
             <button type="button" class="delBtn btn btn-danger">Del</button>
           </td>
         </tr> -->
@@ -178,7 +203,7 @@
         let content = `
         <tr>
           <td>
-            <img class="rounded-circle" src="https://picsum.photos/id/${imgUrl}/120/120" alt="">
+            <img class="rounded-circle" src="./img/${imgUrl}.jpg" width="200px">
           </td>
           <td class="text-start">
             ${name}
@@ -192,7 +217,7 @@
             小計 : <span class="myTotal">${price}</span>
           </td>
           <td class="text-start">
-            <button type="button" class="cloneBtn btn btn-warning">Clone</button>
+            <button type="button" class="cloneBtn btn btn-warning">Copy</button>
             <button type="button" class="delBtn btn btn-danger">Del</button>
           </td>
         </tr>
